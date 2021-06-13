@@ -25,6 +25,12 @@ pre = "<b>3. </b>"
 
 ![Create Reservation Budget](/images/4-budget/ReservationBudget/reservation-budget-1.PNG?width=90pc)
 
+{{%notice tip%}}
+
+**RI Utilization** : Là tỉ lệ sử dụng các RI chúng ta đã mua, giúp xác định xem chúng ta có lãng phí RI hay không.\
+**RI Coverage** : Là tỉ lệ những RI chúng ta đã mua so với tổng các instance mà chúng ta có thể mua thêm RI, giúp xác định chúng ta có thể tối ưu hóa chi phí bằng cách mua thêm RI hay không.
+{{%/notice%}}
+
 11. Tại mục **Budget parameters (optional)**, chọn **Filtering**, bạn có thể để Budget bao gồm tất cả dịch vụ hoặc [tùy chọn dịch vụ](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create-filters.html).  
 
 ![Create Reservation Budget](/images/4-budget/ReservationBudget/reservation-budget-2.PNG?width=90pc)

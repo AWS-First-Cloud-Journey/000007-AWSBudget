@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Create Cost Budget :: Begin with AWS Budget</title>
+    <title>Tạo cost budget :: Begin with AWS Budget</title>
 
     
-    <link href="/css/nucleus.css?1610695760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610695760" rel="stylesheet">
-    <link href="/css/hybrid.css?1610695760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610695760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610695760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610695760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610695760" rel="stylesheet">
-    <link href="/css/theme.css?1610695760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610695760" rel="stylesheet">
+    <link href="/css/nucleus.css?1623559087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1623559087" rel="stylesheet">
+    <link href="/css/hybrid.css?1623559087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1623559087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1623559087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1623559087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1623559087" rel="stylesheet">
+    <link href="/css/theme.css?1623559087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1623559087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1610695760" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1623559087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1610695760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1623559087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610695760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610695760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1623559087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1623559087"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610695760"></script>
+<script type="text/javascript" src="/js/search.js?1623559087"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-cost-budgets/" title="Create Cost Budget" class="dd-item 
+    <li data-nav-id="/1-cost-budgets/" title="Tạo cost budget" class="dd-item 
         
         active
         
         ">
       <a href="/1-cost-budgets/">
-          <b>1. </b>Create Cost Budget
+          <b>1. </b>Tạo cost budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-usage-budget/" title="Create Usage Budget" class="dd-item 
+    <li data-nav-id="/2-usage-budget/" title="Tạo Usage Budget" class="dd-item 
         
         
         
         ">
       <a href="/2-usage-budget/">
-          <b>2. </b>Create Usage Budget
+          <b>2. </b>Tạo Usage Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/3-reservation-budget/" title="Create Reservation Budget" class="dd-item 
+    <li data-nav-id="/3-reservation-budget/" title="Tạo Reservation Budget" class="dd-item 
         
         
         
         ">
       <a href="/3-reservation-budget/">
-          <b>3. </b>Create Reservation Budget
+          <b>3. </b>Tạo Reservation Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,13 @@
  
   
     
-    <li data-nav-id="/4-saving-plans-budget/" title="Create Saving Plans Budget" class="dd-item 
+    <li data-nav-id="/4-saving-plans-budget/" title="Tạo Saving plans Budget" class="dd-item 
         
         
         
         ">
       <a href="/4-saving-plans-budget/">
-          <b>4. </b>Create Saving Plans Budget
+          <b>4. </b>Tạo Saving plans Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -302,7 +302,7 @@
             
           
           
-            <a href='/'>Begin with AWS Budget</a> > Create Cost Budget
+            <a href='/'>Bắt đầu với AWS Budget</a> > Tạo cost budget
           
         
           
@@ -337,7 +337,7 @@
           
             <h1>
               
-              Create Cost Budget
+              Tạo cost budget
             </h1>
           
 
@@ -345,40 +345,41 @@
 
 
 
-	<p><strong>Contents:</strong></p>
+	<p><strong>Nội dung:</strong></p>
 <ul>
-<li><a href="#create-your-cost-budget">Create your cost budget</a></li>
+<li><a href="#kh%E1%BB%9Fi-t%E1%BA%A1o-cost-budget">Khởi tạo cost budget</a></li>
 </ul>
-<h4 id="create-your-cost-budget">Create your cost budget</h4>
+<h4 id="khởi-tạo-cost-budget">Khởi tạo cost budget</h4>
 <ol>
-<li>Go to the AWS Management Console and open the Billing and Cost Management console at <strong><a href="https://console.aws.amazon.com/billing/home?#/budgets">Amazon Web Services</a></strong> home page.</li>
-<li>In the navigation pane, choose <strong>Budgets</strong>.</li>
-<li>At the top of the page, choose <strong>Create budget</strong>.</li>
-<li>For <strong>Select budget type</strong>, choose <strong>Cost budget</strong>.</li>
-<li>Choose <strong>Set your budget</strong>.</li>
-<li>For <strong>Name</strong>, enter the name of your budget.</li>
-<li>For <strong>Period</strong>, choose how often you want the budget to reset the actual and forecasted spend. Choose <strong>Monthly</strong> for every month, <strong>Quarterly</strong> for every three months, and <strong>Annually</strong> for every year.</li>
-<li>For a fixed <strong>Budgeted Amount</strong>, enter the total amount that you want to spend for this budget period.</li>
-<li>(Optional) For <strong>Budget effective dates</strong>, choose <strong>Recurring Budget</strong> for a budget that resets after the budget period or <strong>Expiring Budget</strong> for a one-time budget that doesn&rsquo;t reset after the budget period.<br>
-All budget times are in UTC.</li>
+<li>Đăng nhập vào trang quản trị AWS Management Console, vào dịch vụ Billing and Cost Management tại <strong><a href="https://console.aws.amazon.com/billing/home?#/budgets">Amazon Web Services</a></strong>.</li>
+<li>Tại trang quản trị, chọn <strong>Budgets</strong>.</li>
+<li>Chọn <strong>Create budget</strong>.</li>
+<li>Tại mục <strong>Select budget type</strong>, Chọn <strong>Cost budget</strong>.</li>
+<li>Chọn <strong>Set your budget</strong>.</li>
+<li>Tại mục <strong>Name</strong>, đặt tên cho Budget.</li>
+<li>Tại mục <strong>Period</strong>, chọn khoảng thời gian cho Budget. Bạn có thể đặt Budget theo <strong>Tháng, Quý, Năm</strong></li>
+<li>Tại mục <strong>Budgeted Amount</strong>, điền vào số tiền mà bạn muốn đặt cho Budget.</li>
+<li>Tại mục <strong>Budget effective dates</strong>, chọn <strong>Recurring Budget</strong> fnếu bạn muốn số tiền Budget này được đặt lặp đi lặp lại trong khoản thời gian bạn cấu hình hoặc chọn <strong>Expiring Budget</strong> khi bạn chỉ muốn đặt 1 lần Budget cho 1 khoảng thời gian tùy chọn nào đó.<br>
+Tất cả các múi giờ đều là UTC.</li>
 </ol>
 <p><img src="/images/4-budget/CostBudget/Cost-Budget-1.PNG?width=90pc" alt="Create Cost Budget"></p>
 <ol start="10">
-<li>(Optional) Under <strong>Budget parameters (optional)</strong>, for <strong>Filtering</strong>, choose one or more of the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create-filters.html">available filters</a>. Your choice of budget type determines the set of filters that is displayed on the console.</li>
-<li>(Optional) Under Budget parameters (optional), for Advanced options, choose one or more of the following filters. If you are signed in from a member account in an organization instead of from a master account, you might not see all of the advanced options.</li>
+<li>Tại mục <strong>Budget parameters (optional)</strong>, chọn <strong>Filtering</strong>, bạn có thể để Budget bao gồm tất cả dịch vụ hoặc <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create-filters.html">tùy chọn dịch vụ</a>.</li>
+<li>Phía dưới <strong>Budget parameters</strong> (optional), tại mục <strong>Advanced options</strong>, bạn có thể tùy chọn cấu hình nâng cao cho Budget của mình</li>
 </ol>
 <p><img src="/images/4-budget/CostBudget/Cost-Budget-2.PNG?width=90pc" alt="Create Cost Budget"></p>
 <ol start="12">
-<li>Choose <strong>Configure alerts</strong>.</li>
-<li>Under <strong>Configure alerts</strong>, for <strong>Alert 1</strong>, choose <strong>Actual</strong> to create a notification for actual spend and <strong>Forecast</strong> to create a notification for your forecasted spend.</li>
-<li>For <strong>Alert threshold</strong>, enter the amount that you want to be notified at. This can be either an absolute value or a percentage. For example, for a budget of 200 dollars, if you want to be notified at 160 dollars (80% of your budget), enter 160 for an absolute budget or 80 for a percentage budget.</li>
-<li>For <strong>Email contacts</strong>, enter the email addresses that you want the notifications to be sent to and choose <strong>Add email contact</strong>. Separate multiple email addresses with a comma. A notification can have up to 10 email addresses.</li>
-<li>(Optional) For <strong>SNS topic ARN</strong>, enter the ARN for your Amazon SNS topic and then choose <strong>Verify</strong>. If you want to use an Amazon SNS topic for your notification but don&rsquo;t have one, see <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-topic.html">Create a Topic</a> in the <em>Amazon Simple Notification Service Developer Guide</em>.</li>
-<li>Choose <strong>Confirm budget</strong>.</li>
+<li>Chọn <strong>Configure alerts</strong>.</li>
+<li>Tại mục <strong>Configure alerts</strong>, <strong>Alert 1</strong>, chọn <strong>Actual</strong> để gửi thông báo đối với số tiền Budget thực tế và <strong>Forecast</strong> để gửi thông báo đối với số tiền Budget được dự đoán trong tương lai.</li>
+<li>Tại mục <strong>Alert threshold</strong>, nhập số lượng phần trăm để khi số tiền Budget đạt tới mức đó, thông báo sẽ được gửi đến bạn. Ví dụ, bạn cấu hình Budget là 200$, bạn muốn khi số tiền đạt tới mức 80% của Budget thì thông báo sẽ được gửi đến bạn. Bạn cần điền vào đó mức là 80%.</li>
+<li>Tại mục <strong>Email contacts</strong>, nhập vào email mà bạn muốn gửi thông báo tới và chọn <strong>Add email contact</strong> để có thể gửi đến nhiều email cùng 1 lúc. Thông báo có thể gửi tới 10 email 1 lúc. 
+Bạn cũng có thể sử dụng dịch vụ AWS SNS để gửi thông báo.</li>
+<li>Đối với bạn sử dụng <strong>SNS topic ARN</strong>, nhập SNS ARN của bạn và chọn <strong>Verify</strong>. Để tìm hiểu cách sử dụng AWS SNS, bạn có thể tham khảo <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-topic.html">link sau</a>.</li>
+<li>Chọn <strong>Confirm budget</strong>.</li>
 </ol>
 <p><img src="/images/4-budget/CostBudget/Cost-Budget-3.PNG?width=90pc" alt="Configure Alert"></p>
 <ol start="18">
-<li>Review your budget settings, and choose <strong>Create</strong>.</li>
+<li>Xem lại tất cả cấu hình và chọn <strong>Create</strong>.</li>
 </ol>
 <p><img src="/images/4-budget/CostBudget/Cost-Budget-4.PNG?width=90pc" alt="Review"></p>
 
@@ -493,10 +494,10 @@ All budget times are in UTC.</li>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/" title="Begin with AWS Budget"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/" title="Bắt đầu với AWS Budget"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-usage-budget/" title="Create Usage Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-usage-budget/" title="Tạo Usage Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -506,19 +507,19 @@ All budget times are in UTC.</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610695760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610695760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610695760"></script>
-    <script src="/js/jquery.sticky.js?1610695760"></script>
-    <script src="/js/featherlight.min.js?1610695760"></script>
-    <script src="/js/highlight.pack.js?1610695760"></script>
+    <script src="/js/clipboard.min.js?1623559087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1623559087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1623559087"></script>
+    <script src="/js/jquery.sticky.js?1623559087"></script>
+    <script src="/js/featherlight.min.js?1623559087"></script>
+    <script src="/js/highlight.pack.js?1623559087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610695760"></script>
-    <script src="/js/learn.js?1610695760"></script>
-    <script src="/js/hugo-learn.js?1610695760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1623559087"></script>
+    <script src="/js/learn.js?1623559087"></script>
+    <script src="/js/hugo-learn.js?1623559087"></script>
 
-    <link href="/mermaid/mermaid.css?1610695760" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1610695760"></script>
+    <link href="/mermaid/mermaid.css?1623559087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1623559087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

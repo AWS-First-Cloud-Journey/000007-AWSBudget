@@ -1,43 +1,42 @@
 +++
-title = "Create Saving Plans Budget"
+title = "Tạo Saving plans Budget"
 date = 2020-04-18T00:38:32+07:00
 weight = 4
 chapter = false
 pre = "<b>4. </b>"
 +++
 
-**Contents:**
-- [Create your saving plans budget](#create-your-saving-plans-budget)
+**Nội dung:**
+- [Khởi tạo Saving plans Budget](#khởi-tạo-saving-plans-budget)
 
-#### Create your saving plans budget
+#### Khởi tạo Saving plans Budget
 
-1. Go to the AWS Management Console and open the Billing and Cost Management console at **[Amazon Web Services](https://console.aws.amazon.com/billing/home?#/budgets)** home page.
-2. In the navigation pane, choose **Budgets**.
-3. At the top of the page, choose **Create budget**.
-4. For **Select budget type**, choose **Savings Plans budget**.
-5. Choose **Set up your budget**.
-6. For **Name**, enter the name of your budget.
-7. For **Period**, choose how often you want the budget to reset the actual and forecasted spend. Choose **Daily** for every day, **Monthly** for every month, **Quarterly** for every three months, or **Annually** for every year.  
-   All budget times are in UTC.
-8. For **Savings Plans budget type**, choose what you want the budget to track.  
-    **Savings Plans Utilization** is how much of your Savings Plans you've used.  
-    **Savings Plans Coverage** is how much of your usage a Savings Plan covers.
-9.  For **Utilization threshold**, enter the utilization percentage that you want AWS to notify you at. For example, for a utilization budget where you want to stay above 90% Savings Plans utilization, enter 90, and the budget notifies you when your overall Savings Plans utilization goes below 90%.
+1. Đăng nhập vào trang quản trị AWS Management Console, vào dịch vụ Billing and Cost Management tại **[Amazon Web Services](https://console.aws.amazon.com/billing/home?#/budgets)**.
+2. Tại trang quản trị, chọn **Budgets**.
+3. Chọn **Create budget**.
+4. Tại mục **Select budget type**, Chọn **Savings Plans budget**.
+5. Chọn **Set your budget**.
+6. Tại mục **Name**, đặt tên cho Budget.
+7. Tại mục **Period**, chọn khoảng thời gian cho Budget. Bạn có thể đặt Budget theo **Tháng, Quý, Năm**.    
+   Tất cả các múi giờ đều là **UTC**.
+8. Tại mục **Savings Plans budget type**, chọn loại Saving Plans mà bạn muốn đặt Budget: **Savings Plans Utilization** hoặc **Savings Plans Coverage**.  
+9.  Tại mục **Utilization threshold**, điền vào giá trị bạn muốn thiết lập cho Budget. 
 
 ![Create Reservation Budget](/images/4-budget/SavingPlansBudget/savingplansbudget-1.PNG?width=90pc)
 
-10. (Optional) Under **Budget parameters (optional)**, for **Filtering**, choose one or more of the [available filters](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create-filters.html). Your choice of budget type determines the set of filters that is displayed on the console.
+10. Tại mục **Budget parameters (optional)**, chọn **Filtering**, bạn có thể để Budget bao gồm tất cả dịch vụ hoặc [tùy chọn dịch vụ](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create-filters.html).
 
 ![Create Reservation Budget](/images/4-budget/SavingPlansBudget/savingplansbudget-2.PNG?width=90pc)
 
-11. Choose **Configure alerts**. You can configure one alert only for a Savings Plans budget.
-12. (Optional) For **Email contacts**, enter the email addresses that you want the notifications to be sent to and choose **Add email contact**. Separate multiple email addresses with a comma. A notification can have up to 10 email addresses.  
+11. Chọn **Configure alerts**.
+12. Tại mục **Email contacts**, nhập vào email mà bạn muốn gửi thông báo tới và chọn **Add email contact** để có thể gửi đến nhiều email cùng 1 lúc. Thông báo có thể gửi tới 10 email 1 lúc. 
+    Bạn cũng có thể sử dụng dịch vụ AWS SNS để gửi thông báo.  
     To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic.
-13. (Optional) For **SNS topic ARN**, enter the ARN for your Amazon SNS topic and then choose **Verify**. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-topic.html) in the *Amazon Simple Notification Service Developer Guide*.  
-14. Choose **Confirm budget**.
+13. Đối với bạn sử dụng **SNS topic ARN**, nhập SNS ARN của bạn và chọn **Verify**. Để tìm hiểu cách sử dụng AWS SNS, bạn có thể tham khảo [link sau](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-topic.html). 
+14. Chọn **Confirm budget**.
 
 ![Create Reservation Budget](/images/4-budget/SavingPlansBudget/savingplansbudget-3.PNG?width=90pc)
 
-15. Review your budget settings, and choose **Create**.
+15. Xem lại tất cả cấu hình và chọn **Create**.
 
 ![Create Reservation Budget](/images/4-budget/SavingPlansBudget/savingplansbudget-4.PNG?width=90pc)
