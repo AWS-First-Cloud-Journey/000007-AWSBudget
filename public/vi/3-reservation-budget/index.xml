@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tạo Reservation Budget on Bắt đầu với AWS Budget</title>
+    <title>Tạo RI Budget on Bắt đầu với AWS Budget</title>
     <link>/vi/3-reservation-budget/</link>
-    <description>Recent content in Tạo Reservation Budget on Bắt đầu với AWS Budget</description>
+    <description>Recent content in Tạo RI Budget on Bắt đầu với AWS Budget</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 18 Apr 2020 00:38:32 +0700</lastBuildDate>
     

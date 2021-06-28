@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
     <loc>/1-cost-budgets/</loc>
     <lastmod>2020-04-18T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -29,6 +14,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/1-cost-budgets/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
                 />
   </url>
   
@@ -74,6 +74,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/4-saving-plans-budget/"
+                />
+  </url>
+  
+  <url>
+    <loc>/5-clean-up/</loc>
+    <lastmod>2021-06-09T18:21:33+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/5-clean-up/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/5-clean-up/"
                 />
   </url>
   

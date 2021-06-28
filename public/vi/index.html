@@ -12,21 +12,21 @@
     <title>Bắt đầu với AWS Budget :: Bắt đầu với AWS Budget</title>
 
     
-    <link href="/css/nucleus.css?1623559087" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1623559087" rel="stylesheet">
-    <link href="/css/hybrid.css?1623559087" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1623559087" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1623559087" rel="stylesheet">
-    <link href="/css/auto-complete.css?1623559087" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1623559087" rel="stylesheet">
-    <link href="/css/theme.css?1623559087" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1623559087" rel="stylesheet">
+    <link href="/css/nucleus.css?1624883929" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1624883929" rel="stylesheet">
+    <link href="/css/hybrid.css?1624883929" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1624883929" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1624883929" rel="stylesheet">
+    <link href="/css/auto-complete.css?1624883929" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1624883929" rel="stylesheet">
+    <link href="/css/theme.css?1624883929" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1624883929" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1623559087" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1624883929" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1623559087"></script>
+    <script src="/js/jquery-3.3.1.min.js?1624883929"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1623559087"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1623559087"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1624883929"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1624883929"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1623559087"></script>
+<script type="text/javascript" src="/js/search.js?1624883929"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-cost-budgets/" title="Tạo cost budget" class="dd-item 
+    <li data-nav-id="/vi/1-cost-budgets/" title="Tạo Cost Budget" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-cost-budgets/">
-          <b>1. </b>Tạo cost budget
+          <b>1. </b>Tạo Cost Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/vi/3-reservation-budget/" title="Tạo Reservation Budget" class="dd-item 
+    <li data-nav-id="/vi/3-reservation-budget/" title="Tạo RI Budget" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-reservation-budget/">
-          <b>3. </b>Tạo Reservation Budget
+          <b>3. </b>Tạo RI Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,39 @@
  
   
     
-    <li data-nav-id="/vi/4-saving-plans-budget/" title="Tạo Saving plans Budget" class="dd-item 
+    <li data-nav-id="/vi/4-saving-plans-budget/" title="Tạo Saving Plans Budget" class="dd-item 
         
         
         
         ">
       <a href="/vi/4-saving-plans-budget/">
-          <b>4. </b>Tạo Saving plans Budget
+          <b>4. </b>Tạo Saving Plans Budget
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-clean-up/" title="Dọn Dẹp Tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/5-clean-up/">
+          <b>5. </b>Dọn Dẹp Tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -259,11 +285,11 @@
     <section id="footer">
       <left>
     
-    
-
-    
-
-    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7831389&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
 </left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -293,11 +319,44 @@
 </span>
 
  
-<h1 id="bắt-đầu-với-aws-budget"><strong>Bắt đầu với AWS Budget</strong></h1>
+<h1 id="quản-lý-chi-phí-với-aws-budget">Quản lý chi phí với AWS Budget</h1>
+<h4 id="tổng-quan">Tổng quan</h4>
+<p>Ở bài lab này, bạn sẽ được tìm hiểu thêm về dịch vụ AWS Budget để giúp bạn quản lý chi phí trên tài khoản AWS của bạn. Quản lý chi phí là một việc quan trọng hàng đầu trong việc vận hành hệ thống của bạn trên Cloud.</p>
+<h4 id="aws-budget">AWS Budget</h4>
+<p><strong>AWS Budget</strong> là một dịch vụ cung cấp khả năng thiết lập ngân sách để gửi cảnh báo cho bạn khi chi phí vượt quá chi phí mà ngân sách cho phép (hoặc được dự báo sẽ vượt quá ngân sách).</p>
+<p>AWS Budget bao gồm 4 loại budget:</p>
 <ul>
-<li>AWS Budget cung cấp khả năng cài đặt tùy chọn ngân sách để cảnh báo cho bạn khi ngân sách vượt quá số tiền ngân sách của bạn (hoặc được dự báo vượt quá ngân sách).</li>
-<li>Bạn cũng có thể sử dụng AWS Budget để đặt cảnh báo cho các dịch vụ trả trước. Cảnh báo cho các dịch vụ trả trước có thể áp dụng cho Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon Elasticsearch.</li>
+<li>Cost Budget.</li>
+<li>Usage Budget.</li>
+<li>RI Budget.</li>
+<li>Savings Plans Budget.</li>
 </ul>
+<h4 id="cost-budget">Cost Budget</h4>
+<p><strong>Cost Budget</strong> cho phép bạn gửi cảnh báo khi tổng chi phí vượt qua ngưỡng chi phí trong ngân sách.</p>
+<h4 id="usage-budget">Usage Budget</h4>
+<p><strong>Usage Budget</strong> cho phép bạn gửi cảnh báo khi tổng mức sử dụng <strong>theo từng dịch vụ</strong> bạn lựa chọn vượt qua ngưỡng mức sử dụng trong ngân sách.</p>
+<p>Ví dụ: Mức sử dụng theo số giờ chạy của dịch vụ EC2.</p>
+<h4 id="reservation-instance-ri-budget">Reservation Instance (RI) Budget</h4>
+<p><strong>RI Budget</strong> cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ trả trước (<em>reserve instance</em>) của bạn.</p>
+
+<div class="notices info" ><p><strong>Reserve instance</strong> là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết mức sử dụng  của instance theo thời hạn 1 - 3 năm.</p>
+</div>
+
+<h4 id="savings-plans-budget">Savings Plans Budget</h4>
+<p><strong>Savings Plans Budget</strong> cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ đã được quy định ở trong savings plans.</p>
+
+<div class="notices info" ><p><strong>Savings plans instance</strong> cũng là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết dài hạn (từ 01 đến 03 năm) mức sử dụng của instance đó. 
+<strong>Savings plans</strong> là mô hình gia ra đời sau và linh hoạt hơn Reserve Instance với mức giảm giá tương đương. Với EC2 Instance, bạn được khuyến khích sử dụng Savings plans.</p>
+</div>
+
+<h4 id="nội-dung">Nội dung</h4>
+<ol>
+<li><a href="1-cost-budgets">Tạo Cost Budget</a></li>
+<li><a href="2-usage-budget">Tạo Usage Budget</a></li>
+<li><a href="3-reservation-budget">Tạo RI Budget</a></li>
+<li><a href="4-saving-plans-budget">Tạo Savings Plans Budget</a></li>
+<li><a href="5-clean-up">Dọn Dẹp Tài Nguyên</a></li>
+</ol>
 	
   
         
@@ -393,6 +452,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -403,7 +478,7 @@
 	 
 		
 		
-			<a class="nav nav-next" href="/vi/1-cost-budgets/" title="Tạo cost budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/1-cost-budgets/" title="Tạo Cost Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -413,19 +488,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1623559087"></script>
-    <script src="/js/perfect-scrollbar.min.js?1623559087"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1623559087"></script>
-    <script src="/js/jquery.sticky.js?1623559087"></script>
-    <script src="/js/featherlight.min.js?1623559087"></script>
-    <script src="/js/highlight.pack.js?1623559087"></script>
+    <script src="/js/clipboard.min.js?1624883929"></script>
+    <script src="/js/perfect-scrollbar.min.js?1624883929"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1624883929"></script>
+    <script src="/js/jquery.sticky.js?1624883929"></script>
+    <script src="/js/featherlight.min.js?1624883929"></script>
+    <script src="/js/highlight.pack.js?1624883929"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1623559087"></script>
-    <script src="/js/learn.js?1623559087"></script>
-    <script src="/js/hugo-learn.js?1623559087"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1624883929"></script>
+    <script src="/js/learn.js?1624883929"></script>
+    <script src="/js/hugo-learn.js?1624883929"></script>
 
-    <link href="/mermaid/mermaid.css?1623559087" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1623559087"></script>
+    <link href="/mermaid/mermaid.css?1624883929" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1624883929"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
