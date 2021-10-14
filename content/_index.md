@@ -1,51 +1,61 @@
 +++
-title = "Bắt đầu với AWS Budget"
+title = "Getting Started with AWS Budgets"
 date = 2021
 weight = 1
 chapter = false
 +++
 
-# Quản lý chi phí với AWS Budget
+# Cost Management with AWS Budgets
 
-#### Tổng quan
+#### Overview
 
-Ở bài lab này, bạn sẽ được tìm hiểu thêm về dịch vụ AWS Budget để giúp bạn quản lý chi phí trên tài khoản AWS của bạn. Quản lý chi phí là một việc quan trọng hàng đầu trong việc vận hành hệ thống của bạn trên Cloud. 
+In this lab, we'll explore how AWS Budgets can help you manage costs within your AWS account.
 
-#### AWS Budget
-**AWS Budget** là một dịch vụ cung cấp khả năng thiết lập ngân sách để gửi cảnh báo cho bạn khi chi phí vượt quá chi phí mà ngân sách cho phép (hoặc được dự báo sẽ vượt quá ngân sách). 
+#### AWS Budgets
+**AWS Budgets** is a service that allows you to set a one-time or recurring budget that alerts you when costs exceed (or are forecasted to exceed) your budgeted cost or usage amount.
 
-AWS Budget bao gồm 4 loại budget: 
-+ Cost Budget.
-+ Usage Budget.
-+ RI Budget.
-+ Savings Plans Budget.
+You can create the following types of budgets: 
+- [Cost Budget](#cost-budget).
+- [Usage budget](#usage-budget).
+- [Reserved Instance Budget](#reservation-instance-ri-budget).
+- [Savings Plans Budget](#savings-plans-budget).
 
 #### Cost Budget
-**Cost Budget** cho phép bạn gửi cảnh báo khi tổng chi phí vượt qua ngưỡng chi phí trong ngân sách. 
+A **Cost Budget** allows you to send alerts when the current or projected spend exceeds the cost threshold in the budget. 
 
 #### Usage Budget
-**Usage Budget** cho phép bạn gửi cảnh báo khi tổng mức sử dụng **theo từng dịch vụ** bạn lựa chọn vượt qua ngưỡng mức sử dụng trong ngân sách.
+A **Usage Budget** allows you to send alerts when the current or projected usage of a service or group of services you choose exceeds the usage budget threshold.
 
-Ví dụ: Mức sử dụng theo số giờ chạy của dịch vụ EC2.
+For example, we may budget the usage of the number of running-hours of EC2 compute-services.
 
-#### Reservation Instance (RI) Budget
-**RI Budget** cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ trả trước (*reserve instance*) của bạn.
+#### Reserved Instance (RI) Budget
+**RI Budget** allows you to send alerts based on your usage or coverage of committed usage (*reserve instance*).
 
-{{% notice info %}}
-**Reserve instance** là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết mức sử dụng  của instance theo thời hạn 1 - 3 năm.
-{{% /notice %}}
+{{% notice note%}}
+A **Reserved Instance (RI)** is an EC2 offering that provides you with a significant discount on EC2 usage when you commit to a one-year or three-year term.
+{{% /notice%}}
 
 #### Savings Plans Budget
-**Savings Plans Budget** cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ đã được quy định ở trong savings plans.
+**Savings Plans Budget** allows you to send alerts based on the usage or coverage of services specified in the savings plans.
 
-{{% notice info %}}
-**Savings plans instance** cũng là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết dài hạn (từ 01 đến 03 năm) mức sử dụng của instance đó. 
-**Savings plans** là mô hình gia ra đời sau và linh hoạt hơn Reserve Instance với mức giảm giá tương đương. Với EC2 Instance, bạn được khuyến khích sử dụng Savings plans.
-{{% /notice %}}
+{{% notice note%}}
+**Savings Plans** is a flexible pricing model that offers low prices on EC2, Lambda and Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term. When you sign up for Savings Plans, you will be charged the discounted Savings Plans price for your usage up to your commitment.
+\
+\
+AWS offers two types of Savings Plans:
+\
+**Compute Savings Plans** provides the most flexibility and help to reduce your costs by up to 66%. These plans automatically apply to EC2 instance usage regardless of instance family, size, Availability Zone, region, Operating System or tenancy, and also apply to AWS Fargate and Lambda usage. For example, with Compute Savings Plans, you can change from `C4` to `M5` instances, shift a workload from EU (Ireland) to EU (London), or move a workload from EC2 to Fargate or Lambda at any time and automatically continue to pay the Savings Plans price.
+\
+\
+**EC2 Instance Savings Plans** provides the lowest prices, offering savings up to 72% in exchange for commitment to usage of individual instance families in a region (e.g. `M5` usage in N. Virginia). This automatically reduces your cost on the selected instance family in that region regardless of Availability Zone, size, Operating System or tenancy. EC2 Instance Savings Plans give you the flexibility to change your usage between instances within a family in that region. For example, you can move from `c5.xlarge` running Windows to `c5.2xlarge` running Linux and automatically benefit from the Savings Plan prices.
+\
+\
+**Savings plans** offer more flexible than Reserved Instances with comparable discounts. You are encouraged to use Savings plans for predictable, sustained workloads on EC2.
+{{% /notice%}}
 
-#### Nội dung
-1. [Tạo Cost Budget](1-cost-budgets)
-2. [Tạo Usage Budget](2-usage-budget)
-3. [Tạo RI Budget](3-reservation-budget)
-4. [Tạo Savings Plans Budget](4-saving-plans-budget)
-5. [Dọn Dẹp Tài Nguyên](5-clean-up)
+#### Content
+1. [Creating a Cost Budget](1-cost-budgets)
+2. [Creating a Usage Budget](2-usage-budget)
+3. [Creating an Reservation Budget](3-reservation-budget)
+4. [Creating a Savings Plans Budget](4-saving-plans-budget)
+5. [Resource Cleanup](5-clean-up)

@@ -1,49 +1,54 @@
 +++
-title = "Tạo RI Budget"
+title = "Creating a Reservation Budget"
 date = 2020-04-18T00:38:32+07:00
 weight = 3
 chapter = false
 pre = "<b>3. </b>"
 +++
 
-Ở phần này, bạn sẽ thực hành khởi tạo một Reservation Instance (RI) Budget.
+{{% notice info%}}
+Since we will not be utilising Reserved Instances within our lab due to the usage commitment, this lab is only illustrative.
+{{% /notice%}}
 
-{{% notice info %}}
-Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab vì reserve instance yêu cầu bạn phải trả trước phí sử dụng, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.
-{{% /notice %}}
+1. Sign in to the AWS Management Console and open the **Billing and Cost Management console** at https://console.aws.amazon.com/billing/ or type in `billing` into the service search-bar and select the first search result.
 
-**Nội dung:**
-- [Khởi tạo reservation budget](#khởi-tạo-reservation-budget)
+![Billing Service](/images/4-budget/CostBudget/2.1.1.png?width=90pc)
 
-#### Khởi tạo reservation budget
+2. In the navigation pane, choose **Budgets**.
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
-![Billing Service](/images/4-budget/CostBudget/1_FindBilling.png?width=90pc)
-2. Tại trang quản trị, chọn **Budgets**. 
-3. Chọn **Create budget**.
-![Create Service](/images/4-budget/CostBudget/1_CreateBudget.png?width=90pc)
-4. Tại trang **Select budget type**, chọn **Reservation budget**, và chọn **Set your budget**.
-5. Ở trang **Set you budget**, bạn có thể thiết lập các mục sau:
-    - Mục **Define your budget name and timeframe**:
-        - **Name**: đặt tên cho Budget.
-        - **Period**: chọn khoảng thời gian cho Budget theo Ngày (*Daily*), Tháng (*Monthly*), Quý (*Quaterly*), và Năm (*Annualy*)
-    - Mục **Specify your Reservation budget**:
-        - Chọn **RI Utilization** hoặc **RI Coverage** để chọn cách theo dõi mức sử dụng của bạn
-            + Chọn **RI Utilization**, nếu bạn muốn theo dõi phần trăm mức sử dụng reserve instance hiện tại so với mức sử dụng đã trả trước cho reserve instance.
-{{% notice info %}}
-**RI Utilization** = tổng số giờ sử dụng reserve instanace / tổng số giờ đã trả trước cho reserve instance. Chính vì thế, RI Utilization giúp bạn đo độ hiệu quả của việc sử dụng reserve instance.
-{{% /notice %}}
-            + Chọn **RI Coverage**, nếu bạn muốn theo dõi phần trăm mức sử dụng reserve instance hiện tại so với tổng mức sử dụng dịch vụ có cùng phân loại với reserve instance.
-{{% notice info %}}
-**RI Coverage** = tổng số giờ sử dụng reserve instanace / tổng số giờ đã sử dụng dịch vụ có cùng phân loại với reserve instance. Chính vì thế, RI Coverage giúp bạn quyết định được lượng reserve instance cần trả trước để có thể tận dụng tối đa độ phủ của reserve instace vì sử dụng reserve instance sẽ rẻ hơn là sử dụng on-demand instance.
-{{% /notice %}}
-        - Tại **Service**, chọn loại service mà bạn muốn đặt Budget.
-        - Tại **Utilization threshold**, điền vào giá trị bạn muốn thiết lập cho Budget.
-![Budget Name & Amount](/images/4-budget/ReservationBudget/3_BudgetNAme&Amount.png?width=90pc)
-    - Mục **Set additional budget parameters - Optional**: bạn có thể lọc mức sử dụng cần theo dõi của Cost Budget bằng cách áp dụng các bộ lọc có sẵn.
-6. Cuốn xuống cuối trang và chọn **Configure alerts**.
-7. Tại mục **Email contacts**, nhập vào email mà bạn muốn gửi thông báo tới và chọn **Add email contact** để có thể gửi đến nhiều email cùng 1 lúc. Thông báo có thể gửi tới 10 email 1 lúc. 
-    - Bạn cũng có thể sử dụng dịch vụ AWS SNS hoặc AWS Chatbot để gửi thông báo.  
-8. Chọn **Confirm budget**.
-![Configure Alerts](/images/4-budget/ReservationBudget/3_ConfigureAlerts.png?width=90pc)
-9. Xem lại tất cả cấu hình và chọn **Create**.
+3. At the top of the page, choose **Create budget**.
+
+![Create Service](/images/4-budget/CostBudget/2.1.2.png?width=90pc)
+
+4. For **Choose budget type**, choose **Reservation budget**. Then, choose **Next**.
+
+![Budget Type](/images/4-budget/ReservationBudget/2.3.3.png?width=90pc)
+
+5. Under **Utilization threshold**, for **Period**, choose how often you want the budget to reset the tracked utilization or coverage.
+
+6. For **Monitor my spend against**, choose **Utilization of reservations** to track how much of your reservation you used. Or, choose **Coverage of reservations** to track how much of your instance usage is covered by reservations.
+
+{{% notice info%}}
+**RI Utilization** = total hours spent using reserve instances / total hours provisioned for reserved instances. RI Utilization helps you measure the effectiveness of using reserve instance. \
+**RI Coverage** = total hours spent on reserve instances / total hours spent using the service has the same classification as the reserve instances. RI Coverage helps you decide how much reserve instance to purchase to get the most out of this pricing model.
+{{% /notice%}}
+
+7. For **Service**, choose the service that you want the budget to track.
+
+8. For **Utilization threshold**, enter the utilization percentage that you want AWS to notify you at. For example, for a utilization budget where you want to stay above 90% RI utilization, enter 90. The budget notiﬁes you when your overall RI utilization is below 90%.
+
+    For **Coverage threshold**, enter the coverage percentage that you want AWS to notify you at. For example, for a coverage budget where you want to stay above 80%, enter 80. The budget notiﬁes you when your overall coverage is below 80%.
+
+![Configure Budget](/images/4-budget/ReservationBudget/2.3.4.png?width=90pc)
+
+9. Under **Details**, for **Budget name**, enter the name of your budget. Your budget name must be unique within your account. It can contain A-Z, a-z, spaces, and the following characters:
+
+```text
+ _.:/=+-%@
+```
+
+10. Select **Next** to configure alerts.
+
+![Configure Alerts](/images/4-budget/ReservationBudget/2.3.5.png?width=90pc)
+
+11. Review all configurations and select **Create**.

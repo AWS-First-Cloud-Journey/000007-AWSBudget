@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Begin with AWS Budget"
+title = "Getting Started with AWS Budgets"
 weight = 1
 languageName = "English"
 
