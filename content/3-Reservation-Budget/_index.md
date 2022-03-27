@@ -33,6 +33,15 @@ Since we will not be utilising Reserved Instances within our lab due to the usag
 **RI Coverage** = total hours spent on reserve instances / total hours spent using the service has the same classification as the reserve instances. RI Coverage helps you decide how much reserve instance to purchase to get the most out of this pricing model.
 {{% /notice%}}
 
+{{% notice tip %}}
+For example, we commit to use 100 hours but only used up 50 hours.
+**RI Utilization** = 50% (since we only use 50% of committed hours)
+**RI Coverage** = 100% (because the commitment has covered all actual usage)
+In another case, we promise to use 50 hours but actually use up 100 hours.
+**RI Utilization** = 100% (since we have used all committed hours)
+**RI Coverage** = 50% (because we only commit to 50% of the actual usage)
+{{% /notice %}}
+
 7. For **Service**, choose the service that you want the budget to track.
 
 8. For **Utilization threshold**, enter the utilization percentage that you want AWS to notify you at. For example, for a utilization budget where you want to stay above 90% RI utilization, enter 90. The budget notiﬁes you when your overall RI utilization is below 90%.

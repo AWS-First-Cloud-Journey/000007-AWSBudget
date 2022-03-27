@@ -37,6 +37,15 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 {{% notice info %}}
 **RI Coverage** = tổng số giờ sử dụng reserve instanace / tổng số giờ đã sử dụng dịch vụ có cùng phân loại với reserve instance. Chính vì thế, RI Coverage giúp bạn quyết định được lượng reserve instance cần trả trước để có thể tận dụng tối đa độ phủ của reserve instace vì sử dụng reserve instance sẽ rẻ hơn là sử dụng on-demand instance.
 {{% /notice %}}
+
+{{% notice tip %}}
+Giả sử chúng ta cam kết sử dụng 100 giờ nhưng chỉ sử dụng hết 50 giờ.  
+**RI Utilization** = 50%  ( do chúng ta chỉ sủ dụng 50% số giờ cam kết )
+**RI Coverage** = 100%  ( do mức cam kết đã đảm bảo toàn bộ mức sử dụng thực tế )
+Trong truong hợp chúng ta cam kết sử dụng 50 giờ nhưng thực tế dùng đến 100 giờ.  
+**RI Utilization** = 100%  ( do chúng ta đã sử dụng toàn bộ số giờ cam kết )
+**RI Coverage** = 50% ( do chúng ta chỉ cam kết được 50% mức sử dụng thực tế )  
+{{% /notice %}}
         - Tại **Service**, chọn loại service mà bạn muốn đặt Budget.
         - Tại **Utilization threshold**, điền vào giá trị bạn muốn thiết lập cho Budget.
 ![Budget Name & Amount](/images/4-budget/ReservationBudget/3_BudgetNAme&Amount.png?width=90pc)
