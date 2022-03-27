@@ -40,10 +40,10 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 
 {{% notice tip %}}
 Giả sử chúng ta cam kết sử dụng 100 giờ nhưng chỉ sử dụng hết 50 giờ.  
-**RI Utilization** = 50%  ( do chúng ta chỉ sủ dụng 50% số giờ cam kết )
-**RI Coverage** = 100%  ( do mức cam kết đã đảm bảo toàn bộ mức sử dụng thực tế )
+**RI Utilization** = 50%  ( do chúng ta chỉ sủ dụng 50% số giờ cam kết )  
+**RI Coverage** = 100%  ( do mức cam kết đã đảm bảo toàn bộ mức sử dụng thực tế )  
 Trong truong hợp chúng ta cam kết sử dụng 50 giờ nhưng thực tế dùng đến 100 giờ.  
-**RI Utilization** = 100%  ( do chúng ta đã sử dụng toàn bộ số giờ cam kết )
+**RI Utilization** = 100%  ( do chúng ta đã sử dụng toàn bộ số giờ cam kết )  
 **RI Coverage** = 50% ( do chúng ta chỉ cam kết được 50% mức sử dụng thực tế )  
 {{% /notice %}}
         - Tại **Service**, chọn loại service mà bạn muốn đặt Budget.

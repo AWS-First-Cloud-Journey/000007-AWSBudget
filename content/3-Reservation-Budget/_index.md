@@ -34,12 +34,12 @@ Since we will not be utilising Reserved Instances within our lab due to the usag
 {{% /notice%}}
 
 {{% notice tip %}}
-For example, we commit to use 100 hours but only used up 50 hours.
-**RI Utilization** = 50% (since we only use 50% of committed hours)
-**RI Coverage** = 100% (because the commitment has covered all actual usage)
-In another case, we promise to use 50 hours but actually use up 100 hours.
-**RI Utilization** = 100% (since we have used all committed hours)
-**RI Coverage** = 50% (because we only commit to 50% of the actual usage)
+For example, we commit to use 100 hours but only used up 50 hours.  
+**RI Utilization** = 50% (since we only use 50% of committed hours)  
+**RI Coverage** = 100% (because the commitment has covered all actual usage)  
+In another case, we promise to use 50 hours but actually use up 100 hours.  
+**RI Utilization** = 100% (since we have used all committed hours)  
+**RI Coverage** = 50% (because we only commit to 50% of the actual usage)  
 {{% /notice %}}
 
 7. For **Service**, choose the service that you want the budget to track.
