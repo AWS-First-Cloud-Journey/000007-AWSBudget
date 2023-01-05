@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Saving Plans Budget :: Bắt đầu với AWS Budget</title>
 
     
-    <link href="/css/nucleus.css?1648372710" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1648372710" rel="stylesheet">
-    <link href="/css/hybrid.css?1648372710" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1648372710" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1648372710" rel="stylesheet">
-    <link href="/css/auto-complete.css?1648372710" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1648372710" rel="stylesheet">
-    <link href="/css/theme.css?1648372710" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1648372710" rel="stylesheet">
+    <link href="/css/nucleus.css?1672917427" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1672917427" rel="stylesheet">
+    <link href="/css/hybrid.css?1672917427" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1672917427" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1672917427" rel="stylesheet">
+    <link href="/css/auto-complete.css?1672917427" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1672917427" rel="stylesheet">
+    <link href="/css/theme.css?1672917427" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1672917427" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1648372710" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1672917427" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1648372710"></script>
+    <script src="/js/jquery-3.3.1.min.js?1672917427"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1648372710"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1648372710"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1672917427"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1672917427"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1648372710"></script>
+<script type="text/javascript" src="/js/search.js?1672917427"></script>
 
     
   </div>
@@ -82,13 +82,39 @@
  
   
     
+    <li data-nav-id="/vi/0-createtemplate/" title="Tạo Budget" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/0-createtemplate/">
+           <b> 1. </b> Tạo Budget
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
     <li data-nav-id="/vi/1-cost-budgets/" title="Tạo Cost Budget" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-cost-budgets/">
-          <b>1. </b>Tạo Cost Budget
+           <b> 2. </b> Tạo Cost Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -114,7 +140,7 @@
         
         ">
       <a href="/vi/2-usage-budget/">
-          <b>2. </b>Tạo Usage Budget
+           <b> 3. </b> Tạo Usage Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -140,7 +166,7 @@
         
         ">
       <a href="/vi/3-reservation-budget/">
-          <b>3. </b>Tạo RI Budget
+           <b> 4. </b> Tạo RI Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -161,12 +187,12 @@
   
     
     <li data-nav-id="/vi/4-saving-plans-budget/" title="Tạo Saving Plans Budget" class="dd-item 
-        
+        parent
         active
         
         ">
       <a href="/vi/4-saving-plans-budget/">
-          <b>4. </b>Tạo Saving Plans Budget
+           <b> 5. </b> Tạo Saving Plans Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -192,7 +218,7 @@
         
         ">
       <a href="/vi/5-clean-up/">
-          <b>5. </b>Dọn Dẹp Tài nguyên
+           <b> 6. </b> Dọn Dẹp Tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -294,7 +320,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>27-03-2022</font>
+        <font color=orange>05-01-2023</font>
     </i>
 </left>
 <left>
@@ -400,53 +426,50 @@
 </ul>
 <h4 id="khởi-tạo-saving-plans-budget">Khởi tạo Saving plans Budget</h4>
 <ol>
-<li>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing</strong> tại thanh tìm kiếm.
-<img src="/images/4-budget/CostBudget/1_FindBilling.png?width=90pc" alt="Billing Service"></li>
-<li>Tại trang quản trị, chọn <strong>Budgets</strong>.</li>
-<li>Chọn <strong>Create budget</strong>.
-<img src="/images/4-budget/CostBudget/1_CreateBudget.png?width=90pc" alt="Create Service"></li>
-<li>Tại trang <strong>Select budget type</strong>, chọn <strong>Reservation budget</strong>, và chọn <strong>Set your budget</strong>.</li>
-<li>Ở trang <strong>Set you budget</strong>, bạn có thể thiết lập các mục sau:
-<ul>
-<li>Mục <strong>Define your budget name and timeframe</strong>:
-<ul>
-<li><strong>Name</strong>: đặt tên cho Budget.</li>
-<li><strong>Period</strong>: chọn khoảng thời gian cho Budget theo Ngày (<em>Daily</em>), Tháng (<em>Monthly</em>), Quý (<em>Quaterly</em>), và Năm (<em>Annualy</em>)</li>
-</ul>
-</li>
-<li>Mục <strong>Specify your Savings Plans budget</strong>:
-<ul>
-<li>Chọn <strong>Savings Plans Utilization</strong> hoặc <strong>Savings Plans Coverage</strong> để chọn cách theo dõi mức sử dụng của bạn
-<ul>
-<li>Chọn <strong>Savings Plans Utilization</strong>, nếu bạn muốn theo dõi phần trăm mức sử dụng savings plans instance hiện tại so với mức sử dụng đã định trước cho saving plans instance.
-
-<div class="notices info" ><p><strong>Savings Plans Utilization</strong> = tổng số giờ sử dụng savaings plans instanace / tổng số giờ đã định trước cho savings plans instance. Chính vì thế, Savings Plans Utilization giúp bạn đo độ hiệu quả của việc sử dụng savings plans instance.</p>
-</div>
-</li>
-<li>Chọn <strong>Savings Plans Coverage</strong>, nếu bạn muốn theo dõi phần trăm mức sử dụng savings plans instance hiện tại so với tổng mức sử dụng dịch vụ có cùng phân loại với savings plans instance.
-
-<div class="notices info" ><p><strong>Savings Plans Coverage</strong> = tổng số giờ sử dụng savings plans instanace / tổng số giờ đã sử dụng dịch vụ có cùng phân loại với savings plans instance. Chính vì thế, Savings Plans Coverage giúp bạn quyết định được lượng savings plans instance cần trả trước để có thể tận dụng tối đa độ phủ của savings plans instace vì sử dụng savings plans instance sẽ rẻ hơn là sử dụng on-demand instance.</p>
-</div>
-</li>
-</ul>
-</li>
-<li>Tại <strong>Utilization threshold</strong>, điền vào giá trị bạn muốn thiết lập cho Budget.</li>
-</ul>
-</li>
-<li>Mục <strong>Set additional budget parameters - Optional</strong>: bạn có thể lọc mức sử dụng cần theo dõi của Cost Budget bằng cách áp dụng các bộ lọc có sẵn.
-<img src="/images/4-budget/SavingPlansBudget/4_BudgetNAme&amp;Amount.png?width=90pc" alt="Budget Name & Amount"></li>
-</ul>
-</li>
-<li>Cuốn xuống cuối trang và chọn <strong>Configure alerts</strong>.</li>
-<li>Tại mục <strong>Email contacts</strong>, nhập vào email mà bạn muốn gửi thông báo tới và chọn <strong>Add email contact</strong> để có thể gửi đến nhiều email cùng 1 lúc. Thông báo có thể gửi tới 10 email 1 lúc.
-<ul>
-<li>Bạn cũng có thể sử dụng dịch vụ AWS SNS hoặc AWS Chatbot để gửi thông báo.</li>
-</ul>
-</li>
-<li>Chọn <strong>Confirm budget</strong>.
-<img src="/images/4-budget/SavingPlansBudget/4_ConfigureAlerts.png?width=90pc" alt="Configure Alerts"></li>
-<li>Xem lại tất cả cấu hình và chọn <strong>Create</strong>.</li>
+<li>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing</strong> tại thanh tìm kiếm.</li>
 </ol>
+<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol>
+<li>Tại trang quản trị, chọn <strong>Budgets</strong>.</li>
+</ol>
+<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="2">
+<li>Chọn <strong>Create budget</strong>.</li>
+</ol>
+<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="3">
+<li>Thực hiện <strong>Budget setup</strong></li>
+</ol>
+<ul>
+<li>Chọn <strong>Customize</strong></li>
+<li>Chọn <strong>Budget types</strong> là  <strong>Saving Plan budget</strong></li>
+<li>Chọn <strong>Next</strong></li>
+</ul>
+<p><img src="/images/5/0002.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="4">
+<li>Đặt tên cho <strong>Budget name</strong></li>
+</ol>
+<p><img src="/images/5/0003.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="5">
+<li>Thực hiện cấu hình threshold.</li>
+</ol>
+<p><img src="/images/5/0004.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="6">
+<li>Cấu hình <strong>Alert</strong> và sau đó chọn <strong>Next</strong></li>
+</ol>
+<p><img src="/images/5/0005.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="7">
+<li>Chọn <strong>Create budget</strong></li>
+</ol>
+<p><img src="/images/5/0006.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="8">
+<li>Tạp budget thành công.</li>
+</ol>
+<p><img src="/images/5/0007.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="9">
+<li>Xem chi tiết budget đã tạo.</li>
+</ol>
+<p><img src="/images/5/0008.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 
 
 
@@ -489,6 +512,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -591,19 +630,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1648372710"></script>
-    <script src="/js/perfect-scrollbar.min.js?1648372710"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1648372710"></script>
-    <script src="/js/jquery.sticky.js?1648372710"></script>
-    <script src="/js/featherlight.min.js?1648372710"></script>
-    <script src="/js/highlight.pack.js?1648372710"></script>
+    <script src="/js/clipboard.min.js?1672917427"></script>
+    <script src="/js/perfect-scrollbar.min.js?1672917427"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1672917427"></script>
+    <script src="/js/jquery.sticky.js?1672917427"></script>
+    <script src="/js/featherlight.min.js?1672917427"></script>
+    <script src="/js/highlight.pack.js?1672917427"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1648372710"></script>
-    <script src="/js/learn.js?1648372710"></script>
-    <script src="/js/hugo-learn.js?1648372710"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1672917427"></script>
+    <script src="/js/learn.js?1672917427"></script>
+    <script src="/js/hugo-learn.js?1672917427"></script>
 
-    <link href="/mermaid/mermaid.css?1648372710" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1648372710"></script>
+    <link href="/mermaid/mermaid.css?1672917427" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1672917427"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

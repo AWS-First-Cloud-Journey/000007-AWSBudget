@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Creating a Reservation Budget :: Getting Started with AWS Budgets</title>
+    <title>Create RI Budget :: Getting Started with AWS Budgets</title>
 
     
-    <link href="/css/nucleus.css?1648372710" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1648372710" rel="stylesheet">
-    <link href="/css/hybrid.css?1648372710" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1648372710" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1648372710" rel="stylesheet">
-    <link href="/css/auto-complete.css?1648372710" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1648372710" rel="stylesheet">
-    <link href="/css/theme.css?1648372710" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1648372710" rel="stylesheet">
+    <link href="/css/nucleus.css?1672917427" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1672917427" rel="stylesheet">
+    <link href="/css/hybrid.css?1672917427" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1672917427" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1672917427" rel="stylesheet">
+    <link href="/css/auto-complete.css?1672917427" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1672917427" rel="stylesheet">
+    <link href="/css/theme.css?1672917427" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1672917427" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1648372710" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1672917427" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1648372710"></script>
+    <script src="/js/jquery-3.3.1.min.js?1672917427"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1648372710"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1648372710"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1672917427"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1672917427"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1648372710"></script>
+<script type="text/javascript" src="/js/search.js?1672917427"></script>
 
     
   </div>
@@ -82,13 +82,39 @@
  
   
     
-    <li data-nav-id="/1-cost-budgets/" title="Creating a Cost Budget" class="dd-item 
+    <li data-nav-id="/0-createtemplate/" title="Create Budget by template" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/0-createtemplate/">
+           <b> 1. </b> Create Budget by template
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-cost-budgets/" title="Create Cost Budget" class="dd-item 
         
         
         
         ">
       <a href="/1-cost-budgets/">
-          <b>1. </b>Creating a Cost Budget
+           <b> 2. </b> Create Cost Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +134,13 @@
  
   
     
-    <li data-nav-id="/2-usage-budget/" title="Creating a Usage Budget" class="dd-item 
+    <li data-nav-id="/2-usage-budget/" title="Create Usage Budget" class="dd-item 
         
         
         
         ">
       <a href="/2-usage-budget/">
-          <b>2. </b>Creating a Usage Budget
+           <b> 3. </b> Create Usage Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +160,13 @@
  
   
     
-    <li data-nav-id="/3-reservation-budget/" title="Creating a Reservation Budget" class="dd-item 
-        
+    <li data-nav-id="/3-reservation-budget/" title="Create RI Budget" class="dd-item 
+        parent
         active
         
         ">
       <a href="/3-reservation-budget/">
-          <b>3. </b>Creating a Reservation Budget
+           <b> 4. </b> Create RI Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +186,13 @@
  
   
     
-    <li data-nav-id="/4-saving-plans-budget/" title="Creating a Saving Plans Budget" class="dd-item 
+    <li data-nav-id="/4-saving-plans-budget/" title="Create Saving Plans Budget" class="dd-item 
         
         
         
         ">
       <a href="/4-saving-plans-budget/">
-          <b>4. </b>Creating a Saving Plans Budget
+           <b> 5. </b> Create Saving Plans Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +212,13 @@
  
   
     
-    <li data-nav-id="/5-clean-up/" title="Deleting a Budget" class="dd-item 
+    <li data-nav-id="/5-clean-up/" title="Clean up resource" class="dd-item 
         
         
         
         ">
       <a href="/5-clean-up/">
-          <b>5. </b>Deleting a Budget
+           <b> 6. </b> Clean up resource
           
             <i class="fas fa-check read-icon"></i>
           
@@ -294,7 +320,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>27-03-2022</font>
+        <font color=orange>05-01-2023</font>
     </i>
 </left>
 <left>
@@ -342,7 +368,7 @@
             
           
           
-            <a href='/'>Getting Started with AWS Budgets</a> > Creating a Reservation Budget
+            <a href='/'>Getting Started with AWS Budgets</a> > Create RI Budget
           
         
           
@@ -353,7 +379,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -369,7 +403,7 @@
           
             <h1>
               
-              Creating a Reservation Budget
+              Create RI Budget
             </h1>
           
 
@@ -377,70 +411,57 @@
 
 
 
-	
-<div class="notices info" ><p>Since we will not be utilising Reserved Instances within our lab due to the usage commitment, this lab is only illustrative.</p>
+	<p>In this section, you will practice creating a Reservation Instance (RI) Budget.</p>
+
+<div class="notices info" ><p>Since you will not use the reserve instance within the lab because the reserve instance requires you to pay the usage fee in advance, this lab is for illustrative purposes only. Therefore, you can follow or just watch the instructions.</p>
 </div>
 
+<p><strong>Content:</strong></p>
+<ul>
+<li><a href="#create-reservation-budget">Create reservation budget</a></li>
+</ul>
+<h4 id="create-reservation-budget">Create reservation budget</h4>
 <ol>
-<li>Sign in to the AWS Management Console and open the <strong>Billing and Cost Management console</strong> at <a href="https://console.aws.amazon.com/billing/">https://console.aws.amazon.com/billing/</a> or type in <code>billing</code> into the service search-bar and select the first search result.</li>
+<li>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service in the search bar.</li>
 </ol>
-<p><img src="/images/4-budget/CostBudget/2.1.1.png?width=90pc" alt="Billing Service"></p>
+<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol>
+<li>In the admin page, select <strong>Budgets</strong>.</li>
+</ol>
+<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 <ol start="2">
-<li>
-<p>In the navigation pane, choose <strong>Budgets</strong>.</p>
-</li>
-<li>
-<p>At the top of the page, choose <strong>Create budget</strong>.</p>
-</li>
+<li>Select <strong>Create budget</strong>.</li>
 </ol>
-<p><img src="/images/4-budget/CostBudget/2.1.2.png?width=90pc" alt="Create Service"></p>
+<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="3">
+<li>Execute <strong>Budget setup</strong></li>
+</ol>
+<ul>
+<li>Select <strong>Customize</strong></li>
+<li>Select <strong>Reservation budget</strong></li>
+<li>Select <strong>Next</strong></li>
+</ul>
+<p><img src="/images/4/0002.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 <ol start="4">
-<li>For <strong>Choose budget type</strong>, choose <strong>Reservation budget</strong>. Then, choose <strong>Next</strong>.</li>
+<li>Configure <strong>Coverage threshold</strong></li>
 </ol>
-<p><img src="/images/4-budget/ReservationBudget/2.3.3.png?width=90pc" alt="Budget Type"></p>
+<p><img src="/images/4/0008.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 <ol start="5">
-<li>
-<p>Under <strong>Utilization threshold</strong>, for <strong>Period</strong>, choose how often you want the budget to reset the tracked utilization or coverage.</p>
-</li>
-<li>
-<p>For <strong>Monitor my spend against</strong>, choose <strong>Utilization of reservations</strong> to track how much of your reservation you used. Or, choose <strong>Coverage of reservations</strong> to track how much of your instance usage is covered by reservations.</p>
-</li>
+<li>Configure <strong>Alert</strong></li>
 </ol>
-
-<div class="notices info" ><p><strong>RI Utilization</strong> = total hours spent using reserve instances / total hours provisioned for reserved instances. RI Utilization helps you measure the effectiveness of using reserve instance.<br>
-<strong>RI Coverage</strong> = total hours spent on reserve instances / total hours spent using the service has the same classification as the reserve instances. RI Coverage helps you decide how much reserve instance to purchase to get the most out of this pricing model.</p>
-</div>
-
-
-<div class="notices tip" ><p>For example, we commit to use 100 hours but only used up 50 hours.<br>
-<strong>RI Utilization</strong> = 50% (since we only use 50% of committed hours)<br>
-<strong>RI Coverage</strong> = 100% (because the commitment has covered all actual usage)<br>
-In another case, we promise to use 50 hours but actually use up 100 hours.<br>
-<strong>RI Utilization</strong> = 100% (since we have used all committed hours)<br>
-<strong>RI Coverage</strong> = 50% (because we only commit to 50% of the actual usage)</p>
-</div>
-
+<p><img src="/images/4/0006.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="6">
+<li>Select <strong>Create budget</strong></li>
+</ol>
+<p><img src="/images/4/0007.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 <ol start="7">
-<li>
-<p>For <strong>Service</strong>, choose the service that you want the budget to track.</p>
-</li>
-<li>
-<p>For <strong>Utilization threshold</strong>, enter the utilization percentage that you want AWS to notify you at. For example, for a utilization budget where you want to stay above 90% RI utilization, enter 90. The budget notiﬁes you when your overall RI utilization is below 90%.</p>
-<p>For <strong>Coverage threshold</strong>, enter the coverage percentage that you want AWS to notify you at. For example, for a coverage budget where you want to stay above 80%, enter 80. The budget notiﬁes you when your overall coverage is below 80%.</p>
-</li>
+<li>Complete budget creation</li>
 </ol>
-<p><img src="/images/4-budget/ReservationBudget/2.3.4.png?width=90pc" alt="Configure Budget"></p>
-<ol start="9">
-<li>Under <strong>Details</strong>, for <strong>Budget name</strong>, enter the name of your budget. Your budget name must be unique within your account. It can contain A-Z, a-z, spaces, and the following characters:</li>
+<p><img src="/images/4/0009.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<ol start="8">
+<li>Check the budget.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"> _.:/=+-%@
-</code></pre></div><ol start="10">
-<li>Select <strong>Next</strong> to configure alerts.</li>
-</ol>
-<p><img src="/images/4-budget/ReservationBudget/2.3.5.png?width=90pc" alt="Configure Alerts"></p>
-<ol start="11">
-<li>Review all configurations and select <strong>Create</strong>.</li>
-</ol>
+<p><img src="/images/4/00010.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 
 
 
@@ -516,6 +537,22 @@ In another case, we promise to use 50 hours but actually use up 100 hours.<br>
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -572,10 +609,10 @@ In another case, we promise to use 50 hours but actually use up 100 hours.<br>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-usage-budget/" title="Creating a Usage Budget"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-usage-budget/" title="Create Usage Budget"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/4-saving-plans-budget/" title="Creating a Saving Plans Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/4-saving-plans-budget/" title="Create Saving Plans Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -585,19 +622,19 @@ In another case, we promise to use 50 hours but actually use up 100 hours.<br>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1648372710"></script>
-    <script src="/js/perfect-scrollbar.min.js?1648372710"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1648372710"></script>
-    <script src="/js/jquery.sticky.js?1648372710"></script>
-    <script src="/js/featherlight.min.js?1648372710"></script>
-    <script src="/js/highlight.pack.js?1648372710"></script>
+    <script src="/js/clipboard.min.js?1672917427"></script>
+    <script src="/js/perfect-scrollbar.min.js?1672917427"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1672917427"></script>
+    <script src="/js/jquery.sticky.js?1672917427"></script>
+    <script src="/js/featherlight.min.js?1672917427"></script>
+    <script src="/js/highlight.pack.js?1672917427"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1648372710"></script>
-    <script src="/js/learn.js?1648372710"></script>
-    <script src="/js/hugo-learn.js?1648372710"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1672917427"></script>
+    <script src="/js/learn.js?1672917427"></script>
+    <script src="/js/hugo-learn.js?1672917427"></script>
 
-    <link href="/mermaid/mermaid.css?1648372710" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1648372710"></script>
+    <link href="/mermaid/mermaid.css?1672917427" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1672917427"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
