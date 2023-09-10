@@ -7,53 +7,93 @@ chapter = false
 
 # Cost Management with AWS Budgets
 
-#### Overview
+## Overview
 
-In this lab, we'll explore how AWS Budgets can help you manage costs within your AWS account.
+In this lab, we will explore how **AWS Budgets** can assist you in cost management within your AWS account.
 
-#### AWS Budgets
-**AWS Budgets** is a service that allows you to set a one-time or recurring budget that alerts you when costs exceed (or are forecasted to exceed) your budgeted cost or usage amount.
+## AWS Budgets
 
-You can create the following types of budgets: 
+**AWS Budgets** is a service designed to enable you to establish one-time or recurring budgets. These budgets will send you alerts whenever costs exceed (or are forecasted to exceed) your predetermined budgeted cost or usage amount.
+
+You can create several types of budgets:
+
 - [Cost Budget](#cost-budget).
-- [Usage budget](#usage-budget).
+- [Usage Budget](#usage-budget).
 - [Reserved Instance Budget](#reservation-instance-ri-budget).
 - [Savings Plans Budget](#savings-plans-budget).
 
-#### Cost Budget
-A **Cost Budget** allows you to send alerts when the current or projected spend exceeds the cost threshold in the budget. 
+## Cost Budget
 
-#### Usage Budget
-A **Usage Budget** allows you to send alerts when the current or projected usage of a service or group of services you choose exceeds the usage budget threshold.
+A **Cost Budget** provides alerts when the current or projected spending surpasses the cost threshold set within the budget.
 
-For example, we may budget the usage of the number of running-hours of EC2 compute-services.
+## Usage Budget
 
-#### Reserved Instance (RI) Budget
-**RI Budget** allows you to send alerts based on your usage or coverage of committed usage (*reserve instance*).
+An **Usage Budget** sends alerts when the current or projected usage of a chosen service or group of services exceeds the usage budget threshold. For instance, you could budget the usage of running hours for EC2 compute services.
 
-{{% notice note%}}
-A **Reserved Instance (RI)** is an EC2 offering that provides you with a significant discount on EC2 usage when you commit to a one-year or three-year term.
-{{% /notice%}}
+## Reserved Instance (RI) Budget
 
-#### Savings Plans Budget
-**Savings Plans Budget** allows you to send alerts based on the usage or coverage of services specified in the savings plans.
+The **RI Budget** generates alerts based on your usage or coverage of committed usage, also known as a *reserved instance*.
 
-{{% notice note%}}
-**Savings Plans** is a flexible pricing model that offers low prices on EC2, Lambda and Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term. When you sign up for Savings Plans, you will be charged the discounted Savings Plans price for your usage up to your commitment.
-\
-\
-AWS offers two types of Savings Plans:
-\
-**Compute Savings Plans** provides the most flexibility and help to reduce your costs by up to 66%. These plans automatically apply to EC2 instance usage regardless of instance family, size, Availability Zone, region, Operating System or tenancy, and also apply to AWS Fargate and Lambda usage. For example, with Compute Savings Plans, you can change from `C4` to `M5` instances, shift a workload from EU (Ireland) to EU (London), or move a workload from EC2 to Fargate or Lambda at any time and automatically continue to pay the Savings Plans price.
-\
-\
-**EC2 Instance Savings Plans** provides the lowest prices, offering savings up to 72% in exchange for commitment to usage of individual instance families in a region (e.g. `M5` usage in N. Virginia). This automatically reduces your cost on the selected instance family in that region regardless of Availability Zone, size, Operating System or tenancy. EC2 Instance Savings Plans give you the flexibility to change your usage between instances within a family in that region. For example, you can move from `c5.xlarge` running Windows to `c5.2xlarge` running Linux and automatically benefit from the Savings Plan prices.
-\
-\
-**Savings plans** offer more flexible than Reserved Instances with comparable discounts. You are encouraged to use Savings plans for predictable, sustained workloads on EC2.
-{{% /notice%}}
+> **Note:** A **Reserved Instance (RI)** is a discounted EC2 offering when you commit to a one-year or three-year term.
 
-#### Content
+## Savings Plans Budget
+
+With the **Savings Plans Budget**, you will receive alerts based on usage or coverage of services specified within savings plans.
+
+> **Note:** **Savings Plans** is a pricing model offering reduced prices for EC2, Lambda, and Fargate usage. This is in exchange for committing to a consistent usage amount (measured in $/hour) for a 1 or 3 year term. There are two types of Savings Plans: **Compute Savings Plans** and **EC2 Instance Savings Plans**.
+
+## Best Practices for Controlling Access to AWS Budgets
+
+To enable users to create budgets in the AWS Billing and Cost Management console, ensure they have permission to:
+
+- View your billing information.
+- Create Amazon CloudWatch alarms.
+- Create Amazon Simple Notification Service (Amazon SNS) notifications.
+
+For more information, see [Allow users to create budgets](link_here).
+
+You can also programmatically create budgets using the Budgets API. When configuring API access, it's recommended to create a unique user role for programmatic requests. This ensures precise access controls between AWS Budgets console and the API. For multiple users with query access to the Budgets API, create a role for each.
+
+## Best Practices for Budget Actions
+
+### Using Managed Policies
+
+Two AWS managed policies simplify budget actions setup: one for users and one for budgets. These policies are related. The first policy allows a user to pass a role to the budgets service, and the second permits budgets to execute the action.
+
+Proper permissions are vital for AWS Budgets to execute your configured actions. Managed policies ensure correct configuration and execution, adding new capabilities automatically.
+
+For policy details, see [Managed policies](link_here).
+
+Learn more about AWS Budgets actions in the [Configuring AWS Budgets actions](link_here) section.
+
+### Using Amazon EC2 Auto Scaling
+
+For budget actions affecting an Amazon EC2 instance in an Auto Scaling Group (ASG), Amazon EC2 Auto Scaling restarts or replaces instances. "Shutdown budget actions is not effective to Amazon EC2/Amazon RDS budget actions" unless combined with a second budget action removing permissions on the Launch Configuration role managing the ASG.
+
+## Best Practices for Setting Budgets
+
+Use AWS Budgets to set custom budgets based on costs, usage, reservation utilization, and coverage. Set budgets on a recurring basis to avoid unexpected alerts.
+
+## Best Practices for Using Advanced Options When Setting Cost Budgets
+
+Cost budgets can be aggregated by unblended costs, amortized costs, or blended costs. Budgets can also include or exclude refunds, credits, upfront reservation fees, recurring reservation charges, non-reservation subscription costs, taxes, and support charges.
+
+## Understanding the AWS Budgets Update Frequency
+
+Budgets rely on AWS billing data, updated at least once daily. Alerts and budget information align with this refresh cadence.
+
+## Best Practices for Setting Budget Alerts
+
+Budget alerts can be sent to up to 10 email addresses and one Amazon SNS topic per alert. Alerts can target actual or forecasted values.
+
+Actual alerts trigger once per budget, per budget period, upon reaching the alert threshold. Forecast-based alerts trigger on a per-budget, per-budget period basis. If forecasted values exceed, dip below, and then exceed the threshold within a budgeted period, multiple alerts can be generated.
+
+AWS requires about 5 weeks of usage data for budget forecasts. Forecast-based alerts need sufficient historical usage information.
+
+A video emphasizes budget alert setup's importance and highlights the use of multi-factor authentication (MFA) for enhanced account security.
+
+## Content
+
 1. [Creating a Cost Budget](1-cost-budgets)
 2. [Creating a Usage Budget](2-usage-budget)
 3. [Creating an Reservation Budget](3-reservation-budget)

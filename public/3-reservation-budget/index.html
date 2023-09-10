@@ -12,21 +12,21 @@
     <title>Create RI Budget :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1680244852" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680244852" rel="stylesheet">
-    <link href="/css/hybrid.css?1680244852" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680244852" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680244852" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680244852" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680244852" rel="stylesheet">
-    <link href="/css/theme.css?1680244852" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680244852" rel="stylesheet">
+    <link href="/css/nucleus.css?1694360751" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1694360751" rel="stylesheet">
+    <link href="/css/hybrid.css?1694360751" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1694360751" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1694360751" rel="stylesheet">
+    <link href="/css/auto-complete.css?1694360751" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1694360751" rel="stylesheet">
+    <link href="/css/theme.css?1694360751" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1694360751" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680244852" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1694360751" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680244852"></script>
+    <script src="/js/jquery-3.3.1.min.js?1694360751"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680244852"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680244852"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1694360751"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1694360751"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680244852"></script>
+<script type="text/javascript" src="/js/search.js?1694360751"></script>
 
     
   </div>
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>31-03-2023</font>
+        <font color=orange>10-09-2023</font>
     </i>
 </left>
 <left>
@@ -415,57 +415,59 @@
 
 
 
-	<p>In this section, you will practice creating a Reservation Instance (RI) Budget.</p>
-
-<div class="notices info" ><p>Since you will not use the reserve instance within the lab because the reserve instance requires you to pay the usage fee in advance, this lab is for illustrative purposes only. Therefore, you can follow or just watch the instructions.</p>
-</div>
-
-<p><strong>Content:</strong></p>
+	<h4 id="practice-creating-a-reservation-instance-ri-budget">Practice: Creating a Reservation Instance (RI) Budget</h4>
+<p>In this practice section, you will learn how to create a budget for Reservation Instances (RIs) in the AWS Management Console.</p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> This lab is for instructional purposes only. You will not actually use a reserved instance during the lab since it requires prepayment of usage fees. Feel free to follow along or simply observe the instructions.</p>
+</blockquote>
+<h4 id="table-of-contents">Table of Contents</h4>
 <ul>
-<li><a href="#create-reservation-budget">Create reservation budget</a></li>
+<li><a href="#create-reservation-budget">Create Reservation Budget</a></li>
 </ul>
-<h4 id="create-reservation-budget">Create reservation budget</h4>
+<h4 id="create-reservation-budget">Create Reservation Budget</h4>
 <ol>
-<li>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service in the search bar.</li>
-</ol>
+<li>
+<p>Log in to the <strong>AWS Management Console</strong> by navigating to the admin page and selecting the <strong>Billing</strong> service from the search bar.</p>
 <p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol>
-<li>In the admin page, select <strong>Budgets</strong>.</li>
-</ol>
-<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="2">
-<li>Select <strong>Create budget</strong>.</li>
-</ol>
-<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="3">
-<li>Execute <strong>Budget setup</strong></li>
-</ol>
+</li>
+<li>
+<p>Within the admin page, locate and select <strong>Budgets</strong>.</p>
+<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Budgets"></p>
+</li>
+<li>
+<p>Choose <strong>Create Budget</strong> to begin setting up the budget for your reservation instance.</p>
+<p><img src="/images/4/0001.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
+</li>
+<li>
+<p>Complete the <strong>Budget Setup</strong>:</p>
 <ul>
 <li>Select <strong>Customize</strong></li>
-<li>Select <strong>Reservation budget</strong></li>
-<li>Select <strong>Next</strong></li>
+<li>Choose <strong>Reservation Budget</strong></li>
+<li>Click <strong>Next</strong></li>
 </ul>
-<p><img src="/images/4/0002.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="4">
-<li>Configure <strong>Coverage threshold</strong></li>
+<p><img src="/images/4/0002.png?featherlight=false&amp;width=90pc" alt="Budget Setup"></p>
+</li>
+<li>
+<p>Configure the <strong>Coverage Threshold</strong> for your budget.</p>
+<p><img src="/images/4/0008.png?featherlight=false&amp;width=90pc" alt="Coverage Threshold"></p>
+</li>
+<li>
+<p>Configure <strong>Alert</strong> settings for the budget.</p>
+<p><img src="/images/4/0006.png?featherlight=false&amp;width=90pc" alt="Alert Settings"></p>
+</li>
+<li>
+<p>Once the configurations are set, click <strong>Create Budget</strong>.</p>
+<p><img src="/images/4/0007.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
+</li>
+<li>
+<p>Review the details and confirm to complete the budget creation.</p>
+<p><img src="/images/4/0009.png?featherlight=false&amp;width=90pc" alt="Budget Creation"></p>
+</li>
+<li>
+<p>Verify the budget settings by checking the budget overview.</p>
+<p><img src="/images/4/00010.png?featherlight=false&amp;width=90pc" alt="Budget Overview"></p>
+</li>
 </ol>
-<p><img src="/images/4/0008.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="5">
-<li>Configure <strong>Alert</strong></li>
-</ol>
-<p><img src="/images/4/0006.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="6">
-<li>Select <strong>Create budget</strong></li>
-</ol>
-<p><img src="/images/4/0007.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="7">
-<li>Complete budget creation</li>
-</ol>
-<p><img src="/images/4/0009.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="8">
-<li>Check the budget.</li>
-</ol>
-<p><img src="/images/4/00010.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 
 
 
@@ -626,19 +628,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680244852"></script>
-    <script src="/js/jquery.sticky.js?1680244852"></script>
-    <script src="/js/featherlight.min.js?1680244852"></script>
-    <script src="/js/highlight.pack.js?1680244852"></script>
+    <script src="/js/clipboard.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1694360751"></script>
+    <script src="/js/jquery.sticky.js?1694360751"></script>
+    <script src="/js/featherlight.min.js?1694360751"></script>
+    <script src="/js/highlight.pack.js?1694360751"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680244852"></script>
-    <script src="/js/learn.js?1680244852"></script>
-    <script src="/js/hugo-learn.js?1680244852"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1694360751"></script>
+    <script src="/js/learn.js?1694360751"></script>
+    <script src="/js/hugo-learn.js?1694360751"></script>
 
-    <link href="/mermaid/mermaid.css?1680244852" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680244852"></script>
+    <link href="/mermaid/mermaid.css?1694360751" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1694360751"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

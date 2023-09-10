@@ -12,21 +12,21 @@
     <title>Getting Started with AWS Budgets :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1680244852" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680244852" rel="stylesheet">
-    <link href="/css/hybrid.css?1680244852" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680244852" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680244852" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680244852" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680244852" rel="stylesheet">
-    <link href="/css/theme.css?1680244852" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680244852" rel="stylesheet">
+    <link href="/css/nucleus.css?1694360751" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1694360751" rel="stylesheet">
+    <link href="/css/hybrid.css?1694360751" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1694360751" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1694360751" rel="stylesheet">
+    <link href="/css/auto-complete.css?1694360751" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1694360751" rel="stylesheet">
+    <link href="/css/theme.css?1694360751" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1694360751" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680244852" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1694360751" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680244852"></script>
+    <script src="/js/jquery-3.3.1.min.js?1694360751"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680244852"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680244852"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1694360751"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1694360751"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680244852"></script>
+<script type="text/javascript" src="/js/search.js?1694360751"></script>
 
     
   </div>
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>31-03-2023</font>
+        <font color=orange>10-09-2023</font>
     </i>
 </left>
 <left>
@@ -364,46 +364,60 @@
 
  
 <h1 id="cost-management-with-aws-budgets">Cost Management with AWS Budgets</h1>
-<h4 id="overview">Overview</h4>
-<p>In this lab, we&rsquo;ll explore how AWS Budgets can help you manage costs within your AWS account.</p>
-<h4 id="aws-budgets">AWS Budgets</h4>
-<p><strong>AWS Budgets</strong> is a service that allows you to set a one-time or recurring budget that alerts you when costs exceed (or are forecasted to exceed) your budgeted cost or usage amount.</p>
-<p>You can create the following types of budgets:</p>
+<h2 id="overview">Overview</h2>
+<p>In this lab, we will explore how <strong>AWS Budgets</strong> can assist you in cost management within your AWS account.</p>
+<h2 id="aws-budgets">AWS Budgets</h2>
+<p><strong>AWS Budgets</strong> is a service designed to enable you to establish one-time or recurring budgets. These budgets will send you alerts whenever costs exceed (or are forecasted to exceed) your predetermined budgeted cost or usage amount.</p>
+<p>You can create several types of budgets:</p>
 <ul>
 <li><a href="#cost-budget">Cost Budget</a>.</li>
-<li><a href="#usage-budget">Usage budget</a>.</li>
+<li><a href="#usage-budget">Usage Budget</a>.</li>
 <li><a href="#reservation-instance-ri-budget">Reserved Instance Budget</a>.</li>
 <li><a href="#savings-plans-budget">Savings Plans Budget</a>.</li>
 </ul>
-<h4 id="cost-budget">Cost Budget</h4>
-<p>A <strong>Cost Budget</strong> allows you to send alerts when the current or projected spend exceeds the cost threshold in the budget.</p>
-<h4 id="usage-budget">Usage Budget</h4>
-<p>A <strong>Usage Budget</strong> allows you to send alerts when the current or projected usage of a service or group of services you choose exceeds the usage budget threshold.</p>
-<p>For example, we may budget the usage of the number of running-hours of EC2 compute-services.</p>
-<h4 id="reserved-instance-ri-budget">Reserved Instance (RI) Budget</h4>
-<p><strong>RI Budget</strong> allows you to send alerts based on your usage or coverage of committed usage (<em>reserve instance</em>).</p>
-
-<div class="notices note" ><p>A <strong>Reserved Instance (RI)</strong> is an EC2 offering that provides you with a significant discount on EC2 usage when you commit to a one-year or three-year term.</p>
-</div>
-
-<h4 id="savings-plans-budget">Savings Plans Budget</h4>
-<p><strong>Savings Plans Budget</strong> allows you to send alerts based on the usage or coverage of services specified in the savings plans.</p>
-
-<div class="notices note" ><p><strong>Savings Plans</strong> is a flexible pricing model that offers low prices on EC2, Lambda and Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term. When you sign up for Savings Plans, you will be charged the discounted Savings Plans price for your usage up to your commitment.
-<br>
-<br>
-AWS offers two types of Savings Plans:
-<br>
-<strong>Compute Savings Plans</strong> provides the most flexibility and help to reduce your costs by up to 66%. These plans automatically apply to EC2 instance usage regardless of instance family, size, Availability Zone, region, Operating System or tenancy, and also apply to AWS Fargate and Lambda usage. For example, with Compute Savings Plans, you can change from <code>C4</code> to <code>M5</code> instances, shift a workload from EU (Ireland) to EU (London), or move a workload from EC2 to Fargate or Lambda at any time and automatically continue to pay the Savings Plans price.
-<br>
-<br>
-<strong>EC2 Instance Savings Plans</strong> provides the lowest prices, offering savings up to 72% in exchange for commitment to usage of individual instance families in a region (e.g. <code>M5</code> usage in N. Virginia). This automatically reduces your cost on the selected instance family in that region regardless of Availability Zone, size, Operating System or tenancy. EC2 Instance Savings Plans give you the flexibility to change your usage between instances within a family in that region. For example, you can move from <code>c5.xlarge</code> running Windows to <code>c5.2xlarge</code> running Linux and automatically benefit from the Savings Plan prices.
-<br>
-<br>
-<strong>Savings plans</strong> offer more flexible than Reserved Instances with comparable discounts. You are encouraged to use Savings plans for predictable, sustained workloads on EC2.</p>
-</div>
-
-<h4 id="content">Content</h4>
+<h2 id="cost-budget">Cost Budget</h2>
+<p>A <strong>Cost Budget</strong> provides alerts when the current or projected spending surpasses the cost threshold set within the budget.</p>
+<h2 id="usage-budget">Usage Budget</h2>
+<p>An <strong>Usage Budget</strong> sends alerts when the current or projected usage of a chosen service or group of services exceeds the usage budget threshold. For instance, you could budget the usage of running hours for EC2 compute services.</p>
+<h2 id="reserved-instance-ri-budget">Reserved Instance (RI) Budget</h2>
+<p>The <strong>RI Budget</strong> generates alerts based on your usage or coverage of committed usage, also known as a <em>reserved instance</em>.</p>
+<blockquote>
+<p><strong>Note:</strong> A <strong>Reserved Instance (RI)</strong> is a discounted EC2 offering when you commit to a one-year or three-year term.</p>
+</blockquote>
+<h2 id="savings-plans-budget">Savings Plans Budget</h2>
+<p>With the <strong>Savings Plans Budget</strong>, you will receive alerts based on usage or coverage of services specified within savings plans.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Savings Plans</strong> is a pricing model offering reduced prices for EC2, Lambda, and Fargate usage. This is in exchange for committing to a consistent usage amount (measured in $/hour) for a 1 or 3 year term. There are two types of Savings Plans: <strong>Compute Savings Plans</strong> and <strong>EC2 Instance Savings Plans</strong>.</p>
+</blockquote>
+<h2 id="best-practices-for-controlling-access-to-aws-budgets">Best Practices for Controlling Access to AWS Budgets</h2>
+<p>To enable users to create budgets in the AWS Billing and Cost Management console, ensure they have permission to:</p>
+<ul>
+<li>View your billing information.</li>
+<li>Create Amazon CloudWatch alarms.</li>
+<li>Create Amazon Simple Notification Service (Amazon SNS) notifications.</li>
+</ul>
+<p>For more information, see <a href="link_here">Allow users to create budgets</a>.</p>
+<p>You can also programmatically create budgets using the Budgets API. When configuring API access, it&rsquo;s recommended to create a unique user role for programmatic requests. This ensures precise access controls between AWS Budgets console and the API. For multiple users with query access to the Budgets API, create a role for each.</p>
+<h2 id="best-practices-for-budget-actions">Best Practices for Budget Actions</h2>
+<h3 id="using-managed-policies">Using Managed Policies</h3>
+<p>Two AWS managed policies simplify budget actions setup: one for users and one for budgets. These policies are related. The first policy allows a user to pass a role to the budgets service, and the second permits budgets to execute the action.</p>
+<p>Proper permissions are vital for AWS Budgets to execute your configured actions. Managed policies ensure correct configuration and execution, adding new capabilities automatically.</p>
+<p>For policy details, see <a href="link_here">Managed policies</a>.</p>
+<p>Learn more about AWS Budgets actions in the <a href="link_here">Configuring AWS Budgets actions</a> section.</p>
+<h3 id="using-amazon-ec2-auto-scaling">Using Amazon EC2 Auto Scaling</h3>
+<p>For budget actions affecting an Amazon EC2 instance in an Auto Scaling Group (ASG), Amazon EC2 Auto Scaling restarts or replaces instances. &ldquo;Shutdown budget actions is not effective to Amazon EC2/Amazon RDS budget actions&rdquo; unless combined with a second budget action removing permissions on the Launch Configuration role managing the ASG.</p>
+<h2 id="best-practices-for-setting-budgets">Best Practices for Setting Budgets</h2>
+<p>Use AWS Budgets to set custom budgets based on costs, usage, reservation utilization, and coverage. Set budgets on a recurring basis to avoid unexpected alerts.</p>
+<h2 id="best-practices-for-using-advanced-options-when-setting-cost-budgets">Best Practices for Using Advanced Options When Setting Cost Budgets</h2>
+<p>Cost budgets can be aggregated by unblended costs, amortized costs, or blended costs. Budgets can also include or exclude refunds, credits, upfront reservation fees, recurring reservation charges, non-reservation subscription costs, taxes, and support charges.</p>
+<h2 id="understanding-the-aws-budgets-update-frequency">Understanding the AWS Budgets Update Frequency</h2>
+<p>Budgets rely on AWS billing data, updated at least once daily. Alerts and budget information align with this refresh cadence.</p>
+<h2 id="best-practices-for-setting-budget-alerts">Best Practices for Setting Budget Alerts</h2>
+<p>Budget alerts can be sent to up to 10 email addresses and one Amazon SNS topic per alert. Alerts can target actual or forecasted values.</p>
+<p>Actual alerts trigger once per budget, per budget period, upon reaching the alert threshold. Forecast-based alerts trigger on a per-budget, per-budget period basis. If forecasted values exceed, dip below, and then exceed the threshold within a budgeted period, multiple alerts can be generated.</p>
+<p>AWS requires about 5 weeks of usage data for budget forecasts. Forecast-based alerts need sufficient historical usage information.</p>
+<p>A video emphasizes budget alert setup&rsquo;s importance and highlights the use of multi-factor authentication (MFA) for enhanced account security.</p>
+<h2 id="content">Content</h2>
 <ol>
 <li><a href="1-cost-budgets">Creating a Cost Budget</a></li>
 <li><a href="2-usage-budget">Creating a Usage Budget</a></li>
@@ -558,19 +572,19 @@ AWS offers two types of Savings Plans:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680244852"></script>
-    <script src="/js/jquery.sticky.js?1680244852"></script>
-    <script src="/js/featherlight.min.js?1680244852"></script>
-    <script src="/js/highlight.pack.js?1680244852"></script>
+    <script src="/js/clipboard.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1694360751"></script>
+    <script src="/js/jquery.sticky.js?1694360751"></script>
+    <script src="/js/featherlight.min.js?1694360751"></script>
+    <script src="/js/highlight.pack.js?1694360751"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680244852"></script>
-    <script src="/js/learn.js?1680244852"></script>
-    <script src="/js/hugo-learn.js?1680244852"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1694360751"></script>
+    <script src="/js/learn.js?1694360751"></script>
+    <script src="/js/hugo-learn.js?1694360751"></script>
 
-    <link href="/mermaid/mermaid.css?1680244852" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680244852"></script>
+    <link href="/mermaid/mermaid.css?1694360751" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1694360751"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

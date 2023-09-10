@@ -12,6 +12,8 @@ pre : " <b> 2. </b> "
 
 #### Khởi tạo cost budget
 
+Các tài khoản mới chỉ tạo được phần Cost Budget, các phần tiếp theo có thể bỏ qua.
+
 1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
 
 1. Tại trang quản trị, chọn **Budgets**. 

@@ -12,21 +12,21 @@
     <title>Create Usage Budget :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1680244852" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680244852" rel="stylesheet">
-    <link href="/css/hybrid.css?1680244852" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680244852" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680244852" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680244852" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680244852" rel="stylesheet">
-    <link href="/css/theme.css?1680244852" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680244852" rel="stylesheet">
+    <link href="/css/nucleus.css?1694360751" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1694360751" rel="stylesheet">
+    <link href="/css/hybrid.css?1694360751" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1694360751" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1694360751" rel="stylesheet">
+    <link href="/css/auto-complete.css?1694360751" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1694360751" rel="stylesheet">
+    <link href="/css/theme.css?1694360751" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1694360751" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680244852" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1694360751" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680244852"></script>
+    <script src="/js/jquery-3.3.1.min.js?1694360751"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680244852"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680244852"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1694360751"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1694360751"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680244852"></script>
+<script type="text/javascript" src="/js/search.js?1694360751"></script>
 
     
   </div>
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>31-03-2023</font>
+        <font color=orange>10-09-2023</font>
     </i>
 </left>
 <left>
@@ -415,89 +415,96 @@
 
 
 
-	<p>In this section, you will practice creating a Usage Budget.</p>
-
-<div class="notices note" ><p>If you&rsquo;ve gone through <a href="../1-cost-budgets">create Cost Budget</a>, you&rsquo;ll see that the process for creating Usage Budget is very similar, with the only difference being that Cost Budget works on * <em>cost</em>*, while Usage Budget works on <strong>usage</strong>.</p>
-</div>
-
-<p><strong>Content:</strong></p>
+	<h4 id="creating-a-usage-budget-in-aws">Creating a Usage Budget in AWS</h4>
+<p>In this section, you will practice creating a Usage Budget.</p>
+<blockquote>
+<p><strong>Note:</strong> If you&rsquo;ve previously gone through the process of creating a <a href="../1-cost-budgets">Cost Budget</a>, you&rsquo;ll find that the steps for creating a Usage Budget are quite similar. The main distinction is that Cost Budget focuses on <strong>cost</strong>, while Usage Budget focuses on <strong>usage</strong>.</p>
+</blockquote>
+<h4 id="table-of-contents">Table of Contents</h4>
+<ul>
+<li><a href="#creating-a-usage-budget-in-aws">Creating a Usage Budget in AWS</a>
+- <a href="#table-of-contents">Table of Contents</a>
 <ul>
 <li><a href="#create-usage-budget">Create usage budget</a></li>
 </ul>
+</li>
+</ul>
 <h4 id="create-usage-budget">Create usage budget</h4>
 <ol>
-<li>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service in the search bar.</li>
-</ol>
+<li>
+<p>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service using the search bar.</p>
 <p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="2">
-<li>In the admin page, select <strong>Budgets</strong>.</li>
-</ol>
+</li>
+<li>
+<p>On the admin page, click on <strong>Budgets</strong>.</p>
 <p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="3">
-<li>Select <strong>Create budget</strong>.</li>
-</ol>
+</li>
+<li>
+<p>Choose <strong>Create budget</strong>.</p>
 <p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="4">
-<li>Select <strong>Budget type</strong></li>
-</ol>
+</li>
+<li>
+<p>Select the <strong>Budget type</strong>:</p>
 <ul>
-<li>Select <strong>Customize</strong></li>
-<li>Select <strong>Usage budget</strong></li>
+<li>Choose <strong>Customize</strong></li>
+<li>Choose <strong>Usage budget</strong></li>
 </ul>
 <p><img src="/images/3/0002.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="5">
-<li>Name the budget.</li>
-</ol>
+</li>
+<li>
+<p>Provide a name for your budget.</p>
 <p><img src="/images/3/0003.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="6">
-<li>Select <strong>Use type groups</strong></li>
-</ol>
+</li>
+<li>
+<p>Select <strong>Use type groups</strong>:</p>
 <ul>
-<li>Select <strong>EC2:Running Hours</strong></li>
+<li>Choose <strong>EC2:Running Hours</strong></li>
 </ul>
 <p><img src="/images/3/0004.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="7">
-<li>Do <strong>Set budget amount</strong></li>
-</ol>
+</li>
+<li>
+<p>Set the budget amount:</p>
 <ul>
-<li>Select <strong>Period</strong></li>
-<li>Select <strong>Budget renewal type</strong></li>
-<li>Select <strong>Budgeting method</strong></li>
+<li>Select a <strong>Period</strong></li>
+<li>Choose a <strong>Budget renewal type</strong></li>
+<li>Select a <strong>Budgeting method</strong></li>
 <li>Enter the number of hours.</li>
 </ul>
 <p><img src="/images/3/0005.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="8">
-<li>Leave the default and select <strong>Next</strong></li>
-</ol>
+</li>
+<li>
+<p>Keep the default settings and click <strong>Next</strong>.</p>
 <p><img src="/images/3/0006.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="9">
-<li>Configure <strong>Alert</strong></li>
-</ol>
+</li>
+<li>
+<p>Configure the <strong>Alert</strong>:</p>
 <p><img src="/images/3/0007.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="10">
-<li>Complete information <strong>Alert</strong></li>
-</ol>
+</li>
+<li>
+<p>Provide complete information for the <strong>Alert</strong>:</p>
 <p><img src="/images/3/0008.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="11">
-<li>Select <strong>Next</strong></li>
-</ol>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
 <p><img src="/images/3/0009.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="12">
-<li>Select <strong>Create budget</strong></li>
-</ol>
+</li>
+<li>
+<p>Click <strong>Create budget</strong>.</p>
 <p><img src="/images/3/00010.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="13">
-<li>Tao budget success.</li>
-</ol>
+</li>
+<li>
+<p>Your budget has been successfully created.</p>
 <p><img src="/images/3/00011.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="14">
-<li>Check <strong>Budget health</strong></li>
-</ol>
+</li>
+<li>
+<p>Check the <strong>Budget health</strong>:</p>
 <p><img src="/images/3/00012.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
-<ol start="15">
-<li>Review <strong>Budget history</strong></li>
-</ol>
+</li>
+<li>
+<p>Review the <strong>Budget history</strong>:</p>
 <p><img src="/images/3/00013.png?featherlight=false&amp;width=90pc" alt="Budget Name &amp; Amount"></p>
+</li>
+</ol>
 
 
 
@@ -658,19 +665,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680244852"></script>
-    <script src="/js/jquery.sticky.js?1680244852"></script>
-    <script src="/js/featherlight.min.js?1680244852"></script>
-    <script src="/js/highlight.pack.js?1680244852"></script>
+    <script src="/js/clipboard.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1694360751"></script>
+    <script src="/js/jquery.sticky.js?1694360751"></script>
+    <script src="/js/featherlight.min.js?1694360751"></script>
+    <script src="/js/highlight.pack.js?1694360751"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680244852"></script>
-    <script src="/js/learn.js?1680244852"></script>
-    <script src="/js/hugo-learn.js?1680244852"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1694360751"></script>
+    <script src="/js/learn.js?1694360751"></script>
+    <script src="/js/hugo-learn.js?1694360751"></script>
 
-    <link href="/mermaid/mermaid.css?1680244852" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680244852"></script>
+    <link href="/mermaid/mermaid.css?1694360751" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1694360751"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

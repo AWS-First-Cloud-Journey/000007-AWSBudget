@@ -6,18 +6,23 @@ chapter : false
 pre : " <b> 6. </b> "
 ---
 
-{{%notice warning%}}
-Setting a budget is important when managing resources and operating in a cloud computing environment. However, if you only work on the lab environment to understand the feature, you can perform the resource cleanup operations below to remove the set warning levels.
-{{%/notice%}}
+#### **Managing Budgets in a Cloud Environment**
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing** service in the search bar.
+In a cloud computing environment, it's crucial to set up a budget to effectively manage resources. However, if you're using the lab environment solely to explore features, you can follow these steps to clean up resources and eliminate any set warning levels.
 
-- Select **Budget** to delete
-- Select **Delete**
-![Billing Service](/images/5/0009.png?featherlight=false&width=90pc)
+#### **Steps to Clean Up Budgets:**
 
-2. Confirm **Delete**
+1. Log in to the **AWS Management Console** admin page and navigate to the **Billing** service using the search bar.
 
-![Billing Service](/images/5/00010.png?featherlight=false&width=90pc)
+   - Choose the **Budget** you want to delete.
+   - Select **Delete**.
+   
+   ![Billing Service](/images/5/0009.png?featherlight=false&width=90pc)
 
-3. Repeat with the remaining Budgets related to this lab.
+2. Confirm the deletion.
+
+   ![Billing Service](/images/5/00010.png?featherlight=false&width=90pc)
+
+3. Repeat this process for any other budgets associated with this lab.
+
+Remember, it's important to manage your cloud resources efficiently, and setting budgets helps ensure cost control and optimization.

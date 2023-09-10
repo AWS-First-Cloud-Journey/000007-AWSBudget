@@ -6,84 +6,85 @@ chapter : false
 pre : " <b> 3. </b> "
 ---
 
+#### Creating a Usage Budget in AWS
+
 In this section, you will practice creating a Usage Budget.
 
-{{% notice note %}}
-If you've gone through [create Cost Budget](../1-cost-budgets), you'll see that the process for creating Usage Budget is very similar, with the only difference being that Cost Budget works on * *cost**, while Usage Budget works on **usage**.
+> **Note:** If you've previously gone through the process of creating a [Cost Budget](../1-cost-budgets), you'll find that the steps for creating a Usage Budget are quite similar. The main distinction is that Cost Budget focuses on **cost**, while Usage Budget focuses on **usage**.
 
-{{% /notice %}}
-
-**Content:**
-- [Create usage budget](#create-usage-budget)
+#### Table of Contents
+- [Creating a Usage Budget in AWS](#creating-a-usage-budget-in-aws)
+      - [Table of Contents](#table-of-contents)
+  - [Create usage budget](#create-usage-budget)
 
 #### Create usage budget
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing** service in the search bar.
+1. Log in to the **AWS Management Console** admin page and select the **Billing** service using the search bar.
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
 
-2. In the admin page, select **Budgets**.
+2. On the admin page, click on **Budgets**.
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
 
-3. Select **Create budget**.
+3. Choose **Create budget**.
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
 
-4. Select **Budget type**
+4. Select the **Budget type**:
 
-- Select **Customize**
-- Select **Usage budget**
+   - Choose **Customize**
+   - Choose **Usage budget**
 
-![Budget Name & Amount](/images/3/0002.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0002.png?featherlight=false&width=90pc)
 
-5. Name the budget.
+5. Provide a name for your budget.
 
-![Budget Name & Amount](/images/3/0003.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0003.png?featherlight=false&width=90pc)
 
-6. Select **Use type groups**
+6. Select **Use type groups**:
 
-- Select **EC2:Running Hours**
+   - Choose **EC2:Running Hours**
 
-![Budget Name & Amount](/images/3/0004.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0004.png?featherlight=false&width=90pc)
 
-7. Do **Set budget amount**
+7. Set the budget amount:
 
-- Select **Period**
-- Select **Budget renewal type**
-- Select **Budgeting method**
-- Enter the number of hours.
+   - Select a **Period**
+   - Choose a **Budget renewal type**
+   - Select a **Budgeting method**
+   - Enter the number of hours.
 
-![Budget Name & Amount](/images/3/0005.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0005.png?featherlight=false&width=90pc)
 
-8. Leave the default and select **Next**
+8. Keep the default settings and click **Next**.
 
-![Budget Name & Amount](/images/3/0006.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0006.png?featherlight=false&width=90pc)
 
-9. Configure **Alert**
+9. Configure the **Alert**:
 
-![Budget Name & Amount](/images/3/0007.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/0007.png?featherlight=false&width=90pc)
 
-10. Complete information **Alert**
+10. Provide complete information for the **Alert**:
 
-![Budget Name & Amount](/images/3/0008.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/0008.png?featherlight=false&width=90pc)
 
-11. Select **Next**
+11. Click **Next**.
 
-![Budget Name & Amount](/images/3/0009.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/0009.png?featherlight=false&width=90pc)
 
-12. Select **Create budget**
+12. Click **Create budget**.
 
-![Budget Name & Amount](/images/3/00010.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/00010.png?featherlight=false&width=90pc)
 
-13. Tao budget success.
+13. Your budget has been successfully created.
 
-![Budget Name & Amount](/images/3/00011.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/00011.png?featherlight=false&width=90pc)
 
-14. Check **Budget health**
+14. Check the **Budget health**:
 
-![Budget Name & Amount](/images/3/00012.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/00012.png?featherlight=false&width=90pc)
 
-15. Review **Budget history**
+15. Review the **Budget history**:
 
-![Budget Name & Amount](/images/3/00013.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/00013.png?featherlight=false&width=90pc)

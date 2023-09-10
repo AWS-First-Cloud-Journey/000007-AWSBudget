@@ -12,21 +12,21 @@
     <title>Create Saving Plans Budget :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1680244852" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680244852" rel="stylesheet">
-    <link href="/css/hybrid.css?1680244852" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680244852" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680244852" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680244852" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680244852" rel="stylesheet">
-    <link href="/css/theme.css?1680244852" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680244852" rel="stylesheet">
+    <link href="/css/nucleus.css?1694360751" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1694360751" rel="stylesheet">
+    <link href="/css/hybrid.css?1694360751" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1694360751" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1694360751" rel="stylesheet">
+    <link href="/css/auto-complete.css?1694360751" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1694360751" rel="stylesheet">
+    <link href="/css/theme.css?1694360751" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1694360751" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1680244852" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1694360751" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680244852"></script>
+    <script src="/js/jquery-3.3.1.min.js?1694360751"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680244852"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680244852"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1694360751"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1694360751"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680244852"></script>
+<script type="text/javascript" src="/js/search.js?1694360751"></script>
 
     
   </div>
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>31-03-2023</font>
+        <font color=orange>10-09-2023</font>
     </i>
 </left>
 <left>
@@ -415,65 +415,68 @@
 
 
 
-	<p>In this section, you will practice creating a Savings Plans Budget</p>
-
-<div class="notices info" ><p>Since you will not use the savings plans instance within the labs because the savings plans instance requires you to purchase the savings plans in advance, this lab is for illustrative purposes only. Therefore, you can follow or just watch the instructions.</p>
-</div>
-
-
-<div class="notices note" ><p>If you have gone through the <a href="../3-reservation-budgets">create RI Budget</a> section, you will find that the process of creating a Savings Plans Budget is very similar, with the only difference being that the Reservation Budget works involved. to <strong>reserve instance</strong>, while Savings Plans Budget works about <strong>savings plans instance</strong>.</p>
-</div>
-
-<p><strong>Content:</strong></p>
+	<h4 id="creating-a-savings-plans-budget">Creating a Savings Plans Budget</h4>
+<p>In this section, you will practice creating a Savings Plans Budget.</p>
+<blockquote>
+<p>ℹ️ <strong>Notice</strong>: Since you will not use the savings plans instance within the labs because the savings plans instance requires you to purchase the savings plans in advance, this lab is for illustrative purposes only. Therefore, you can follow or just watch the instructions.</p>
+</blockquote>
+<blockquote>
+<p>ℹ️ <strong>Note</strong>: If you have gone through the <a href="../3-reservation-budgets">create RI Budget</a> section, you will find that the process of creating a Savings Plans Budget is very similar, with the only difference being that the Reservation Budget works involved. to <strong>reserve instance</strong>, while Savings Plans Budget works about <strong>savings plans instance</strong>.</p>
+</blockquote>
+<h4 id="content">Content</h4>
 <ul>
-<li><a href="#create-saving-plans-budget">Create Saving plans Budget</a></li>
+<li><a href="#creating-a-savings-plans-budget">Creating a Savings Plans Budget</a></li>
+<li><a href="#content">Content</a></li>
+<li><a href="#create-savings-plans-budget">Create Savings Plans Budget</a></li>
 </ul>
-<h4 id="create-saving-plans-budget">Create Saving plans Budget</h4>
+<h4 id="create-savings-plans-budget">Create Savings Plans Budget</h4>
 <ol>
-<li>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service in the search bar.</li>
-</ol>
+<li>
+<p>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing</strong> service in the search bar.</p>
 <p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol>
-<li>In the admin page, select <strong>Budgets</strong>.</li>
-</ol>
-<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="2">
-<li>Select <strong>Create budget</strong>.</li>
-</ol>
-<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="3">
-<li>Execute <strong>Budget setup</strong></li>
-</ol>
+</li>
+<li>
+<p>In the admin page, select <strong>Budgets</strong>.</p>
+<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Budgets"></p>
+</li>
+<li>
+<p>Select <strong>Create budget</strong>.</p>
+<p><img src="/images/5/0001.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
+</li>
+<li>
+<p>Execute <strong>Budget setup</strong>:</p>
 <ul>
 <li>Select <strong>Customize</strong></li>
-<li>Select <strong>Budget types</strong> as <strong>Saving Plan budget</strong></li>
+<li>Select <strong>Budget types</strong> as <strong>Savings Plan budget</strong></li>
 <li>Select <strong>Next</strong></li>
 </ul>
-<p><img src="/images/5/0002.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="4">
-<li>Name <strong>Budget name</strong></li>
+<p><img src="/images/5/0002.png?featherlight=false&amp;width=90pc" alt="Budget Setup"></p>
+</li>
+<li>
+<p>Name your <strong>Budget</strong>:</p>
+<p><img src="/images/5/0003.png?featherlight=false&amp;width=90pc" alt="Budget Name"></p>
+</li>
+<li>
+<p>Perform threshold configuration:</p>
+<p><img src="/images/5/0004.png?featherlight=false&amp;width=90pc" alt="Threshold Configuration"></p>
+</li>
+<li>
+<p>Configure <strong>Alert</strong> and then select <strong>Next</strong>:</p>
+<p><img src="/images/5/0005.png?featherlight=false&amp;width=90pc" alt="Alert Configuration"></p>
+</li>
+<li>
+<p>Select <strong>Create budget</strong>:</p>
+<p><img src="/images/5/0006.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
+</li>
+<li>
+<p>Budget creation successful:</p>
+<p><img src="/images/5/0007.png?featherlight=false&amp;width=90pc" alt="Budget Creation Successful"></p>
+</li>
+<li>
+<p>View the details of the created budget:</p>
+<p><img src="/images/5/0008.png?featherlight=false&amp;width=90pc" alt="Budget Details"></p>
+</li>
 </ol>
-<p><img src="/images/5/0003.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="5">
-<li>Perform threshold configuration.</li>
-</ol>
-<p><img src="/images/5/0004.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="6">
-<li>Configure <strong>Alert</strong> and then select <strong>Next</strong></li>
-</ol>
-<p><img src="/images/5/0005.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="7">
-<li>Select <strong>Create budget</strong></li>
-</ol>
-<p><img src="/images/5/0006.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="8">
-<li>Successful budget journal.</li>
-</ol>
-<p><img src="/images/5/0007.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
-<ol start="9">
-<li>View the created budget details.</li>
-</ol>
-<p><img src="/images/5/0008.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 
 
 
@@ -634,19 +637,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680244852"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680244852"></script>
-    <script src="/js/jquery.sticky.js?1680244852"></script>
-    <script src="/js/featherlight.min.js?1680244852"></script>
-    <script src="/js/highlight.pack.js?1680244852"></script>
+    <script src="/js/clipboard.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.min.js?1694360751"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1694360751"></script>
+    <script src="/js/jquery.sticky.js?1694360751"></script>
+    <script src="/js/featherlight.min.js?1694360751"></script>
+    <script src="/js/highlight.pack.js?1694360751"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680244852"></script>
-    <script src="/js/learn.js?1680244852"></script>
-    <script src="/js/hugo-learn.js?1680244852"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1694360751"></script>
+    <script src="/js/learn.js?1694360751"></script>
+    <script src="/js/hugo-learn.js?1694360751"></script>
 
-    <link href="/mermaid/mermaid.css?1680244852" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1680244852"></script>
+    <link href="/mermaid/mermaid.css?1694360751" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1694360751"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
