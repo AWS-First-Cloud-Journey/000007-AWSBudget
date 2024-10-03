@@ -19,7 +19,7 @@ In this practice section, you will learn how to create a budget for Reservation 
 
 #### Create Reservation Budget
 
-1. Log in to the **AWS Management Console** by navigating to the admin page and selecting the **Billing** service from the search bar.
+1. Log in to the **AWS Management Console** by navigating to the admin page and selecting the **Billing and Cost Management** service from the search bar.
 
     ![Billing Service](/images/4/0001.png?featherlight=false&width=90pc)
 
@@ -29,7 +29,7 @@ In this practice section, you will learn how to create a budget for Reservation 
 
 3. Choose **Create Budget** to begin setting up the budget for your reservation instance.
 
-    ![Create Budget](/images/4/0001.png?featherlight=false&width=90pc)
+    ![Create Budget](/images/4/00001.png?featherlight=false&width=90pc)
 
 4. Complete the **Budget Setup**:
 
@@ -39,22 +39,27 @@ In this practice section, you will learn how to create a budget for Reservation 
 
     ![Budget Setup](/images/4/0002.png?featherlight=false&width=90pc)
 
-5. Configure the **Coverage Threshold** for your budget.
+
+5. Name your **Budget**:
+
+    ![Budget Setup](/images/4/0003.png?featherlight=false&width=90pc)
+
+6. Configure the **Coverage Threshold** for your budget.
 
     ![Coverage Threshold](/images/4/0008.png?featherlight=false&width=90pc)
 
-6. Configure **Alert** settings for the budget.
+7. Configure **Alert** settings for the budget.
 
     ![Alert Settings](/images/4/0006.png?featherlight=false&width=90pc)
 
-7. Once the configurations are set, click **Create Budget**.
+8. Once the configurations are set, click **Create Budget**.
 
     ![Create Budget](/images/4/0007.png?featherlight=false&width=90pc)
 
-8. Review the details and confirm to complete the budget creation.
+9. Review the details and confirm to complete the budget creation.
 
     ![Budget Creation](/images/4/0009.png?featherlight=false&width=90pc)
 
-9. Verify the budget settings by checking the budget overview.
+10. Verify the budget settings by checking the budget overview.
 
     ![Budget Overview](/images/4/00010.png?featherlight=false&width=90pc)

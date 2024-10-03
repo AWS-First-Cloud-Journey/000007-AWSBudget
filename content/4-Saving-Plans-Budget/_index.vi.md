@@ -21,46 +21,48 @@ Nếu bạn đã làm qua phần [tạo RI Budget](../3-reservation-budgets), b�
 
 #### Khởi tạo Saving plans Budget
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
 ![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
 
-1. Tại trang quản trị, chọn **Budgets**. 
+2. Tại trang quản trị, chọn **Budgets**. 
 
 ![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
 
-2. Chọn **Create budget**.
+3. Chọn **Create budget**.
 
-![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/00001.png?featherlight=false&width=90pc)
 
-3. Thực hiện **Budget setup**
+4. Thực hiện **Budget setup**
 
 - Chọn **Customize**
 - Chọn **Budget types** là  **Saving Plan budget**
 - Chọn **Next**
 
 ![Billing Service](/images/5/0002.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/00002.png?featherlight=false&width=90pc)
 
-4. Đặt tên cho **Budget name**
+5. Đặt tên cho **Budget name**
 
 ![Billing Service](/images/5/0003.png?featherlight=false&width=90pc)
 
-5. Thực hiện cấu hình threshold.
+6. Thực hiện cấu hình threshold.
 
 ![Billing Service](/images/5/0004.png?featherlight=false&width=90pc)
 
-6. Cấu hình **Alert** và sau đó chọn **Next**
+7. Cấu hình **Alert** và sau đó chọn **Next**
 
 ![Billing Service](/images/5/0005.png?featherlight=false&width=90pc)
 
-7. Chọn **Create budget**
+8. Chọn **Create budget**
 
+![Billing Service](/images/5/00006.png?featherlight=false&width=90pc)
 ![Billing Service](/images/5/0006.png?featherlight=false&width=90pc)
 
-8. Tạp budget thành công.
+9. Tạp budget thành công.
 
 ![Billing Service](/images/5/0007.png?featherlight=false&width=90pc)
 
-9. Xem chi tiết budget đã tạo.
+10. Xem chi tiết budget đã tạo.
 
 ![Billing Service](/images/5/0008.png?featherlight=false&width=90pc)

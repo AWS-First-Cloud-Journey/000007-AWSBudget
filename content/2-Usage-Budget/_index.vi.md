@@ -18,7 +18,7 @@ Nếu bạn đã làm qua phần [tạo Cost Budget](../1-cost-budgets), bạn s
 
 #### Khởi tạo usage budget
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
 ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
 
@@ -28,7 +28,7 @@ Nếu bạn đã làm qua phần [tạo Cost Budget](../1-cost-budgets), bạn s
 
 3. Chọn **Create budget**.
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+![Budget Name & Amount](/images/3/00001.png?featherlight=false&width=90pc)
 
 4. Chọn **Budget type**
 
@@ -87,3 +87,5 @@ Nếu bạn đã làm qua phần [tạo Cost Budget](../1-cost-budgets), bạn s
 15. Xem lại **Budget history**
 
 ![Budget Name & Amount](/images/3/00013.png?featherlight=false&width=90pc)
+
+![Budget Name & Amount](/images/3/000131.png?featherlight=false&width=90pc)

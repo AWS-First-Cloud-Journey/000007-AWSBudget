@@ -12,7 +12,7 @@ In a cloud computing environment, it's crucial to set up a budget to effectively
 
 #### **Steps to Clean Up Budgets:**
 
-1. Log in to the **AWS Management Console** admin page and navigate to the **Billing** service using the search bar.
+1. Log in to the **AWS Management Console** admin page and navigate to the **Billing and Cost Management** service using the search bar.
 
    - Choose the **Budget** you want to delete.
    - Select **Delete**.

@@ -19,7 +19,7 @@ In this section, you will practice creating a Usage Budget.
 
 #### Create usage budget
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing** service using the search bar.
+1. Log in to the **AWS Management Console** admin page and select the **Billing and Cost Management** service using the search bar.
 
    ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
 
@@ -29,7 +29,7 @@ In this section, you will practice creating a Usage Budget.
 
 3. Choose **Create budget**.
 
-   ![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+   ![Budget Name & Amount](/images/3/00001.png?featherlight=false&width=90pc)
 
 4. Select the **Budget type**:
 
@@ -88,3 +88,5 @@ In this section, you will practice creating a Usage Budget.
 15. Review the **Budget history**:
 
     ![Budget Name & Amount](/images/3/00013.png?featherlight=false&width=90pc)
+    ![Budget Name & Amount](/images/3/000131.png?featherlight=false&width=90pc)
+

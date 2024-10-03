@@ -14,7 +14,7 @@ In this section, you will practice creating a **Cost Budget**.
 
 New accounts can only create the *Cost Budget* section; subsequent sections can be skipped.
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing** service in the search bar.
+1. Log in to the **AWS Management Console** admin page and select the **Billing and Cost Management** service in the search bar.
 
 2. In the admin page, select **Budgets**.
 
@@ -29,6 +29,8 @@ New accounts can only create the *Cost Budget* section; subsequent sections can 
    - Select **Next**
 
    ![Billing Service](/images/2/0002.png?featherlight=false&width=90pc)
+
+   ![Billing Service](/images/2/00021.png?featherlight=false&width=90pc)
 
 5. In the **Set your budget** interface:
 

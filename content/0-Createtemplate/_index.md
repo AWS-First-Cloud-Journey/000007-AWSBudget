@@ -10,12 +10,12 @@ pre : " <b> 1. </b> "
 
 1. We will create **Budget** using the AWS template.
 
-   - Access the AWS interface.
-   - Locate and choose **Billing**
+   - Access the [AWS interface](https://ap-southeast-1.console.aws.amazon.com/console/home?region=ap-southeast-1).
+   - Locate and choose **Billing and Cost Management**
 
 ![AWS Budget](/images/1/0001.png?featherlight=false&width=90pc)
 
-2. In the **Billing** interface:
+2. In the **Billing and Cost Management** interface:
 
 - Select **Budget**
 - Select **Create a budget**
@@ -31,13 +31,16 @@ pre : " <b> 1. </b> "
 
 4. Fill in the necessary information and select **Create budget**
 
-![AWS Budget](/images/1/0007.png?featherlight=false&width=90pc)
+![AWS Budget](/images/1/0004.png?featherlight=false&width=90pc)
+![AWS Budget](/images/1/00041.png?featherlight=false&width=90pc)
 
 5. Successfully create the **Budget**
 
 ![AWS Budget](/images/1/0005.png?featherlight=false&width=90pc)
 
 6. You can view historical budgets.
+
+![AWS Budget](/images/1/00060.png?featherlight=false&width=90pc)
 
 ![AWS Budget](/images/1/0006.png?featherlight=false&width=90pc)
 
@@ -47,11 +50,13 @@ pre : " <b> 1. </b> "
 
 8. Check budget health and alerts.
 
-![AWS Budget](/images/1/0009.png?featherlight=false&width=90pc)
+![AWS Budget](/images/1/0005.png?featherlight=false&width=90pc)
 
 9. Go back to Budget history.
 
-![AWS Budget](/images/1/00010.png?featherlight=false&width=90pc)
+![AWS Budget](/images/1/00060.png?featherlight=false&width=90pc)
+
+![AWS Budget](/images/1/0006.png?featherlight=false&width=90pc)
 
 10. Review the alert types of the template.
 

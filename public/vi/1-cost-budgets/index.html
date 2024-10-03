@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Cost Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1704858594" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1704858594" rel="stylesheet">
-    <link href="/css/hybrid.css?1704858594" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1704858594" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1704858594" rel="stylesheet">
-    <link href="/css/auto-complete.css?1704858594" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1704858594" rel="stylesheet">
-    <link href="/css/theme.css?1704858594" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1704858594" rel="stylesheet">
+    <link href="/css/nucleus.css?1727938936" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1727938936" rel="stylesheet">
+    <link href="/css/hybrid.css?1727938936" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1727938936" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1727938936" rel="stylesheet">
+    <link href="/css/auto-complete.css?1727938936" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1727938936" rel="stylesheet">
+    <link href="/css/theme.css?1727938936" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1727938936" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1704858594" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1727938936" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1704858594"></script>
+    <script src="/js/jquery-3.3.1.min.js?1727938936"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1704858594"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1704858594"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1727938936"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1727938936"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1704858594"></script>
+<script type="text/javascript" src="/js/search.js?1727938936"></script>
 
     
   </div>
@@ -109,7 +109,7 @@
   
     
     <li data-nav-id="/vi/1-cost-budgets/" title="Tạo Cost Budget" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/1-cost-budgets/">English</option>
+                      <option id="en" value="//localhost:1313/1-cost-budgets/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/1-cost-budgets/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/1-cost-budgets/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-01ss-2023</font>
+        <font color=orange>03-10-2024</font>
     </i>
 </left>
 <left>
@@ -420,7 +420,7 @@
 <p>Các tài khoản mới chỉ tạo được phần Cost Budget, các phần tiếp theo có thể bỏ qua.</p>
 <ol>
 <li>
-<p>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing</strong> tại thanh tìm kiếm.</p>
+<p>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</p>
 </li>
 <li>
 <p>Tại trang quản trị, chọn <strong>Budgets</strong>.</p>
@@ -429,7 +429,7 @@
 <p>Chọn <strong>Create budget</strong>.</p>
 </li>
 </ol>
-<p><img src="/images/2/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<p><img alt="Billing Service" src="/images/2/0001.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Đối với <strong>Budget setup</strong></li>
 </ol>
@@ -438,14 +438,15 @@
 <li><strong>Budget types</strong>, chọn <strong>Cost budget</strong></li>
 <li>Chọn <strong>Next</strong></li>
 </ul>
-<p><img src="/images/2/0002.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<p><img alt="Billing Service" src="/images/2/0002.png?featherlight=false&width=90pc">
+<img alt="Billing Service" src="/images/2/00021.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Trong giao diện <strong>Set your budget</strong></li>
 </ol>
 <ul>
 <li>Đối với <strong>Budget name</strong>, nhập <strong><code>Monthly</code></strong></li>
 </ul>
-<p><img src="/images/2/0003.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<p><img alt="Billing Service" src="/images/2/0003.png?featherlight=false&width=90pc"></p>
 <ul>
 <li><strong>Period</strong>: chọn khoảng thời gian cho Budget theo Ngày (<em>Daily</em>), Tháng (<em>Monthly</em>), Quý (<em>Quaterly</em>), và Năm (<em>Annualy</em>)</li>
 <li><strong>Budget effective dates</strong>:
@@ -467,31 +468,31 @@
 </ul>
 </li>
 </ul>
-<p><img src="/images/2/0004.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<p><img alt="Billing Service" src="/images/2/0004.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Đối với <strong>Budget scope</strong> chọn <strong>All AWS services</strong>. Sau đó chọn <strong>Next</strong></li>
 </ol>
-<p><img src="/images/2/0005.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/0005.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Đối với <strong>Configure alerts</strong>, chọn <strong>Add an alert threshold</strong>. Chọn <strong>Next</strong></li>
 </ol>
-<p><img src="/images/2/0006.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/0006.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Thực hiện cấu hình <strong>Alert</strong> và chọn <strong>Next</strong></li>
 </ol>
-<p><img src="/images/2/0007.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/0007.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Chọn <strong>Next</strong></li>
 </ol>
-<p><img src="/images/2/0008.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/0008.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>Chọn <strong>Create budget</strong></li>
 </ol>
-<p><img src="/images/2/0009.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/0009.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Tạo budget thành công.</li>
 </ol>
-<p><img src="/images/2/00010.png?featherlight=false&amp;width=90pc" alt="Create Cost Budget"></p>
+<p><img alt="Create Cost Budget" src="/images/2/00010.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -652,19 +653,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1704858594"></script>
-    <script src="/js/perfect-scrollbar.min.js?1704858594"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1704858594"></script>
-    <script src="/js/jquery.sticky.js?1704858594"></script>
-    <script src="/js/featherlight.min.js?1704858594"></script>
-    <script src="/js/highlight.pack.js?1704858594"></script>
+    <script src="/js/clipboard.min.js?1727938936"></script>
+    <script src="/js/perfect-scrollbar.min.js?1727938936"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1727938936"></script>
+    <script src="/js/jquery.sticky.js?1727938936"></script>
+    <script src="/js/featherlight.min.js?1727938936"></script>
+    <script src="/js/highlight.pack.js?1727938936"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1704858594"></script>
-    <script src="/js/learn.js?1704858594"></script>
-    <script src="/js/hugo-learn.js?1704858594"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1727938936"></script>
+    <script src="/js/learn.js?1727938936"></script>
+    <script src="/js/hugo-learn.js?1727938936"></script>
 
-    <link href="/mermaid/mermaid.css?1704858594" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1704858594"></script>
+    <link href="/mermaid/mermaid.css?1727938936" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1727938936"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -10,7 +10,7 @@ pre : " <b> 6. </b> "
 Việc cài đặt budget là một việc quan trọng khi quản lý tài nguyên và vận hành trên môi trường điện toán đám mây. Tuy nhiên nếu bạn chỉ làm trên môi trường lab để hiểu tính năng thì có thể thực hiện các thao tác dọn dẹp tài nguyên bên dưới để xóa các mức cảnh báo đã thiết lập.
 {{%/notice%}}
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
 - Chọn **Budget** cần xóa
 - Chọn **Delete**

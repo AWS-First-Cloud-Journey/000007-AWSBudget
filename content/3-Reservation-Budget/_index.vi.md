@@ -16,19 +16,19 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 
 #### Khởi tạo reservation budget
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
 ![Billing Service](/images/4/0001.png?featherlight=false&width=90pc)
 
-1. Tại trang quản trị, chọn **Budgets**. 
+2. Tại trang quản trị, chọn **Budgets**. 
 
 ![Billing Service](/images/4/0001.png?featherlight=false&width=90pc)
 
-2. Chọn **Create budget**.
+3. Chọn **Create budget**.
 
-![Billing Service](/images/4/0001.png?featherlight=false&width=90pc)
+![Billing Service](/images/4/00001.png?featherlight=false&width=90pc)
 
-3. Thực hiện **Budget setup**
+4. Thực hiện **Budget setup**
 
 - Chọn **Customize**
 - Chọn **Reservation budget**
@@ -36,23 +36,29 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 
 ![Billing Service](/images/4/0002.png?featherlight=false&width=90pc)
 
-4. Cấu hình **Coverage threshold**
+![Billing Service](/images/4/00002.png?featherlight=false&width=90pc)
+
+5. Đặt tên budget.
+
+![Billing Service](/images/4/0003.png?featherlight=false&width=90pc)
+
+6. Cấu hình **Coverage threshold**
 
 ![Billing Service](/images/4/0008.png?featherlight=false&width=90pc)
 
-5. Cấu hình **Alert**
+7. Cấu hình **Alert**
 
 ![Billing Service](/images/4/0006.png?featherlight=false&width=90pc)
 
-6. Chọn **Create budget**
+8. Chọn **Create budget**
 
 ![Billing Service](/images/4/0007.png?featherlight=false&width=90pc)
 
-7. Hoàn thành tạo budget
+9. Hoàn thành tạo budget
 
 ![Billing Service](/images/4/0009.png?featherlight=false&width=90pc)
 
-8. Kiểm tra budget.
+10. Kiểm tra budget.
 
 
 ![Billing Service](/images/4/00010.png?featherlight=false&width=90pc)

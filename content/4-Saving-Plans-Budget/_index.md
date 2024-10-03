@@ -21,7 +21,7 @@ In this section, you will practice creating a Savings Plans Budget.
 
 #### Create Savings Plans Budget
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing** service in the search bar.
+1. Log in to the **AWS Management Console** admin page and select the **Billing and Cost Management** service in the search bar.
 
     ![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
 
@@ -31,7 +31,7 @@ In this section, you will practice creating a Savings Plans Budget.
 
 3. Select **Create budget**.
 
-    ![Create Budget](/images/5/0001.png?featherlight=false&width=90pc)
+    ![Create Budget](/images/5/00001.png?featherlight=false&width=90pc)
 
 4. Execute **Budget setup**:
 
@@ -40,6 +40,8 @@ In this section, you will practice creating a Savings Plans Budget.
     - Select **Next**
 
     ![Budget Setup](/images/5/0002.png?featherlight=false&width=90pc)
+
+    ![Budget Setup](/images/5/00002.png?featherlight=false&width=90pc)
 
 5. Name your **Budget**:
 
@@ -55,6 +57,7 @@ In this section, you will practice creating a Savings Plans Budget.
 
 8. Select **Create budget**:
 
+    ![Create Budget](/images/5/00006.png?featherlight=false&width=90pc)
     ![Create Budget](/images/5/0006.png?featherlight=false&width=90pc)
 
 9. Budget creation successful:

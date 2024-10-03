@@ -14,11 +14,11 @@ pre : " <b> 2. </b> "
 
 Các tài khoản mới chỉ tạo được phần Cost Budget, các phần tiếp theo có thể bỏ qua.
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing** tại thanh tìm kiếm.
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
-1. Tại trang quản trị, chọn **Budgets**. 
+2. Tại trang quản trị, chọn **Budgets**. 
 
-2. Chọn **Create budget**.
+3. Chọn **Create budget**.
 
 ![Billing Service](/images/2/0001.png?featherlight=false&width=90pc)
 
@@ -29,6 +29,7 @@ Các tài khoản mới chỉ tạo được phần Cost Budget, các phần ti�
 - Chọn **Next**
 
 ![Billing Service](/images/2/0002.png?featherlight=false&width=90pc)
+![Billing Service](/images/2/00021.png?featherlight=false&width=90pc)
 
 5. Trong giao diện **Set your budget**
 
