@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create Cost Budget on COST MANAGEMENT WITH AWS BUDGETS</title>
-    <link>//localhost:1313/1-cost-budgets/</link>
+    <link>/1-cost-budgets/</link>
     <description>Recent content in Create Cost Budget on COST MANAGEMENT WITH AWS BUDGETS</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/1-cost-budgets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/1-cost-budgets/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

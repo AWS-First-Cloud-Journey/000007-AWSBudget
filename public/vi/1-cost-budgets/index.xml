@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo Cost Budget on QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
-    <link>//localhost:1313/vi/1-cost-budgets/</link>
+    <link>/vi/1-cost-budgets/</link>
     <description>Recent content in Tạo Cost Budget on QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="//localhost:1313/vi/1-cost-budgets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/vi/1-cost-budgets/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
