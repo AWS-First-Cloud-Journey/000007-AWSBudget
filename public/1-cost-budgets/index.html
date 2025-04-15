@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create Cost Budget :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744704627" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744704627" rel="stylesheet">
+    <link href="/css/hybrid.css?1744704627" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744704627" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744704627" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744704627" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744704627" rel="stylesheet">
+    <link href="/css/theme.css?1744704627" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744704627" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744704627" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744704627"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744704627"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744704627"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744704627"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/0-createtemplate/" title="Create Budget by template" class="dd-item 
+    <li data-nav-id="/0-createtemplate/" title="Create Budget by Template" class="dd-item 
         
         
         
         ">
       <a href="/0-createtemplate/">
-           <b> 1. </b> Create Budget by template
+           <b> 2. </b> Create Budget by Template
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/4-saving-plans-budget/" title="Create Saving Plans Budget" class="dd-item 
+    <li data-nav-id="/4-saving-plans-budget/" title="Create Savings Plans Budget" class="dd-item 
         
         
         
         ">
       <a href="/4-saving-plans-budget/">
-           <b> 5. </b> Create Saving Plans Budget
+           <b> 5. </b> Create Savings Plans Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,13 +212,13 @@
  
   
     
-    <li data-nav-id="/5-clean-up/" title="Clean up resource" class="dd-item 
+    <li data-nav-id="/5-clean-up/" title="Clean Up Resources" class="dd-item 
         
         
         
         ">
       <a href="/5-clean-up/">
-           <b> 6. </b> Clean up resource
+           <b> 6. </b> Clean Up Resources
           
             <i class="fas fa-check read-icon"></i>
           
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/1-cost-budgets/" selected>English</option>
+                      <option id="en" value="//localhost:1313/1-cost-budgets/" selected>English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/1-cost-budgets/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/1-cost-budgets/">Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -415,85 +415,112 @@
 
 
 
-	<h4 id="create-cost-budget-tutorial">Create Cost Budget Tutorial</h4>
-<p>In this section, you will practice creating a <strong>Cost Budget</strong>.</p>
-<h4 id="create-cost-budget">Create Cost Budget</h4>
-<p>New accounts can only create the <em>Cost Budget</em> section; subsequent sections can be skipped.</p>
+	<h4 id="overview">Overview</h4>
+<p>In this section, you will learn how to create and configure an AWS Cost Budget to monitor and manage your AWS spending effectively.</p>
+
+<div class="notices info" ><p><strong>ℹ️ Information</strong>: Cost Budgets are the most common type of AWS Budget, allowing you to set thresholds for your AWS spending and receive alerts when costs exceed or are forecasted to exceed your defined limits.</p>
+</div>
+
+<h4 id="creating-a-cost-budget">Creating a Cost Budget</h4>
 <ol>
 <li>
-<p>Log in to the <strong>AWS Management Console</strong> admin page and select the <strong>Billing and Cost Management</strong> service in the search bar.</p>
+<p>Sign in to the <strong>AWS Management Console</strong> and search for <strong>AWS Billing and Cost Management</strong> in the services search bar.</p>
 </li>
 <li>
-<p>In the admin page, select <strong>Budgets</strong>.</p>
+<p>In the navigation pane, select <strong>Budgets</strong>.</p>
 </li>
 <li>
-<p>Select <strong>Create budget</strong>.</p>
-<p><img alt="Billing Service" src="/images/2/0001.png?featherlight=false&width=90pc"></p>
+<p>Click <strong>Create budget</strong>.</p>
+<p><img alt="AWS Billing Service" src="/images/2/0001.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>For <strong>Budget setup</strong>:</p>
+<p>Configure your <strong>Budget setup</strong>:</p>
 <ul>
-<li>Select <strong>Customize</strong></li>
-<li><strong>Budget types</strong>: select <strong>Cost budget</strong></li>
-<li>Select <strong>Next</strong></li>
+<li>Select <strong>Customize (advanced)</strong> for more control over your budget settings</li>
+<li>Under <strong>Budget types</strong>, select <strong>Cost budget</strong></li>
+<li>Click <strong>Next</strong></li>
 </ul>
-<p><img alt="Billing Service" src="/images/2/0002.png?featherlight=false&width=90pc"></p>
-<p><img alt="Billing Service" src="/images/2/00021.png?featherlight=false&width=90pc"></p>
+<p><img alt="Budget Setup Options" src="/images/2/0002.png?featherlight=false&width=90pc"></p>
+<p><img alt="Cost Budget Selection" src="/images/2/00021.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>In the <strong>Set your budget</strong> interface:</p>
+<p>In the <strong>Set your budget</strong> section:</p>
 <ul>
-<li>For <strong>Budget name</strong>, enter <strong><code>Monthly</code></strong></li>
+<li>Enter a descriptive <strong>Budget name</strong> (e.g., <strong><code>Monthly</code></strong>)</li>
 </ul>
-<p><img alt="Billing Service" src="/images/2/0003.png?featherlight=false&width=90pc"></p>
+<p><img alt="Budget Naming" src="/images/2/0003.png?featherlight=false&width=90pc"></p>
 <ul>
-<li><strong>Period</strong>: select the time period for Budget by Day (<em>Daily</em>), Month (<em>Monthly</em>), Quarter (<em>Quarterly</em>), and Year (<em>Annually</em>)</li>
-<li><strong>Budget effective dates</strong>:
+<li>
+<p>For <strong>Period</strong>, select the appropriate time interval:</p>
 <ul>
-<li>Select <strong>Recurring Budget</strong> if you want this Budget to be repeated periodically</li>
-<li>Select <strong>Expiring Budget</strong> if you only want the Budget to be booked only once.</li>
-<li>All time zones are <strong>UTC</strong>.</li>
-</ul>
-</li>
-<li>Section <strong>Specify your monthly budget</strong>:
-<ul>
-<li>Choose <strong>Fixed</strong> if you want the budget of each term to be the same</li>
-<li>Choose <strong>Monthly Budget Planning</strong> if you want the budget of each term to be different</li>
-<li><strong>Budgeted amount</strong>: enter the amount corresponding to your budget.
-<ul>
-<li><strong>Note</strong>: if you select <strong>Monthly Budget Planning</strong>, you will have to enter a budgeted amount for each term.</li>
+<li><strong>Daily</strong> for day-to-day monitoring</li>
+<li><strong>Monthly</strong> for month-to-month tracking (most common)</li>
+<li><strong>Quarterly</strong> for quarterly oversight</li>
+<li><strong>Annually</strong> for yearly budget management</li>
 </ul>
 </li>
+<li>
+<p>Under <strong>Budget effective dates</strong>:</p>
+<ul>
+<li>Select <strong>Recurring Budget</strong> if you want this budget to continue indefinitely</li>
+<li>Select <strong>Expiring Budget</strong> if you need a one-time budget for a specific timeframe</li>
+<li>Note that all time zones are in <strong>UTC</strong></li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Specify your monthly budget</strong> section:</p>
+<ul>
+<li>Choose <strong>Fixed</strong> to set the same budget amount for each period</li>
+<li>Choose <strong>Monthly Budget Planning</strong> to set different amounts for each period</li>
+<li>Enter your <strong>Budgeted amount</strong> in your preferred currency</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Billing Service" src="/images/2/0004.png?featherlight=false&width=90pc"></p>
+<p><img alt="Budget Configuration" src="/images/2/0004.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>For <strong>Budget scope</strong>, select <strong>All AWS services</strong>. Then select <strong>Next</strong></p>
-<p><img alt="Create Cost Budget" src="/images/2/0005.png?featherlight=false&width=90pc"></p>
+<p>For <strong>Budget scope</strong>, select <strong>All AWS services</strong> to monitor your entire AWS spending, then click <strong>Next</strong>.</p>
+
+<div class="notices tip" ><p><strong>💡 Pro Tip</strong>: For more granular tracking, you can filter budgets by specific services, linked accounts, tags, or cost categories. This is especially useful for large organizations with multiple projects or departments.</p>
+</div>
+
+<p><img alt="Budget Scope Selection" src="/images/2/0005.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>For <strong>Configure alerts</strong>, select <strong>Add an alert threshold</strong>. Select <strong>Next</strong></p>
-<p><img alt="Create Cost Budget" src="/images/2/0006.png?featherlight=false&width=90pc"></p>
+<p>In the <strong>Configure alerts</strong> section, click <strong>Add an alert threshold</strong>, then click <strong>Next</strong>.</p>
+<p><img alt="Adding Alert Threshold" src="/images/2/0006.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>Configure <strong>Alert</strong> and select <strong>Next</strong></p>
-<p><img alt="Create Cost Budget" src="/images/2/0007.png?featherlight=false&width=90pc"></p>
+<p>Configure your alert settings:</p>
+<ul>
+<li>Set the threshold percentage (e.g., 80% of actual or forecasted spend)</li>
+<li>Add email recipients who should receive notifications</li>
+<li>Optionally, configure an Amazon SNS topic for programmatic notifications</li>
+<li>Click <strong>Next</strong></li>
+</ul>
+<p><img alt="Alert Configuration" src="/images/2/0007.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>Select <strong>Next</strong></p>
-<p><img alt="Create Cost Budget" src="/images/2/0008.png?featherlight=false&width=90pc"></p>
+<p>Review the budget actions settings and click <strong>Next</strong>.</p>
+
+<div class="notices info" ><p><strong>ℹ️ Information</strong>: Budget actions allow you to configure automated responses when a budget threshold is reached, such as applying an IAM policy or targeting specific EC2 or RDS instances.</p>
+</div>
+
+<p><img alt="Budget Actions Review" src="/images/2/0008.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>Select <strong>Create budget</strong></p>
-<p><img alt="Create Cost Budget" src="/images/2/0009.png?featherlight=false&width=90pc"></p>
+<p>Review your budget configuration and click <strong>Create budget</strong>.</p>
+<p><img alt="Create Budget Confirmation" src="/images/2/0009.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
-<p>Create a successful budget.</p>
-<p><img alt="Create Cost Budget" src="/images/2/00010.png?featherlight=false&width=90pc"></p>
+<p>Verify that your budget has been created successfully.</p>
+<p><img alt="Budget Creation Success" src="/images/2/00010.png?featherlight=false&width=90pc"></p>
 </li>
 </ol>
+
+<div class="notices warning" ><p><strong>⚠️ Warning</strong>: AWS Budgets relies on billing data that updates approximately every 8-12 hours. There may be a delay between when costs are incurred and when alerts are triggered. For the most critical workloads, consider setting conservative thresholds to account for this delay.</p>
+</div>
+
 
 
 
@@ -641,7 +668,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/0-createtemplate/" title="Create Budget by template"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/0-createtemplate/" title="Create Budget by Template"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/2-usage-budget/" title="Create Usage Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -654,19 +681,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744704627"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744704627"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744704627"></script>
+    <script src="/js/jquery.sticky.js?1744704627"></script>
+    <script src="/js/featherlight.min.js?1744704627"></script>
+    <script src="/js/highlight.pack.js?1744704627"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744704627"></script>
+    <script src="/js/learn.js?1744704627"></script>
+    <script src="/js/hugo-learn.js?1744704627"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744704627" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744704627"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Cost Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744705087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744705087" rel="stylesheet">
+    <link href="/css/hybrid.css?1744705087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744705087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744705087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744705087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744705087" rel="stylesheet">
+    <link href="/css/theme.css?1744705087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744705087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744705087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744705087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744705087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744705087"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744705087"></script>
 
     
   </div>
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/1-cost-budgets/">English</option>
+                      <option id="en" value="//localhost:1313/1-cost-budgets/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/1-cost-budgets/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/1-cost-budgets/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -415,84 +415,99 @@
 
 
 
-	<p>Ở phần này, bạn sẽ thực hành tạo một Cost Budget.</p>
-<h4 id="khởi-tạo-cost-budget">Khởi tạo cost budget</h4>
-<p>Các tài khoản mới chỉ tạo được phần Cost Budget, các phần tiếp theo có thể bỏ qua.</p>
+	<h4 id="tổng-quan">Tổng quan</h4>
+<p>Ở phần này, bạn sẽ thực hành tạo một Cost Budget - công cụ quan trọng giúp bạn theo dõi và kiểm soát chi phí AWS của mình.</p>
+<h4 id="khởi-tạo-cost-budget">Khởi tạo Cost Budget</h4>
+<p>ℹ️ <strong>Information</strong>: Các tài khoản AWS mới chỉ có thể tạo được Cost Budget, các loại budget khác có thể không khả dụng ngay lập tức.</p>
 <ol>
 <li>
-<p>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</p>
+<p>Đăng nhập vào <strong>AWS Management Console</strong> và tìm dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</p>
 </li>
 <li>
-<p>Tại trang quản trị, chọn <strong>Budgets</strong>.</p>
+<p>Tại trang quản trị, chọn <strong>Budgets</strong> từ menu bên trái.</p>
 </li>
 <li>
-<p>Chọn <strong>Create budget</strong>.</p>
+<p>Nhấn vào nút <strong>Create budget</strong>.</p>
 </li>
 </ol>
 <p><img alt="Billing Service" src="/images/2/0001.png?featherlight=false&width=90pc"></p>
+<h4 id="thiết-lập-cấu-hình-budget">Thiết lập cấu hình Budget</h4>
 <ol start="4">
-<li>Đối với <strong>Budget setup</strong></li>
-</ol>
+<li>Trong phần <strong>Budget setup</strong>:
 <ul>
-<li>Chọn <strong>Customize</strong></li>
-<li><strong>Budget types</strong>, chọn <strong>Cost budget</strong></li>
-<li>Chọn <strong>Next</strong></li>
+<li>Chọn <strong>Customize</strong> (tùy chỉnh)</li>
+<li>Tại <strong>Budget types</strong>, chọn <strong>Cost budget</strong></li>
+<li>Nhấn <strong>Next</strong></li>
 </ul>
+</li>
+</ol>
 <p><img alt="Billing Service" src="/images/2/0002.png?featherlight=false&width=90pc">
 <img alt="Billing Service" src="/images/2/00021.png?featherlight=false&width=90pc"></p>
 <ol start="5">
-<li>Trong giao diện <strong>Set your budget</strong></li>
-</ol>
+<li>Trong giao diện <strong>Set your budget</strong>:
 <ul>
-<li>Đối với <strong>Budget name</strong>, nhập <strong><code>Monthly</code></strong></li>
+<li>Tại <strong>Budget name</strong>, nhập <strong><code>Monthly</code></strong></li>
 </ul>
+</li>
+</ol>
 <p><img alt="Billing Service" src="/images/2/0003.png?featherlight=false&width=90pc"></p>
 <ul>
-<li><strong>Period</strong>: chọn khoảng thời gian cho Budget theo Ngày (<em>Daily</em>), Tháng (<em>Monthly</em>), Quý (<em>Quaterly</em>), và Năm (<em>Annualy</em>)</li>
-<li><strong>Budget effective dates</strong>:
-- Chọn <strong>Recurring Budget</strong> nếu bạn muốn Budget này được lặp đi lặp lại định kỳ
-- Chọn <strong>Expiring Budget</strong> nếu bạn chỉ muốn Budget được đặt một lần duy nhất.<br>
-- Tất cả các múi giờ đều là <strong>UTC</strong>.
+<li>
+<p><strong>Period</strong>: Chọn khoảng thời gian cho Budget:</p>
 <ul>
-<li>Mục <strong>Specify your monthly budget</strong>:
-<ul>
-<li>Chọn <strong>Fixed</strong> nếu bạn muốn ngân sách của mỗi kỳ hạn là giống nhau</li>
-<li>Chọn <strong>Monthly Budget Planning</strong> nếu bạn muốn ngân sách của mỗi kỳ hạn là khác nhau</li>
-<li><strong>Budgeted amount</strong>: nhập số tiền tương ứng với ngân sách của bạn.
-<ul>
-<li><strong>Lưu ý</strong>: nếu bạn chọn <strong>Monthly Budget Planning</strong>, bạn sẽ phải nhập budgeted amount cho từng kỳ hạn.</li>
+<li><strong>Daily</strong> (Hàng ngày)</li>
+<li><strong>Monthly</strong> (Hàng tháng)</li>
+<li><strong>Quarterly</strong> (Hàng quý)</li>
+<li><strong>Annually</strong> (Hàng năm)</li>
 </ul>
 </li>
+<li>
+<p><strong>Budget effective dates</strong>:</p>
+<ul>
+<li><strong>Recurring Budget</strong>: Nếu bạn muốn Budget được lặp lại định kỳ</li>
+<li><strong>Expiring Budget</strong>: Nếu bạn chỉ muốn Budget được áp dụng một lần duy nhất</li>
 </ul>
+<p>💡 <strong>Pro Tip</strong>: Tất cả các múi giờ trong AWS Budget đều sử dụng chuẩn <strong>UTC</strong>.</p>
 </li>
+<li>
+<p><strong>Specify your monthly budget</strong>:</p>
+<ul>
+<li><strong>Fixed</strong>: Nếu bạn muốn ngân sách của mỗi kỳ hạn là giống nhau</li>
+<li><strong>Monthly Budget Planning</strong>: Nếu bạn muốn thiết lập ngân sách khác nhau cho từng tháng</li>
+<li><strong>Budgeted amount</strong>: Nhập số tiền tương ứng với ngân sách của bạn</li>
 </ul>
 </li>
 </ul>
 <p><img alt="Billing Service" src="/images/2/0004.png?featherlight=false&width=90pc"></p>
 <ol start="6">
-<li>Đối với <strong>Budget scope</strong> chọn <strong>All AWS services</strong>. Sau đó chọn <strong>Next</strong></li>
+<li>Tại phần <strong>Budget scope</strong>, chọn <strong>All AWS services</strong> để áp dụng ngân sách cho tất cả dịch vụ AWS. Sau đó nhấn <strong>Next</strong>.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/0005.png?featherlight=false&width=90pc"></p>
+<h4 id="thiết-lập-cảnh-báo">Thiết lập cảnh báo</h4>
 <ol start="7">
-<li>Đối với <strong>Configure alerts</strong>, chọn <strong>Add an alert threshold</strong>. Chọn <strong>Next</strong></li>
+<li>Trong phần <strong>Configure alerts</strong>, chọn <strong>Add an alert threshold</strong> để thiết lập ngưỡng cảnh báo. Nhấn <strong>Next</strong>.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/0006.png?featherlight=false&width=90pc"></p>
 <ol start="8">
-<li>Thực hiện cấu hình <strong>Alert</strong> và chọn <strong>Next</strong></li>
+<li>Thực hiện cấu hình chi tiết cho <strong>Alert</strong> và chọn <strong>Next</strong>.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/0007.png?featherlight=false&width=90pc"></p>
 <ol start="9">
-<li>Chọn <strong>Next</strong></li>
+<li>Xem lại các thiết lập hành động (nếu có) và chọn <strong>Next</strong>.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/0008.png?featherlight=false&width=90pc"></p>
 <ol start="10">
-<li>Chọn <strong>Create budget</strong></li>
+<li>Xem lại toàn bộ cấu hình và chọn <strong>Create budget</strong> để hoàn tất.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/0009.png?featherlight=false&width=90pc"></p>
 <ol start="11">
-<li>Tạo budget thành công.</li>
+<li>Xác nhận Budget đã được tạo thành công.</li>
 </ol>
 <p><img alt="Create Cost Budget" src="/images/2/00010.png?featherlight=false&width=90pc"></p>
+<h4 id="lợi-ích-của-cost-budget">Lợi ích của Cost Budget</h4>
+<p>ℹ️ <strong>Information</strong>: Cost Budget giúp bạn theo dõi chi phí AWS theo thời gian thực và nhận cảnh báo khi chi phí vượt quá ngưỡng đã thiết lập.</p>
+<p>💡 <strong>Pro Tip</strong>: Nên thiết lập nhiều ngưỡng cảnh báo (ví dụ: 50%, 80%, 100%) để có thể chủ động trong việc kiểm soát chi phí.</p>
+<p>🔒 <strong>Security Note</strong>: Đảm bảo thông báo cảnh báo được gửi đến những người có trách nhiệm và quyền hạn để có thể kịp thời xử lý khi chi phí vượt ngưỡng.</p>
 
 
 
@@ -653,19 +668,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744705087"></script>
+    <script src="/js/jquery.sticky.js?1744705087"></script>
+    <script src="/js/featherlight.min.js?1744705087"></script>
+    <script src="/js/highlight.pack.js?1744705087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744705087"></script>
+    <script src="/js/learn.js?1744705087"></script>
+    <script src="/js/hugo-learn.js?1744705087"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744705087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744705087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

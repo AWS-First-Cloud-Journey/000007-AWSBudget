@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Dọn Dẹp Tài nguyên :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744704627" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744704627" rel="stylesheet">
+    <link href="/css/hybrid.css?1744704627" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744704627" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744704627" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744704627" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744704627" rel="stylesheet">
+    <link href="/css/theme.css?1744704627" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744704627" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744704627" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744704627"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744704627"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744704627"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744704627"></script>
 
     
   </div>
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/5-clean-up/">English</option>
+                      <option id="en" value="//localhost:1313/5-clean-up/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/5-clean-up/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/5-clean-up/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -383,7 +383,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -407,25 +415,34 @@
 
 
 
-	
-<div class="notices warning" ><p>Việc cài đặt budget là một việc quan trọng khi quản lý tài nguyên và vận hành trên môi trường điện toán đám mây. Tuy nhiên nếu bạn chỉ làm trên môi trường lab để hiểu tính năng thì có thể thực hiện các thao tác dọn dẹp tài nguyên bên dưới để xóa các mức cảnh báo đã thiết lập.</p>
-</div>
-
+	<h4 id="tổng-quan">Tổng quan</h4>
+<p>⚠️ <strong>Warning</strong>: Việc cài đặt budget là một hoạt động quan trọng khi quản lý tài nguyên và vận hành trên môi trường điện toán đám mây AWS. Tuy nhiên, nếu bạn chỉ đang thực hành trên môi trường lab để hiểu tính năng, bạn nên thực hiện các thao tác dọn dẹp tài nguyên dưới đây để xóa các mức cảnh báo đã thiết lập, tránh nhận thông báo không cần thiết.</p>
+<h4 id="xóa-aws-budgets">Xóa AWS Budgets</h4>
 <ol>
-<li>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</li>
-</ol>
+<li>
+<p>Đăng nhập vào <strong>AWS Management Console</strong> và tìm dịch vụ <strong>AWS Billing and Cost Management</strong> tại thanh tìm kiếm.</p>
+</li>
+<li>
+<p>Tại trang quản trị, chọn <strong>Budgets</strong> từ menu bên trái.</p>
+</li>
+<li>
+<p>Thực hiện xóa budget:</p>
 <ul>
 <li>Chọn <strong>Budget</strong> cần xóa</li>
-<li>Chọn <strong>Delete</strong>
-<img alt="Billing Service" src="/images/5/0009.png?featherlight=false&width=90pc"></li>
+<li>Nhấn vào nút <strong>Delete</strong></li>
 </ul>
-<ol start="2">
-<li>Xác nhận <strong>Delete</strong></li>
+</li>
 </ol>
-<p><img alt="Billing Service" src="/images/5/00010.png?featherlight=false&width=90pc"></p>
-<ol start="3">
-<li>Lặp lại với các Budget còn lại liên quan tới bài lab này.</li>
+<p><img alt="Xóa Budget" src="/images/5/0009.png?featherlight=false&width=90pc"></p>
+<ol start="4">
+<li>Trong hộp thoại xác nhận, nhấn <strong>Delete</strong> để hoàn tất việc xóa budget.</li>
 </ol>
+<p><img alt="Xác nhận xóa Budget" src="/images/5/00010.png?featherlight=false&width=90pc"></p>
+<ol start="5">
+<li>Lặp lại các bước trên với tất cả các Budget còn lại mà bạn đã tạo trong quá trình thực hành.</li>
+</ol>
+<p>ℹ️ <strong>Information</strong>: Việc xóa AWS Budgets không ảnh hưởng đến tài nguyên đang chạy trong tài khoản AWS của bạn. Các budget chỉ là công cụ giám sát và cảnh báo, không kiểm soát trực tiếp việc sử dụng tài nguyên.</p>
+<p>💡 <strong>Pro Tip</strong>: Nếu bạn dự định sử dụng AWS trong môi trường thực tế, hãy cân nhắc việc thiết lập lại các budget phù hợp với nhu cầu thực tế của bạn sau khi hoàn thành bài lab này.</p>
 
 
 
@@ -583,19 +600,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744704627"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744704627"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744704627"></script>
+    <script src="/js/jquery.sticky.js?1744704627"></script>
+    <script src="/js/featherlight.min.js?1744704627"></script>
+    <script src="/js/highlight.pack.js?1744704627"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744704627"></script>
+    <script src="/js/learn.js?1744704627"></script>
+    <script src="/js/hugo-learn.js?1744704627"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744704627" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744704627"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

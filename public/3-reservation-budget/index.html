@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create RI Budget :: COST MANAGEMENT WITH AWS BUDGETS</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744705087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744705087" rel="stylesheet">
+    <link href="/css/hybrid.css?1744705087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744705087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744705087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744705087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744705087" rel="stylesheet">
+    <link href="/css/theme.css?1744705087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744705087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744705087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744705087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744705087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744705087"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744705087"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/0-createtemplate/" title="Create Budget by template" class="dd-item 
+    <li data-nav-id="/0-createtemplate/" title="Create Budget by Template" class="dd-item 
         
         
         
         ">
       <a href="/0-createtemplate/">
-           <b> 1. </b> Create Budget by template
+           <b> 2. </b> Create Budget by Template
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/4-saving-plans-budget/" title="Create Saving Plans Budget" class="dd-item 
+    <li data-nav-id="/4-saving-plans-budget/" title="Create Savings Plans Budget" class="dd-item 
         
         
         
         ">
       <a href="/4-saving-plans-budget/">
-           <b> 5. </b> Create Saving Plans Budget
+           <b> 5. </b> Create Savings Plans Budget
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,13 +212,13 @@
  
   
     
-    <li data-nav-id="/5-clean-up/" title="Clean up resource" class="dd-item 
+    <li data-nav-id="/5-clean-up/" title="Clean Up Resources" class="dd-item 
         
         
         
         ">
       <a href="/5-clean-up/">
-           <b> 6. </b> Clean up resource
+           <b> 6. </b> Clean Up Resources
           
             <i class="fas fa-check read-icon"></i>
           
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/3-reservation-budget/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-reservation-budget/" selected>English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/3-reservation-budget/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/3-reservation-budget/">Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -415,63 +415,70 @@
 
 
 
-	<h4 id="practice-creating-a-reservation-instance-ri-budget">Practice: Creating a Reservation Instance (RI) Budget</h4>
-<p>In this practice section, you will learn how to create a budget for Reservation Instances (RIs) in the AWS Management Console.</p>
-<blockquote>
-<p>ℹ️ <strong>Note:</strong> This lab is for instructional purposes only. You will not actually use a reserved instance during the lab since it requires prepayment of usage fees. Feel free to follow along or simply observe the instructions.</p>
-</blockquote>
-<h4 id="table-of-contents">Table of Contents</h4>
-<ul>
-<li><a href="/3-reservation-budget/#create-reservation-budget">Create Reservation Budget</a></li>
-</ul>
-<h4 id="create-reservation-budget">Create Reservation Budget</h4>
+	<h4 id="overview">Overview</h4>
+<p>In this section, you will learn how to create and configure an AWS Reservation Budget to monitor the utilization and coverage of your Reserved Instances (RIs).</p>
+<p>ℹ️ <strong>Information</strong>: Reserved Instances provide significant discounts (up to 72%) compared to On-Demand pricing when you commit to a one-year or three-year term for specific AWS resources like EC2 instances, RDS databases, or ElastiCache nodes.</p>
+<p>⚠️ <strong>Warning</strong>: This lab is for instructional purposes only. You will not actually purchase a Reserved Instance during this lab since it requires an upfront commitment. The steps below demonstrate the budget creation process without requiring any financial commitment.</p>
+<h4 id="creating-a-reservation-budget">Creating a Reservation Budget</h4>
 <ol>
-<li>
-<p>Log in to the <strong>AWS Management Console</strong> by navigating to the admin page and selecting the <strong>Billing and Cost Management</strong> service from the search bar.</p>
+<li>Sign in to the <strong>AWS Management Console</strong> and search for <strong>AWS Billing and Cost Management</strong> in the services search bar.</li>
+</ol>
 <p><img alt="Billing Service" src="/images/4/0001.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Within the admin page, locate and select <strong>Budgets</strong>.</p>
+<ol start="2">
+<li>In the navigation pane, select <strong>Budgets</strong>.</li>
+</ol>
 <p><img alt="Budgets" src="/images/4/0001.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Choose <strong>Create Budget</strong> to begin setting up the budget for your reservation instance.</p>
+<ol start="3">
+<li>Click <strong>Create budget</strong>.</li>
+</ol>
 <p><img alt="Create Budget" src="/images/4/00001.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Complete the <strong>Budget Setup</strong>:</p>
+<ol start="4">
+<li>Configure your <strong>Budget setup</strong>:
 <ul>
-<li>Select <strong>Customize</strong></li>
-<li>Choose <strong>Reservation Budget</strong></li>
+<li>Select <strong>Customize (advanced)</strong> for more control over your budget settings</li>
+<li>Under <strong>Budget types</strong>, select <strong>Reservation budget</strong></li>
 <li>Click <strong>Next</strong></li>
 </ul>
-<p><img alt="Budget Setup" src="/images/4/0002.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Name your <strong>Budget</strong>:</p>
-<p><img alt="Budget Setup" src="/images/4/0003.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Configure the <strong>Coverage Threshold</strong> for your budget.</p>
-<p><img alt="Coverage Threshold" src="/images/4/0008.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Configure <strong>Alert</strong> settings for the budget.</p>
-<p><img alt="Alert Settings" src="/images/4/0006.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Once the configurations are set, click <strong>Create Budget</strong>.</p>
-<p><img alt="Create Budget" src="/images/4/0007.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Review the details and confirm to complete the budget creation.</p>
-<p><img alt="Budget Creation" src="/images/4/0009.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Verify the budget settings by checking the budget overview.</p>
-<p><img alt="Budget Overview" src="/images/4/00010.png?featherlight=false&width=90pc"></p>
 </li>
 </ol>
+<p><img alt="Budget Setup" src="/images/4/0002.png?featherlight=false&width=90pc"></p>
+<ol start="5">
+<li>In the <strong>Details</strong> section, enter a descriptive name for your budget.</li>
+</ol>
+<p><img alt="Budget Setup" src="/images/4/0003.png?featherlight=false&width=90pc"></p>
+<ol start="6">
+<li>Configure the <strong>Coverage threshold</strong> for your budget:
+<ul>
+<li>Set the percentage threshold that will trigger an alert when your RI coverage falls below this value</li>
+<li>RI coverage represents the percentage of eligible instance usage that is covered by Reserved Instances</li>
+</ul>
+</li>
+</ol>
+<p>💡 <strong>Pro Tip</strong>: A higher coverage threshold (e.g., 80%) will alert you earlier when your workloads aren&rsquo;t fully covered by RIs, helping you maximize cost savings by purchasing additional RIs when needed.</p>
+<p><img alt="Coverage Threshold" src="/images/4/0008.png?featherlight=false&width=90pc"></p>
+<ol start="7">
+<li>Configure your <strong>Alert settings</strong>:
+<ul>
+<li>Add email recipients who should receive the alert notifications</li>
+<li>Optionally, configure an Amazon SNS topic for additional notification options</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Alert Settings" src="/images/4/0006.png?featherlight=false&width=90pc"></p>
+<ol start="8">
+<li>Review your budget configuration and click <strong>Create budget</strong>.</li>
+</ol>
+<p><img alt="Create Budget" src="/images/4/0007.png?featherlight=false&width=90pc"></p>
+<ol start="9">
+<li>Verify that your budget has been created successfully.</li>
+</ol>
+<p><img alt="Budget Creation" src="/images/4/0009.png?featherlight=false&width=90pc"></p>
+<ol start="10">
+<li>Review your budget in the budgets dashboard to monitor RI coverage over time.</li>
+</ol>
+<p><img alt="Budget Overview" src="/images/4/00010.png?featherlight=false&width=90pc"></p>
+<p>ℹ️ <strong>Information</strong>: AWS Budgets provides two types of RI budgets: RI utilization budgets (tracking how much of your purchased RIs are being used) and RI coverage budgets (tracking what percentage of your eligible usage is covered by RIs). The example above demonstrates an RI coverage budget.</p>
+<p>🔒 <strong>Security Note</strong>: Consider implementing AWS Organizations and consolidated billing to maximize the benefits of Reserved Instances across multiple accounts in your organization.</p>
 
 
 
@@ -622,7 +629,7 @@
 			<a class="nav nav-prev" href="/2-usage-budget/" title="Create Usage Budget"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/4-saving-plans-budget/" title="Create Saving Plans Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/4-saving-plans-budget/" title="Create Savings Plans Budget" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -632,19 +639,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744705087"></script>
+    <script src="/js/jquery.sticky.js?1744705087"></script>
+    <script src="/js/featherlight.min.js?1744705087"></script>
+    <script src="/js/highlight.pack.js?1744705087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744705087"></script>
+    <script src="/js/learn.js?1744705087"></script>
+    <script src="/js/hugo-learn.js?1744705087"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744705087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744705087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

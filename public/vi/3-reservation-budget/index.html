@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo RI Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744705087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744705087" rel="stylesheet">
+    <link href="/css/hybrid.css?1744705087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744705087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744705087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744705087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744705087" rel="stylesheet">
+    <link href="/css/theme.css?1744705087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744705087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744705087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744705087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744705087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744705087"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744705087"></script>
 
     
   </div>
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/3-reservation-budget/">English</option>
+                      <option id="en" value="//localhost:1313/3-reservation-budget/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/3-reservation-budget/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/3-reservation-budget/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -415,18 +415,19 @@
 
 
 
-	<p>Ở phần này, bạn sẽ thực hành khởi tạo một Reservation Instance (RI) Budget.</p>
+	<h4 id="giới-thiệu">Giới thiệu</h4>
+<p>Ở phần này, bạn sẽ thực hành khởi tạo một Reservation Instance (RI) Budget trong AWS Billing and Cost Management.</p>
 
-<div class="notices info" ><p>Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab vì reserve instance yêu cầu bạn phải trả trước phí sử dụng, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.</p>
+<div class="notices info" ><p><strong>ℹ️ Information</strong>: Do bạn sẽ không sử dụng Reserved Instance trong phạm vi các bài lab vì Reserved Instance yêu cầu bạn phải trả trước phí sử dụng, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.</p>
 </div>
 
-<p><strong>Nội dung:</strong></p>
+<h4 id="nội-dung">Nội dung</h4>
 <ul>
-<li><a href="/vi/3-reservation-budget/#khởi-tạo-reservation-budget">Khởi tạo reservation budget</a></li>
+<li><a href="/vi/3-reservation-budget/#khởi-tạo-reservation-budget">Khởi tạo Reservation Budget</a></li>
 </ul>
-<h4 id="khởi-tạo-reservation-budget">Khởi tạo reservation budget</h4>
+<h4 id="khởi-tạo-reservation-budget">Khởi tạo Reservation Budget</h4>
 <ol>
-<li>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</li>
+<li>Đăng nhập vào trang quản trị <strong>AWS Management Console</strong> và chọn dịch vụ <strong>AWS Billing and Cost Management</strong> tại thanh tìm kiếm.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
@@ -438,13 +439,15 @@
 </ol>
 <p><img alt="Billing Service" src="/images/4/00001.png?featherlight=false&width=90pc"></p>
 <ol start="4">
-<li>Thực hiện <strong>Budget setup</strong></li>
-</ol>
+<li>
+<p>Thực hiện <strong>Budget setup</strong>:</p>
 <ul>
 <li>Chọn <strong>Customize</strong></li>
 <li>Chọn <strong>Reservation budget</strong></li>
 <li>Chọn <strong>Next</strong></li>
 </ul>
+</li>
+</ol>
 <p><img alt="Billing Service" src="/images/4/0002.png?featherlight=false&width=90pc"></p>
 <p><img alt="Billing Service" src="/images/4/00002.png?featherlight=false&width=90pc"></p>
 <ol start="5">
@@ -452,25 +455,29 @@
 </ol>
 <p><img alt="Billing Service" src="/images/4/0003.png?featherlight=false&width=90pc"></p>
 <ol start="6">
-<li>Cấu hình <strong>Coverage threshold</strong></li>
+<li>Cấu hình <strong>Coverage threshold</strong>.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/0008.png?featherlight=false&width=90pc"></p>
 <ol start="7">
-<li>Cấu hình <strong>Alert</strong></li>
+<li>Cấu hình <strong>Alert preferences</strong>.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/0006.png?featherlight=false&width=90pc"></p>
 <ol start="8">
-<li>Chọn <strong>Create budget</strong></li>
+<li>Chọn <strong>Create budget</strong>.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/0007.png?featherlight=false&width=90pc"></p>
 <ol start="9">
-<li>Hoàn thành tạo budget</li>
+<li>Hoàn thành tạo budget.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/0009.png?featherlight=false&width=90pc"></p>
 <ol start="10">
-<li>Kiểm tra budget.</li>
+<li>Kiểm tra budget đã tạo.</li>
 </ol>
 <p><img alt="Billing Service" src="/images/4/00010.png?featherlight=false&width=90pc"></p>
+
+<div class="notices tip" ><p><strong>💡 Pro Tip</strong>: Reservation Budgets giúp bạn theo dõi mức độ sử dụng Reserved Instances và tiết kiệm chi phí. Thiết lập các ngưỡng cảnh báo phù hợp sẽ giúp bạn tối ưu hóa việc sử dụng Reserved Instances.</p>
+</div>
+
 
 
 
@@ -631,19 +638,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744705087"></script>
+    <script src="/js/jquery.sticky.js?1744705087"></script>
+    <script src="/js/featherlight.min.js?1744705087"></script>
+    <script src="/js/highlight.pack.js?1744705087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744705087"></script>
+    <script src="/js/learn.js?1744705087"></script>
+    <script src="/js/hugo-learn.js?1744705087"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744705087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744705087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

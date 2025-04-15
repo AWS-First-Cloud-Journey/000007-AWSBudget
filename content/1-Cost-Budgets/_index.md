@@ -6,71 +6,94 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 
-#### Create Cost Budget Tutorial
+#### Overview
 
-In this section, you will practice creating a **Cost Budget**.
+In this section, you will learn how to create and configure an AWS Cost Budget to monitor and manage your AWS spending effectively.
 
-#### Create Cost Budget
+{{% notice info %}}
+**ℹ️ Information**: Cost Budgets are the most common type of AWS Budget, allowing you to set thresholds for your AWS spending and receive alerts when costs exceed or are forecasted to exceed your defined limits.
+{{% /notice %}}
 
-New accounts can only create the *Cost Budget* section; subsequent sections can be skipped.
+#### Creating a Cost Budget
 
-1. Log in to the **AWS Management Console** admin page and select the **Billing and Cost Management** service in the search bar.
+1. Sign in to the **AWS Management Console** and search for **AWS Billing and Cost Management** in the services search bar.
 
-2. In the admin page, select **Budgets**.
+2. In the navigation pane, select **Budgets**.
 
-3. Select **Create budget**.
+3. Click **Create budget**.
 
-   ![Billing Service](/images/2/0001.png?featherlight=false&width=90pc)
+   ![AWS Billing Service](/images/2/0001.png?featherlight=false&width=90pc)
 
-4. For **Budget setup**:
+4. Configure your **Budget setup**:
 
-   - Select **Customize**
-   - **Budget types**: select **Cost budget**
-   - Select **Next**
+   - Select **Customize (advanced)** for more control over your budget settings
+   - Under **Budget types**, select **Cost budget**
+   - Click **Next**
 
-   ![Billing Service](/images/2/0002.png?featherlight=false&width=90pc)
+   ![Budget Setup Options](/images/2/0002.png?featherlight=false&width=90pc)
 
-   ![Billing Service](/images/2/00021.png?featherlight=false&width=90pc)
+   ![Cost Budget Selection](/images/2/00021.png?featherlight=false&width=90pc)
 
-5. In the **Set your budget** interface:
+5. In the **Set your budget** section:
 
-   - For **Budget name**, enter **`Monthly`**
+   - Enter a descriptive **Budget name** (e.g., **`Monthly`**)
 
-   ![Billing Service](/images/2/0003.png?featherlight=false&width=90pc)
+   ![Budget Naming](/images/2/0003.png?featherlight=false&width=90pc)
 
-   - **Period**: select the time period for Budget by Day (*Daily*), Month (*Monthly*), Quarter (*Quarterly*), and Year (*Annually*)
-   - **Budget effective dates**:
-       - Select **Recurring Budget** if you want this Budget to be repeated periodically
-       - Select **Expiring Budget** if you only want the Budget to be booked only once.
-       - All time zones are **UTC**.
-   - Section **Specify your monthly budget**:
-       - Choose **Fixed** if you want the budget of each term to be the same
-       - Choose **Monthly Budget Planning** if you want the budget of each term to be different
-       - **Budgeted amount**: enter the amount corresponding to your budget.
-           - **Note**: if you select **Monthly Budget Planning**, you will have to enter a budgeted amount for each term.
+   - For **Period**, select the appropriate time interval:
+     - **Daily** for day-to-day monitoring
+     - **Monthly** for month-to-month tracking (most common)
+     - **Quarterly** for quarterly oversight
+     - **Annually** for yearly budget management
+   
+   - Under **Budget effective dates**:
+     - Select **Recurring Budget** if you want this budget to continue indefinitely
+     - Select **Expiring Budget** if you need a one-time budget for a specific timeframe
+     - Note that all time zones are in **UTC**
+   
+   - In the **Specify your monthly budget** section:
+     - Choose **Fixed** to set the same budget amount for each period
+     - Choose **Monthly Budget Planning** to set different amounts for each period
+     - Enter your **Budgeted amount** in your preferred currency
 
-   ![Billing Service](/images/2/0004.png?featherlight=false&width=90pc)
+   ![Budget Configuration](/images/2/0004.png?featherlight=false&width=90pc)
 
-6. For **Budget scope**, select **All AWS services**. Then select **Next**
+6. For **Budget scope**, select **All AWS services** to monitor your entire AWS spending, then click **Next**.
 
-   ![Create Cost Budget](/images/2/0005.png?featherlight=false&width=90pc)
+   {{% notice tip %}}
+   **💡 Pro Tip**: For more granular tracking, you can filter budgets by specific services, linked accounts, tags, or cost categories. This is especially useful for large organizations with multiple projects or departments.
+   {{% /notice %}}
 
-7. For **Configure alerts**, select **Add an alert threshold**. Select **Next**
+   ![Budget Scope Selection](/images/2/0005.png?featherlight=false&width=90pc)
 
-   ![Create Cost Budget](/images/2/0006.png?featherlight=false&width=90pc)
+7. In the **Configure alerts** section, click **Add an alert threshold**, then click **Next**.
 
-8. Configure **Alert** and select **Next**
+   ![Adding Alert Threshold](/images/2/0006.png?featherlight=false&width=90pc)
 
-   ![Create Cost Budget](/images/2/0007.png?featherlight=false&width=90pc)
+8. Configure your alert settings:
+   - Set the threshold percentage (e.g., 80% of actual or forecasted spend)
+   - Add email recipients who should receive notifications
+   - Optionally, configure an Amazon SNS topic for programmatic notifications
+   - Click **Next**
 
-9. Select **Next**
+   ![Alert Configuration](/images/2/0007.png?featherlight=false&width=90pc)
 
-   ![Create Cost Budget](/images/2/0008.png?featherlight=false&width=90pc)
+9. Review the budget actions settings and click **Next**.
 
-10. Select **Create budget**
+   {{% notice info %}}
+   **ℹ️ Information**: Budget actions allow you to configure automated responses when a budget threshold is reached, such as applying an IAM policy or targeting specific EC2 or RDS instances.
+   {{% /notice %}}
 
-    ![Create Cost Budget](/images/2/0009.png?featherlight=false&width=90pc)
+   ![Budget Actions Review](/images/2/0008.png?featherlight=false&width=90pc)
 
-11. Create a successful budget.
+10. Review your budget configuration and click **Create budget**.
 
-    ![Create Cost Budget](/images/2/00010.png?featherlight=false&width=90pc)
+    ![Create Budget Confirmation](/images/2/0009.png?featherlight=false&width=90pc)
+
+11. Verify that your budget has been created successfully.
+
+    ![Budget Creation Success](/images/2/00010.png?featherlight=false&width=90pc)
+
+{{% notice warning %}}
+**⚠️ Warning**: AWS Budgets relies on billing data that updates approximately every 8-12 hours. There may be a delay between when costs are incurred and when alerts are triggered. For the most critical workloads, consider setting conservative thresholds to account for this delay.
+{{% /notice %}}

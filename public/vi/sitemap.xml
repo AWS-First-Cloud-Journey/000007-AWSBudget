@@ -2,113 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <loc>//localhost:1313/vi/0-createtemplate/</loc>
+    <lastmod>1970-01-01T00:33:44+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/0-createtemplate/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/0-createtemplate/"
                 />
   </url><url>
-    <loc>/vi/0-createtemplate/</loc>
+    <loc>//localhost:1313/vi/</loc>
+    <lastmod>1970-01-01T00:33:41+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/0-createtemplate/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/0-createtemplate/"
+                href="//localhost:1313/vi/"
                 />
   </url><url>
-    <loc>/vi/1-cost-budgets/</loc>
+    <loc>//localhost:1313/vi/1-cost-budgets/</loc>
+    <lastmod>1970-01-01T00:33:44+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-cost-budgets/"
+                href="//localhost:1313/1-cost-budgets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-cost-budgets/"
+                href="//localhost:1313/vi/1-cost-budgets/"
                 />
   </url><url>
-    <loc>/vi/2-usage-budget/</loc>
+    <loc>//localhost:1313/vi/2-usage-budget/</loc>
+    <lastmod>1970-01-01T00:33:44+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-usage-budget/"
+                href="//localhost:1313/2-usage-budget/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-usage-budget/"
+                href="//localhost:1313/vi/2-usage-budget/"
                 />
   </url><url>
-    <loc>/vi/3-reservation-budget/</loc>
+    <loc>//localhost:1313/vi/3-reservation-budget/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-reservation-budget/"
+                href="//localhost:1313/3-reservation-budget/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-reservation-budget/"
+                href="//localhost:1313/vi/3-reservation-budget/"
                 />
   </url><url>
-    <loc>/vi/4-saving-plans-budget/</loc>
+    <loc>//localhost:1313/vi/4-saving-plans-budget/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-saving-plans-budget/"
+                href="//localhost:1313/4-saving-plans-budget/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-saving-plans-budget/"
+                href="//localhost:1313/vi/4-saving-plans-budget/"
                 />
   </url><url>
-    <loc>/vi/5-clean-up/</loc>
+    <loc>//localhost:1313/vi/5-clean-up/</loc>
+    <lastmod>1970-01-01T00:33:44+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-clean-up/"
+                href="//localhost:1313/5-clean-up/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-clean-up/"
+                href="//localhost:1313/vi/5-clean-up/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

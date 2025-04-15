@@ -1,23 +1,33 @@
----
-title : "Dọn Dẹp Tài nguyên"
-date :  "`r Sys.Date()`" 
-weight : 6
-chapter : false
-pre : " <b> 6. </b> "
----
++++
+title = "Dọn Dẹp Tài nguyên"
+date = 2024
+weight = 6
+chapter = false
+pre = " <b> 6. </b> "
++++
 
-{{%notice warning%}}
-Việc cài đặt budget là một việc quan trọng khi quản lý tài nguyên và vận hành trên môi trường điện toán đám mây. Tuy nhiên nếu bạn chỉ làm trên môi trường lab để hiểu tính năng thì có thể thực hiện các thao tác dọn dẹp tài nguyên bên dưới để xóa các mức cảnh báo đã thiết lập.
-{{%/notice%}}
+#### Tổng quan
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
+⚠️ **Warning**: Việc cài đặt budget là một hoạt động quan trọng khi quản lý tài nguyên và vận hành trên môi trường điện toán đám mây AWS. Tuy nhiên, nếu bạn chỉ đang thực hành trên môi trường lab để hiểu tính năng, bạn nên thực hiện các thao tác dọn dẹp tài nguyên dưới đây để xóa các mức cảnh báo đã thiết lập, tránh nhận thông báo không cần thiết.
 
-- Chọn **Budget** cần xóa
-- Chọn **Delete**
-![Billing Service](/images/5/0009.png?featherlight=false&width=90pc)
+#### Xóa AWS Budgets
 
-2. Xác nhận **Delete**
+1. Đăng nhập vào **AWS Management Console** và tìm dịch vụ **AWS Billing and Cost Management** tại thanh tìm kiếm.
 
-![Billing Service](/images/5/00010.png?featherlight=false&width=90pc)
+2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
 
-3. Lặp lại với các Budget còn lại liên quan tới bài lab này.
+3. Thực hiện xóa budget:
+   - Chọn **Budget** cần xóa
+   - Nhấn vào nút **Delete**
+
+![Xóa Budget](/images/5/0009.png?featherlight=false&width=90pc)
+
+4. Trong hộp thoại xác nhận, nhấn **Delete** để hoàn tất việc xóa budget.
+
+![Xác nhận xóa Budget](/images/5/00010.png?featherlight=false&width=90pc)
+
+5. Lặp lại các bước trên với tất cả các Budget còn lại mà bạn đã tạo trong quá trình thực hành.
+
+ℹ️ **Information**: Việc xóa AWS Budgets không ảnh hưởng đến tài nguyên đang chạy trong tài khoản AWS của bạn. Các budget chỉ là công cụ giám sát và cảnh báo, không kiểm soát trực tiếp việc sử dụng tài nguyên.
+
+💡 **Pro Tip**: Nếu bạn dự định sử dụng AWS trong môi trường thực tế, hãy cân nhắc việc thiết lập lại các budget phù hợp với nhu cầu thực tế của bạn sau khi hoàn thành bài lab này.

@@ -1,101 +1,94 @@
 +++
 title = "Getting Started with AWS Budgets"
-date = 2021
+date = 2024
 weight = 1
 chapter = false
 +++
 
 # Cost Management with AWS Budgets
 
-## Overview
+#### Overview
 
-In this lab, we will explore how **AWS Budgets** can assist you in cost management within your AWS account.
+In this workshop, you will explore how **AWS Budgets** can help you effectively manage and monitor costs within your AWS account.
 
-## AWS Budgets
+#### What is AWS Budgets?
 
-**AWS Budgets** is a service designed to enable you to establish one-time or recurring budgets. These budgets will send you alerts whenever costs exceed (or are forecasted to exceed) your predetermined budgeted cost or usage amount.
+**AWS Budgets** allows you to set custom budgets to track your AWS costs and usage. When your costs or usage exceed (or are forecasted to exceed) your budgeted amount, you receive notifications to help you stay on top of your AWS spending.
 
-You can create several types of budgets:
+ℹ️ **Information**: AWS Budgets provides near real-time visibility into your current and forecasted AWS spend, helping you proactively manage your costs before they occur.
 
-- [Cost Budget](#cost-budget).
-- [Usage Budget](#usage-budget).
-- [Reserved Instance Budget](#reservation-instance-ri-budget).
-- [Savings Plans Budget](#savings-plans-budget).
+#### Types of AWS Budgets
 
-## Cost Budget
+You can create several types of budgets in AWS:
 
-A **Cost Budget** provides alerts when the current or projected spending surpasses the cost threshold set within the budget.
+1. **Cost Budget** - Tracks your AWS spend and alerts you when costs exceed thresholds
+2. **Usage Budget** - Monitors usage of specific AWS services (like EC2 hours)
+3. **Reservation Budget** - Tracks utilization and coverage of your Reserved Instances
+4. **Savings Plans Budget** - Monitors utilization and coverage of your Savings Plans commitments
 
-## Usage Budget
+#### Cost Budget
 
-An **Usage Budget** sends alerts when the current or projected usage of a chosen service or group of services exceeds the usage budget threshold. For instance, you could budget the usage of running hours for EC2 compute services.
+A **Cost Budget** provides alerts when your current or projected AWS spending exceeds the cost threshold you've set. This is the most common type of budget and helps you maintain financial control over your AWS environment.
 
-## Reserved Instance (RI) Budget
+#### Usage Budget
 
-The **RI Budget** generates alerts based on your usage or coverage of committed usage, also known as a *reserved instance*.
+A **Usage Budget** sends alerts when the usage of a specific service or group of services exceeds your defined threshold. For example, you can set a budget to monitor EC2 compute hours or data transfer volumes.
 
-> **Note:** A **Reserved Instance (RI)** is a discounted EC2 offering when you commit to a one-year or three-year term.
+#### Reserved Instance (RI) Budget
 
-## Savings Plans Budget
+The **RI Budget** generates alerts based on the utilization or coverage of your Reserved Instances.
 
-With the **Savings Plans Budget**, you will receive alerts based on usage or coverage of services specified within savings plans.
+ℹ️ **Information**: **Reserved Instances (RIs)** provide significant discounts (up to 72%) compared to On-Demand pricing when you commit to a one-year or three-year term for specific EC2 instance types.
 
-> **Note:** **Savings Plans** is a pricing model offering reduced prices for EC2, Lambda, and Fargate usage. This is in exchange for committing to a consistent usage amount (measured in $/hour) for a 1 or 3 year term. There are two types of Savings Plans: **Compute Savings Plans** and **EC2 Instance Savings Plans**.
+#### Savings Plans Budget
 
-## Best Practices for Controlling Access to AWS Budgets
+With **Savings Plans Budget**, you receive alerts based on the utilization or coverage of your Savings Plans commitments.
 
-To enable users to create budgets in the AWS Billing and Cost Management console, ensure they have permission to:
+ℹ️ **Information**: **Savings Plans** is a flexible pricing model that offers lower prices compared to On-Demand, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term. AWS offers Compute Savings Plans, EC2 Instance Savings Plans, and SageMaker Savings Plans.
 
-- View your billing information.
-- Create Amazon CloudWatch alarms.
-- Create Amazon Simple Notification Service (Amazon SNS) notifications.
+#### Best Practices for AWS Budgets
 
-For more information, see [Allow users to create budgets](link_here).
+##### Access Control
 
-You can also programmatically create budgets using the Budgets API. When configuring API access, it's recommended to create a unique user role for programmatic requests. This ensures precise access controls between AWS Budgets console and the API. For multiple users with query access to the Budgets API, create a role for each.
+To enable users to create budgets in the AWS Billing and Cost Management console, ensure they have permissions to:
 
-## Best Practices for Budget Actions
+- View billing information
+- Create Amazon CloudWatch alarms
+- Create Amazon SNS notifications
 
-### Using Managed Policies
+🔒 **Security Note**: Use IAM roles with least privilege principles when granting access to AWS Budgets. Consider creating dedicated roles for programmatic access to the Budgets API.
 
-Two AWS managed policies simplify budget actions setup: one for users and one for budgets. These policies are related. The first policy allows a user to pass a role to the budgets service, and the second permits budgets to execute the action.
+##### Budget Actions
 
-Proper permissions are vital for AWS Budgets to execute your configured actions. Managed policies ensure correct configuration and execution, adding new capabilities automatically.
+AWS Budgets can be configured to take automated actions when a budget threshold is reached. Two AWS managed policies simplify this setup:
 
-For policy details, see [Managed policies](link_here).
+1. A policy for users to pass a role to the budgets service
+2. A policy for budgets to execute the configured actions
 
-Learn more about AWS Budgets actions in the [Configuring AWS Budgets actions](link_here) section.
+💡 **Pro Tip**: When using budget actions with EC2 instances in Auto Scaling Groups, be aware that the ASG may restart or replace instances that are shut down. Consider adding a second budget action that removes permissions from the Launch Configuration role.
 
-### Using Amazon EC2 Auto Scaling
+##### Setting Effective Budgets
 
-For budget actions affecting an Amazon EC2 instance in an Auto Scaling Group (ASG), Amazon EC2 Auto Scaling restarts or replaces instances. "Shutdown budget actions is not effective to Amazon EC2/Amazon RDS budget actions" unless combined with a second budget action removing permissions on the Launch Configuration role managing the ASG.
+- Set budgets on a recurring basis to maintain continuous monitoring
+- Configure multiple alert thresholds (e.g., 50%, 80%, 90%, 100%)
+- Include both actual and forecasted alerts for proactive management
+- Consider using advanced options like filtering by tags to track costs by project or department
 
-## Best Practices for Setting Budgets
+⚠️ **Warning**: AWS Budgets relies on billing data that updates at least once daily. Budget alerts align with this refresh cadence, so there may be a slight delay between when costs are incurred and when alerts are triggered.
 
-Use AWS Budgets to set custom budgets based on costs, usage, reservation utilization, and coverage. Set budgets on a recurring basis to avoid unexpected alerts.
+##### Budget Alerts
 
-## Best Practices for Using Advanced Options When Setting Cost Budgets
+- Budget alerts can be sent to up to 10 email addresses and one Amazon SNS topic per alert
+- Actual alerts trigger once per budget period when reaching the threshold
+- Forecast-based alerts may trigger multiple times if forecasted values fluctuate around the threshold
+- AWS requires approximately 5 weeks of usage data to generate accurate forecasts
 
-Cost budgets can be aggregated by unblended costs, amortized costs, or blended costs. Budgets can also include or exclude refunds, credits, upfront reservation fees, recurring reservation charges, non-reservation subscription costs, taxes, and support charges.
+🔒 **Security Note**: Consider enabling multi-factor authentication (MFA) for enhanced account security, especially for accounts with budget management permissions.
 
-## Understanding the AWS Budgets Update Frequency
-
-Budgets rely on AWS billing data, updated at least once daily. Alerts and budget information align with this refresh cadence.
-
-## Best Practices for Setting Budget Alerts
-
-Budget alerts can be sent to up to 10 email addresses and one Amazon SNS topic per alert. Alerts can target actual or forecasted values.
-
-Actual alerts trigger once per budget, per budget period, upon reaching the alert threshold. Forecast-based alerts trigger on a per-budget, per-budget period basis. If forecasted values exceed, dip below, and then exceed the threshold within a budgeted period, multiple alerts can be generated.
-
-AWS requires about 5 weeks of usage data for budget forecasts. Forecast-based alerts need sufficient historical usage information.
-
-A video emphasizes budget alert setup's importance and highlights the use of multi-factor authentication (MFA) for enhanced account security.
-
-## Content
+#### Workshop Content
 
 1. [Creating a Cost Budget](1-cost-budgets)
 2. [Creating a Usage Budget](2-usage-budget)
-3. [Creating an Reservation Budget](3-reservation-budget)
+3. [Creating a Reservation Budget](3-reservation-budget)
 4. [Creating a Savings Plans Budget](4-saving-plans-budget)
 5. [Resource Cleanup](5-clean-up)

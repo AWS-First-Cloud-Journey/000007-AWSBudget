@@ -6,63 +6,76 @@ chapter : false
 pre : " <b> 5. </b> "
 ---
 
-Ở phần này, bạn sẽ thực hành khởi tạo một Savings Plans Budget
+#### Giới thiệu
+
+Ở phần này, bạn sẽ thực hành khởi tạo một Savings Plans Budget trong AWS Billing and Cost Management để theo dõi và quản lý hiệu quả các cam kết Savings Plans của bạn.
 
 {{% notice info %}}
-Do bạn sẽ không sử dụng savings plans instance trong phạm vi các bài lab vì savings plans instance yêu cầu bạn phải mua trước savings plans, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.
+**ℹ️ Information**: Do bạn sẽ không sử dụng Savings Plans trong phạm vi các bài lab vì Savings Plans yêu cầu bạn phải cam kết sử dụng trước, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hướng dẫn hoặc chỉ xem qua các bước thực hiện.
 {{% /notice %}}
 
 {{% notice note %}}
-Nếu bạn đã làm qua phần [tạo RI Budget](../3-reservation-budgets), bạn sẽ thấy quy trình tạo Savings Plans Budget cũng rất tương đồng, với một điểm khác nhau duy nhất là Reservation Budget hoạt động liên quan tới **reserve instance**, còn Savings Plans Budget hoạt động liên quan tới **savings plans instance**.
+**ℹ️ Information**: Nếu bạn đã làm qua phần [tạo RI Budget](../3-reservation-budgets), bạn sẽ thấy quy trình tạo Savings Plans Budget cũng rất tương đồng. Điểm khác biệt chính là Reservation Budget liên quan đến **Reserved Instances**, còn Savings Plans Budget liên quan đến các cam kết **Savings Plans**.
 {{% /notice %}}
 
-**Nội dung:**
-- [Khởi tạo Saving plans Budget](#khởi-tạo-saving-plans-budget)
+#### Nội dung
 
-#### Khởi tạo Saving plans Budget
+- [Khởi tạo Savings Plans Budget](#khởi-tạo-savings-plans-budget)
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
+#### Khởi tạo Savings Plans Budget
 
-![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
-
-2. Tại trang quản trị, chọn **Budgets**. 
+1. Đăng nhập vào trang quản trị **AWS Management Console** và tìm dịch vụ **AWS Billing and Cost Management** tại thanh tìm kiếm.
 
 ![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
 
-3. Chọn **Create budget**.
+2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
+
+![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
+
+3. Nhấn vào nút **Create budget**.
 
 ![Billing Service](/images/5/00001.png?featherlight=false&width=90pc)
 
-4. Thực hiện **Budget setup**
+4. Thực hiện cấu hình **Budget setup**:
 
-- Chọn **Customize**
-- Chọn **Budget types** là  **Saving Plan budget**
-- Chọn **Next**
+   - Chọn **Customize** (tùy chỉnh)
+   - Tại **Budget types**, chọn **Savings Plans budget**
+   - Nhấn **Next**
 
 ![Billing Service](/images/5/0002.png?featherlight=false&width=90pc)
 ![Billing Service](/images/5/00002.png?featherlight=false&width=90pc)
 
-5. Đặt tên cho **Budget name**
+5. Tại phần **Details**, nhập tên cho budget của bạn trong trường **Budget name**.
 
 ![Billing Service](/images/5/0003.png?featherlight=false&width=90pc)
 
-6. Thực hiện cấu hình threshold.
+6. Thực hiện cấu hình **Utilization threshold** - ngưỡng sử dụng cho Savings Plans.
 
 ![Billing Service](/images/5/0004.png?featherlight=false&width=90pc)
 
-7. Cấu hình **Alert** và sau đó chọn **Next**
+7. Cấu hình **Alert preferences** và sau đó chọn **Next**:
+   - Thiết lập ngưỡng cảnh báo
+   - Thêm địa chỉ email để nhận thông báo khi đạt ngưỡng
 
 ![Billing Service](/images/5/0005.png?featherlight=false&width=90pc)
 
-8. Chọn **Create budget**
+8. Xem lại các thiết lập và nhấn **Create budget** để hoàn tất.
 
 ![Billing Service](/images/5/00006.png?featherlight=false&width=90pc)
 ![Billing Service](/images/5/0006.png?featherlight=false&width=90pc)
 
-9. Tạp budget thành công.
+9. Sau khi tạo thành công, bạn sẽ thấy thông báo xác nhận.
 
 ![Billing Service](/images/5/0007.png?featherlight=false&width=90pc)
 
-10. Xem chi tiết budget đã tạo.
+10. Kiểm tra chi tiết budget đã tạo trong danh sách budgets.
 
 ![Billing Service](/images/5/0008.png?featherlight=false&width=90pc)
+
+{{% notice tip %}}
+**💡 Pro Tip**: Savings Plans Budget giúp bạn theo dõi mức độ sử dụng cam kết Savings Plans và đảm bảo bạn đang tận dụng tối đa các khoản tiết kiệm. Thiết lập ngưỡng cảnh báo ở mức 80-90% sẽ giúp bạn có thời gian điều chỉnh trước khi đạt đến mức sử dụng tối đa.
+{{% /notice %}}
+
+{{% notice info %}}
+**ℹ️ Information**: AWS Savings Plans cung cấp mô hình giá linh hoạt với mức giảm giá lên đến 72% so với giá On-Demand, đổi lại bạn cam kết sử dụng một lượng tính toán nhất định (tính bằng USD/giờ) trong thời hạn 1 hoặc 3 năm.
+{{% /notice %}}

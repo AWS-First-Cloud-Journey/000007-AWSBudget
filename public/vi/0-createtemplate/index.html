@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744705087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744705087" rel="stylesheet">
+    <link href="/css/hybrid.css?1744705087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744705087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744705087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744705087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744705087" rel="stylesheet">
+    <link href="/css/theme.css?1744705087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744705087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744705087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744705087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744705087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744705087"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744705087"></script>
 
     
   </div>
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/0-createtemplate/">English</option>
+                      <option id="en" value="//localhost:1313/0-createtemplate/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/0-createtemplate/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/0-createtemplate/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -415,66 +415,79 @@
 
 
 
-	<h4 id="tạo-budget-theo-template">Tạo Budget theo template</h4>
+	<h4 id="tổng-quan">Tổng quan</h4>
+<p>Trong phần này, bạn sẽ học cách tạo AWS Budget sử dụng template có sẵn của AWS. AWS Budget là công cụ quan trọng giúp bạn theo dõi và kiểm soát chi phí AWS một cách hiệu quả.</p>
+<h4 id="tạo-budget-theo-template">Tạo Budget theo template</h4>
 <ol>
-<li>
-<p>Chúng ta sẽ tạo <strong>Budget</strong> theo template của AWS.</p>
+<li>Truy cập vào AWS Management Console:
 <ul>
-<li>Truy cập vào <a href="https://ap-southeast-1.console.aws.amazon.com/console/home?region=ap-southeast-1">giao diện AWS</a>.</li>
-<li>Tìm và chọn <strong>Billing and Cost Management</strong></li>
+<li>Mở <a href="https://ap-southeast-1.console.aws.amazon.com/console/home?region=ap-southeast-1">AWS Management Console</a></li>
+<li>Tìm và chọn dịch vụ <strong>AWS Billing and Cost Management</strong></li>
 </ul>
 </li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0001.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="2">
-<li>Trong giao diện <strong>Billing and Cost Management</strong></li>
-</ol>
+<li>Trong giao diện <strong>AWS Billing and Cost Management</strong>:
 <ul>
-<li>Chọn <strong>Budget</strong></li>
-<li>Chọn <strong>Create a budget</strong></li>
+<li>Chọn <strong>Budgets</strong> từ menu bên trái</li>
+<li>Nhấn vào <strong>Create a budget</strong></li>
 </ul>
+</li>
+</ol>
 <p><img alt="AWS Budget" src="/images/1/0002.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="3">
-<li>
-<p>Đối với <strong>Budget setup</strong></p>
+<li>Thiết lập cấu hình Budget:
 <ul>
-<li>Chọn <strong>Use a template (simplified)</strong></li>
-<li>Đối với <strong>Template -new</strong>, chọn <strong>Monthly cost budget</strong></li>
+<li>Chọn <strong>Use a template (simplified)</strong> để sử dụng mẫu có sẵn</li>
+<li>Trong phần <strong>Templates</strong>, chọn <strong>Monthly cost budget</strong></li>
 </ul>
 </li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0003.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="4">
-<li>Hoàn thành thông tin và chọn <strong>Create budget</strong></li>
+<li>Nhập thông tin chi tiết cho Budget:
+<ul>
+<li>Đặt tên cho Budget</li>
+<li>Xác định số tiền ngân sách hàng tháng</li>
+<li>Thiết lập ngưỡng cảnh báo</li>
+<li>Nhấn <strong>Create budget</strong> để hoàn tất</li>
+</ul>
+</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0004.png?featherlight=false&featherlight=false&width=90pc"></p>
 <p><img alt="AWS Budget" src="/images/1/00041.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="5">
-<li>Tạo <strong>Budget</strong> thành công.</li>
+<li>Xác nhận Budget đã được tạo thành công:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0005.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="6">
-<li>Bạn có thể xem các budget trong lịch sử.</li>
+<li>Xem danh sách các Budget đã tạo:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/00060.png?featherlight=false&featherlight=false&width=90pc"></p>
 <p><img alt="AWS Budget" src="/images/1/0006.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="7">
-<li>Bạn xem <strong>Overview</strong> budget đã tạo.</li>
+<li>Xem chi tiết Budget trong tab <strong>Overview</strong>:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0008.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="8">
-<li>Kiểm tra budget health và alerts.</li>
+<li>Kiểm tra tình trạng Budget và các cảnh báo:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/0005.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="9">
-<li>Xem lại Budget history.</li>
+<li>Xem lịch sử Budget:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/00060.png?featherlight=false&featherlight=false&width=90pc"></p>
 <p><img alt="AWS Budget" src="/images/1/0006.png?featherlight=false&featherlight=false&width=90pc"></p>
 <ol start="10">
-<li>Kiểm tra các loại alert của template.</li>
+<li>Kiểm tra các loại cảnh báo có sẵn trong template:</li>
 </ol>
 <p><img alt="AWS Budget" src="/images/1/00011.png?featherlight=false&featherlight=false&width=90pc"></p>
+<h4 id="lợi-ích-của-việc-sử-dụng-aws-budget-templates">Lợi ích của việc sử dụng AWS Budget Templates</h4>
+<p>ℹ️ <strong>Information</strong>: AWS Budget Templates giúp đơn giản hóa quá trình tạo ngân sách bằng cách cung cấp các cấu hình được định nghĩa trước cho các trường hợp sử dụng phổ biến.</p>
+<p>💡 <strong>Pro Tip</strong>: Sử dụng Monthly cost budget là lựa chọn tốt để bắt đầu, nhưng hãy cân nhắc tạo thêm các budget theo dịch vụ cụ thể khi hệ thống của bạn phát triển.</p>
+<p>🔒 <strong>Security Note</strong>: Đảm bảo thiết lập quyền truy cập phù hợp cho AWS Budget để chỉ những người có thẩm quyền mới có thể chỉnh sửa hoặc xóa các budget đã tạo.</p>
+<p>⚠️ <strong>Warning</strong>: Các cảnh báo budget không tự động dừng tài nguyên hoặc ngăn chặn việc sử dụng dịch vụ khi vượt quá ngân sách. Hãy cân nhắc kết hợp với AWS Service Quotas hoặc IAM policies để kiểm soát việc sử dụng tài nguyên.</p>
 
 
 
@@ -632,19 +645,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744705087"></script>
+    <script src="/js/jquery.sticky.js?1744705087"></script>
+    <script src="/js/featherlight.min.js?1744705087"></script>
+    <script src="/js/highlight.pack.js?1744705087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744705087"></script>
+    <script src="/js/learn.js?1744705087"></script>
+    <script src="/js/hugo-learn.js?1744705087"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744705087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744705087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

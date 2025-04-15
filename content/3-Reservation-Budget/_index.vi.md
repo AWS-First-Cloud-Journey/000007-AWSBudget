@@ -5,18 +5,22 @@ weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
-Ở phần này, bạn sẽ thực hành khởi tạo một Reservation Instance (RI) Budget.
+
+#### Giới thiệu
+
+Ở phần này, bạn sẽ thực hành khởi tạo một Reservation Instance (RI) Budget trong AWS Billing and Cost Management.
 
 {{% notice info %}}
-Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab vì reserve instance yêu cầu bạn phải trả trước phí sử dụng, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.
+**ℹ️ Information**: Do bạn sẽ không sử dụng Reserved Instance trong phạm vi các bài lab vì Reserved Instance yêu cầu bạn phải trả trước phí sử dụng, nên bài lab này chỉ mang tính chất minh họa. Chính vì thế, bạn có thể làm theo hoặc chỉ xem hướng dẫn cũng được.
 {{% /notice %}}
 
-**Nội dung:**
-- [Khởi tạo reservation budget](#khởi-tạo-reservation-budget)
+#### Nội dung
 
-#### Khởi tạo reservation budget
+- [Khởi tạo Reservation Budget](#khởi-tạo-reservation-budget)
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
+#### Khởi tạo Reservation Budget
+
+1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **AWS Billing and Cost Management** tại thanh tìm kiếm.
 
 ![Billing Service](/images/4/0001.png?featherlight=false&width=90pc)
 
@@ -28,11 +32,11 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 
 ![Billing Service](/images/4/00001.png?featherlight=false&width=90pc)
 
-4. Thực hiện **Budget setup**
+4. Thực hiện **Budget setup**:
 
-- Chọn **Customize**
-- Chọn **Reservation budget**
-- Chọn **Next**
+   - Chọn **Customize**
+   - Chọn **Reservation budget**
+   - Chọn **Next**
 
 ![Billing Service](/images/4/0002.png?featherlight=false&width=90pc)
 
@@ -42,23 +46,26 @@ Do bạn sẽ không sử dụng reserve instance trong phạm vi các bài lab 
 
 ![Billing Service](/images/4/0003.png?featherlight=false&width=90pc)
 
-6. Cấu hình **Coverage threshold**
+6. Cấu hình **Coverage threshold**.
 
 ![Billing Service](/images/4/0008.png?featherlight=false&width=90pc)
 
-7. Cấu hình **Alert**
+7. Cấu hình **Alert preferences**.
 
 ![Billing Service](/images/4/0006.png?featherlight=false&width=90pc)
 
-8. Chọn **Create budget**
+8. Chọn **Create budget**.
 
 ![Billing Service](/images/4/0007.png?featherlight=false&width=90pc)
 
-9. Hoàn thành tạo budget
+9. Hoàn thành tạo budget.
 
 ![Billing Service](/images/4/0009.png?featherlight=false&width=90pc)
 
-10. Kiểm tra budget.
-
+10. Kiểm tra budget đã tạo.
 
 ![Billing Service](/images/4/00010.png?featherlight=false&width=90pc)
+
+{{% notice tip %}}
+**💡 Pro Tip**: Reservation Budgets giúp bạn theo dõi mức độ sử dụng Reserved Instances và tiết kiệm chi phí. Thiết lập các ngưỡng cảnh báo phù hợp sẽ giúp bạn tối ưu hóa việc sử dụng Reserved Instances.
+{{% /notice %}}

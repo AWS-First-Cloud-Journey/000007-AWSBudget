@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.123.7">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Bắt đầu với AWS Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1733746290" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733746290" rel="stylesheet">
-    <link href="/css/hybrid.css?1733746290" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733746290" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733746290" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733746290" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733746290" rel="stylesheet">
-    <link href="/css/theme.css?1733746290" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733746290" rel="stylesheet">
+    <link href="/css/nucleus.css?1744705087" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1744705087" rel="stylesheet">
+    <link href="/css/hybrid.css?1744705087" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1744705087" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1744705087" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744705087" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1744705087" rel="stylesheet">
+    <link href="/css/theme.css?1744705087" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1744705087" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733746290" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1744705087" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733746290"></script>
+    <script src="/js/jquery-3.3.1.min.js?1744705087"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733746290"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733746290"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1744705087"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1744705087"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733746290"></script>
+<script type="text/javascript" src="/js/search.js?1744705087"></script>
 
     
   </div>
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/">English</option>
+                      <option id="en" value="//localhost:1313/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>10-12-2024</font>
+        <font color=orange>15-04-2025</font>
     </i>
 </left>
 <left>
@@ -370,29 +370,24 @@
 <p><strong>AWS Budget</strong> là một dịch vụ cung cấp khả năng thiết lập ngân sách để gửi cảnh báo cho bạn khi chi phí vượt quá chi phí mà ngân sách cho phép (hoặc được dự báo sẽ vượt quá ngân sách).</p>
 <p>AWS Budget bao gồm 4 loại budget:</p>
 <ul>
-<li>Cost Budget.</li>
-<li>Usage Budget.</li>
-<li>RI Budget.</li>
-<li>Savings Plans Budget.</li>
+<li>Cost Budget</li>
+<li>Usage Budget</li>
+<li>RI Budget</li>
+<li>Savings Plans Budget</li>
 </ul>
 <h4 id="cost-budget">Cost Budget</h4>
 <p><strong>Cost Budget</strong> cho phép bạn gửi cảnh báo khi tổng chi phí vượt qua ngưỡng chi phí trong ngân sách.</p>
 <h4 id="usage-budget">Usage Budget</h4>
 <p><strong>Usage Budget</strong> cho phép bạn gửi cảnh báo khi tổng mức sử dụng <strong>theo từng dịch vụ</strong> bạn lựa chọn vượt qua ngưỡng mức sử dụng trong ngân sách.</p>
-<p>Ví dụ: Mức sử dụng theo số giờ chạy của dịch vụ EC2.</p>
+<p>ℹ️ <strong>Information</strong>: Ví dụ: Mức sử dụng theo số giờ chạy của dịch vụ EC2.</p>
 <h4 id="reservation-instance-ri-budget">Reservation Instance (RI) Budget</h4>
 <p><strong>RI Budget</strong> cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ trả trước (<em>reserve instance</em>) của bạn.</p>
-
-<div class="notices info" ><p><strong>Reserve instance</strong> là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết mức sử dụng  của instance theo thời hạn 1 - 3 năm.</p>
-</div>
-
+<p>ℹ️ <strong>Information</strong>: <strong>Reserve instance</strong> là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết mức sử dụng của instance theo thời hạn 1 - 3 năm.</p>
 <h4 id="savings-plans-budget">Savings Plans Budget</h4>
 <p><strong>Savings Plans Budget</strong> cho phép bạn gửi cảnh báo dựa trên mức sử dụng các dịch vụ đã được quy định ở trong savings plans.</p>
-
-<div class="notices info" ><p><strong>Savings plans instance</strong> cũng là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết dài hạn (từ 01 đến 03 năm) mức sử dụng của instance đó.
+<p>ℹ️ <strong>Information</strong>: <strong>Savings plans</strong> cũng là một phương pháp giảm chi phí sử dụng instance bằng cách cho phép bạn trả trước hoặc cam kết dài hạn (từ 01 đến 03 năm) mức sử dụng của instance đó.
 <strong>Savings plans</strong> là mô hình gia ra đời sau và linh hoạt hơn Reserve Instance với mức giảm giá tương đương. Với EC2 Instance, bạn được khuyến khích sử dụng Savings plans.</p>
-</div>
-
+<p>💡 <strong>Pro Tip</strong>: Sử dụng Savings Plans thay vì Reserved Instances cho EC2 sẽ mang lại sự linh hoạt cao hơn với cùng mức giảm giá.</p>
 <h4 id="nội-dung">Nội dung</h4>
 <ol>
 <li><a href="/vi/1-cost-budgets/">Tạo Cost Budget</a></li>
@@ -400,6 +395,23 @@
 <li><a href="/vi/3-reservation-budget/">Tạo RI Budget</a></li>
 <li><a href="/vi/4-saving-plans-budget/">Tạo Savings Plans Budget</a></li>
 <li><a href="/vi/5-clean-up/">Dọn Dẹp Tài Nguyên</a></li>
+</ol>
+<h4 id="lợi-ích-của-việc-sử-dụng-aws-budget">Lợi ích của việc sử dụng AWS Budget</h4>
+<p>Việc sử dụng AWS Budget mang lại nhiều lợi ích cho doanh nghiệp:</p>
+<ol>
+<li><strong>Kiểm soát chi phí</strong>: Giúp bạn theo dõi và kiểm soát chi phí AWS một cách chủ động.</li>
+<li><strong>Cảnh báo kịp thời</strong>: Nhận thông báo ngay khi chi phí vượt quá ngưỡng đã thiết lập.</li>
+<li><strong>Lập kế hoạch tài chính</strong>: Hỗ trợ việc lập kế hoạch tài chính và dự báo chi phí trong tương lai.</li>
+<li><strong>Tối ưu hóa tài nguyên</strong>: Xác định các dịch vụ có chi phí cao để có thể tối ưu hóa việc sử dụng.</li>
+<li><strong>Phân bổ chi phí</strong>: Dễ dàng phân bổ chi phí cho các dự án, phòng ban hoặc khách hàng khác nhau.</li>
+</ol>
+<h4 id="các-bước-thiết-lập-aws-budget-hiệu-quả">Các bước thiết lập AWS Budget hiệu quả</h4>
+<ol>
+<li><strong>Xác định mục tiêu ngân sách</strong>: Hiểu rõ nhu cầu và giới hạn chi tiêu của bạn.</li>
+<li><strong>Phân tích chi phí hiện tại</strong>: Xem xét chi phí hiện tại để thiết lập ngân sách hợp lý.</li>
+<li><strong>Thiết lập ngưỡng cảnh báo</strong>: Đặt ngưỡng cảnh báo ở mức phù hợp (thường là 80% và 100% ngân sách).</li>
+<li><strong>Cấu hình thông báo</strong>: Đảm bảo thông báo được gửi đến đúng người có thẩm quyền.</li>
+<li><strong>Theo dõi và điều chỉnh</strong>: Thường xuyên xem xét và điều chỉnh ngân sách khi cần thiết.</li>
 </ol>
 	
   
@@ -548,19 +560,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733746290"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733746290"></script>
-    <script src="/js/jquery.sticky.js?1733746290"></script>
-    <script src="/js/featherlight.min.js?1733746290"></script>
-    <script src="/js/highlight.pack.js?1733746290"></script>
+    <script src="/js/clipboard.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.min.js?1744705087"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1744705087"></script>
+    <script src="/js/jquery.sticky.js?1744705087"></script>
+    <script src="/js/featherlight.min.js?1744705087"></script>
+    <script src="/js/highlight.pack.js?1744705087"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733746290"></script>
-    <script src="/js/learn.js?1733746290"></script>
-    <script src="/js/hugo-learn.js?1733746290"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1744705087"></script>
+    <script src="/js/learn.js?1744705087"></script>
+    <script src="/js/hugo-learn.js?1744705087"></script>
 
-    <link href="/mermaid/mermaid.css?1733746290" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733746290"></script>
+    <link href="/mermaid/mermaid.css?1744705087" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1744705087"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

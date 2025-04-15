@@ -1,91 +1,99 @@
----
-title : "Tạo Usage Budget"
-date :  "`r Sys.Date()`" 
-weight : 3
-chapter : false
-pre : " <b> 3. </b> "
----
++++
+title = "Tạo Usage Budget"
+date = 2024
+weight = 3
+chapter = false
+pre = " <b> 3. </b> "
++++
 
-Ở phần này, bạn sẽ thực hành tạo một Usage Budget.
+#### Tổng quan
 
-{{% notice note %}}
-Nếu bạn đã làm qua phần [tạo Cost Budget](../1-cost-budgets), bạn sẽ thấy quy trình tạo Usage Budget cũng rất tương đồng, với một điểm khác nhau duy nhất là Cost Budget hoạt động dựa trên **chi phí**, còn Usage Budget hoạt động dựa trên **mức sử dụng**.
+Ở phần này, bạn sẽ thực hành tạo một Usage Budget - công cụ giúp bạn theo dõi và kiểm soát mức sử dụng tài nguyên AWS của mình.
 
-{{% /notice %}}
+ℹ️ **Information**: Nếu bạn đã làm qua phần [tạo Cost Budget](../1-cost-budgets), bạn sẽ thấy quy trình tạo Usage Budget cũng rất tương đồng, với một điểm khác biệt chính là Cost Budget hoạt động dựa trên **chi phí**, còn Usage Budget hoạt động dựa trên **mức sử dụng** tài nguyên.
 
-**Nội dung:**
-- [Khởi tạo usage budget](#khởi-tạo-usage-budget)
+#### Khởi tạo Usage Budget
 
-#### Khởi tạo usage budget
+1. Đăng nhập vào **AWS Management Console** và tìm dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
-1. Đăng nhập vào trang quản trị **AWS Management Console** và chọn dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
+![Billing Service](/images/3/0001.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
 
-2. Tại trang quản trị, chọn **Budgets**. 
+![Budgets Menu](/images/3/0001.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/0001.png?featherlight=false&width=90pc)
+3. Nhấn vào nút **Create budget**.
 
-3. Chọn **Create budget**.
+![Create Budget](/images/3/00001.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/00001.png?featherlight=false&width=90pc)
+#### Thiết lập cấu hình Budget
 
-4. Chọn **Budget type**
+4. Trong phần **Budget setup**:
+   - Chọn **Customize** (tùy chỉnh)
+   - Tại **Budget types**, chọn **Usage budget**
+   - Nhấn **Next**
 
-- Chọn **Customize**
-- Chọn **Usage budget**
+![Budget Type](/images/3/0002.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/0002.png?featherlight=false&width=90pc)
+5. Trong giao diện **Set your budget**:
+   - Tại **Budget name**, nhập tên cho budget của bạn
 
-5. Đặt tên budget.
+![Budget Name](/images/3/0003.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/0003.png?featherlight=false&width=90pc)
+6. Tại phần **Usage type**:
+   - Chọn **Usage type groups**
+   - Chọn **EC2:Running Hours** để theo dõi số giờ chạy của EC2 instances
 
-6. Chọn **Usage type groups**
+![Usage Type](/images/3/0004.png?featherlight=false&width=90pc)
 
-- Chọn **EC2:Running Hours**
+7. Thực hiện cấu hình **Set budget amount**:
+   - **Period**: Chọn khoảng thời gian cho Budget (Hàng ngày/Hàng tháng/Hàng quý/Hàng năm)
+   - **Budget renewal type**: Chọn loại gia hạn ngân sách (Recurring/Expiring)
+   - **Budgeting method**: Chọn phương pháp lập ngân sách (Fixed/Planned)
+   - Nhập số giờ sử dụng tối đa mà bạn muốn giới hạn
 
-![Budget Name & Amount](/images/3/0004.png?featherlight=false&width=90pc)
+![Budget Amount](/images/3/0005.png?featherlight=false&width=90pc)
 
-7. Thực hiện **Set budget amount**
+8. Tại phần **Budget scope**, giữ mặc định và chọn **Next**.
 
-- Chọn **Period**
-- Chọn **Budget renewal type**
-- Chọn **Budgeting method**
-- Nhập số giờ.
+![Budget Scope](/images/3/0006.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/0005.png?featherlight=false&width=90pc)
+#### Thiết lập cảnh báo
 
-8. Để mặc định và chọn **Next**
+9. Trong phần **Configure alerts**, chọn **Add an alert threshold** để thiết lập ngưỡng cảnh báo.
 
-![Budget Name & Amount](/images/3/0006.png?featherlight=false&width=90pc)
+![Configure Alerts](/images/3/0007.png?featherlight=false&width=90pc)
 
-9. Thực hiện cấu hình **Alert**
+10. Hoàn thành thông tin **Alert**:
+    - Thiết lập ngưỡng cảnh báo (% của ngân sách)
+    - Thêm địa chỉ email để nhận thông báo khi vượt ngưỡng
 
-![Budget Name & Amount](/images/3/0007.png?featherlight=false&width=90pc)
+![Alert Details](/images/3/0008.png?featherlight=false&width=90pc)
 
-10. Hoàn thành thông tin **Alert**
+11. Nhấn **Next** để tiếp tục.
 
-![Budget Name & Amount](/images/3/0008.png?featherlight=false&width=90pc)
+![Next Step](/images/3/0009.png?featherlight=false&width=90pc)
 
-11. Chọn **Next**
+12. Xem lại các thiết lập và chọn **Create budget** để hoàn tất.
 
-![Budget Name & Amount](/images/3/0009.png?featherlight=false&width=90pc)
+![Create Budget](/images/3/00010.png?featherlight=false&width=90pc)
 
-12. Chọn **Create budget**
+#### Xem và quản lý Budget
 
-![Budget Name & Amount](/images/3/00010.png?featherlight=false&width=90pc)
+13. Sau khi tạo thành công, bạn sẽ thấy budget mới trong danh sách.
 
-13. Tao budget thành công.
+![Budget Created](/images/3/00011.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/00011.png?featherlight=false&width=90pc)
+14. Kiểm tra **Budget health** (Tình trạng ngân sách) để theo dõi mức sử dụng hiện tại so với ngân sách đã thiết lập.
 
-14. Kiểm tra **Budget health**
+![Budget Health](/images/3/00012.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/00012.png?featherlight=false&width=90pc)
+15. Xem **Budget history** (Lịch sử ngân sách) để theo dõi xu hướng sử dụng qua thời gian.
 
-15. Xem lại **Budget history**
+![Budget History](/images/3/00013.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/00013.png?featherlight=false&width=90pc)
+![Budget History Details](/images/3/000131.png?featherlight=false&width=90pc)
 
-![Budget Name & Amount](/images/3/000131.png?featherlight=false&width=90pc)
+💡 **Pro Tip**: Sử dụng Usage Budget để theo dõi và kiểm soát việc sử dụng tài nguyên AWS, đặc biệt là các dịch vụ tính phí theo giờ như EC2. Điều này giúp bạn tránh việc sử dụng quá mức dự kiến và kiểm soát chi phí hiệu quả hơn.
+
+🔒 **Security Note**: Đảm bảo chỉ những người có trách nhiệm quản lý chi phí mới nhận được thông báo cảnh báo từ budget để tránh rò rỉ thông tin nhạy cảm về tài chính của tổ chức.
