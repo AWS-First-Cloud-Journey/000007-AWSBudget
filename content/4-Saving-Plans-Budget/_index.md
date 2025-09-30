@@ -18,28 +18,28 @@ In this section, you will learn how to create and configure an AWS Savings Plans
 
 1. Sign in to the **AWS Management Console** and search for **AWS Billing and Cost Management** in the services search bar.
 
-![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0001.png?featherlight=false&width=90pc)
 
 2. In the navigation pane, select **Budgets**.
 
-![Budgets](/images/5/0001.png?featherlight=false&width=90pc)
+![Budgets](/images/5/x00001.png?featherlight=false&width=90pc)
 
 3. Click **Create budget**.
 
-![Create Budget](/images/5/00001.png?featherlight=false&width=90pc)
+![Create Budget](/images/5/x00001.png?featherlight=false&width=90pc)
 
 4. Configure your **Budget setup**:
    - Select **Customize (advanced)** for more control over your budget settings
    - Under **Budget types**, select **Savings Plans budget**
    - Click **Next**
 
-![Budget Setup](/images/5/0002.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0002.png?featherlight=false&width=90pc)
 
-![Budget Setup](/images/5/00002.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z00002.png?featherlight=false&width=90pc)
 
 5. In the **Details** section, enter a descriptive name for your budget.
 
-![Budget Name](/images/5/0003.png?featherlight=false&width=90pc)
+![Budget Name](/images/5/z0003.png?featherlight=false&width=90pc)
 
 6. Configure the **Coverage threshold** for your budget:
    - Set the percentage threshold that will trigger an alert when your Savings Plans coverage falls below this value
@@ -47,26 +47,25 @@ In this section, you will learn how to create and configure an AWS Savings Plans
 
 💡 **Pro Tip**: A higher coverage threshold (e.g., 80%) will alert you earlier when your workloads aren't fully covered by Savings Plans, helping you maximize cost savings by purchasing additional commitments when needed.
 
-![Threshold Configuration](/images/5/0004.png?featherlight=false&width=90pc)
+![Threshold Configuration](/images/5/z0004.png?featherlight=false&width=90pc)
 
 7. Configure your **Alert settings**:
    - Add email recipients who should receive the alert notifications
    - Optionally, configure an Amazon SNS topic for additional notification options
 
-![Alert Configuration](/images/5/0005.png?featherlight=false&width=90pc)
+![Alert Configuration](/images/5/z0005.png?featherlight=false&width=90pc)
 
 8. Review your budget configuration and click **Create budget**.
 
-![Create Budget](/images/5/00006.png?featherlight=false&width=90pc)
-![Create Budget](/images/5/0006.png?featherlight=false&width=90pc)
+![Create Budget](/images/5/z0006.png?featherlight=false&width=90pc)
 
 9. Verify that your budget has been created successfully.
 
-![Budget Creation Successful](/images/5/0007.png?featherlight=false&width=90pc)
+![Budget Creation Successful](/images/5/z0007.png?featherlight=false&width=90pc)
 
 10. Review your budget in the budgets dashboard to monitor Savings Plans coverage over time.
 
-![Budget Details](/images/5/0008.png?featherlight=false&width=90pc)
+![Budget Details](/images/5/z0008.png?featherlight=false&width=90pc)
 
 ℹ️ **Information**: AWS Budgets provides two types of Savings Plans budgets: utilization budgets (tracking how much of your purchased Savings Plans are being used) and coverage budgets (tracking what percentage of your eligible usage is covered by Savings Plans). The example above demonstrates a Savings Plans coverage budget.
 

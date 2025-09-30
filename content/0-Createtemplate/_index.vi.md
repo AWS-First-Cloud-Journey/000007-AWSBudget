@@ -24,6 +24,8 @@ Trong phần này, bạn sẽ học cách tạo AWS Budget sử dụng template 
 
 ![AWS Budget](/images/1/0002.png?featherlight=false&featherlight=false&width=90pc)
 
+![AWS Budget](/images/1/00012.png?featherlight=false&featherlight=false&width=90pc)
+
 3. Thiết lập cấu hình Budget:
    - Chọn **Use a template (simplified)** để sử dụng mẫu có sẵn
    - Trong phần **Templates**, chọn **Monthly cost budget**
@@ -46,8 +48,6 @@ Trong phần này, bạn sẽ học cách tạo AWS Budget sử dụng template 
 
 6. Xem danh sách các Budget đã tạo:
 
-![AWS Budget](/images/1/00060.png?featherlight=false&featherlight=false&width=90pc)
-
 ![AWS Budget](/images/1/0006.png?featherlight=false&featherlight=false&width=90pc)
 
 7. Xem chi tiết Budget trong tab **Overview**:
@@ -59,8 +59,6 @@ Trong phần này, bạn sẽ học cách tạo AWS Budget sử dụng template 
 ![AWS Budget](/images/1/0005.png?featherlight=false&featherlight=false&width=90pc)
 
 9. Xem lịch sử Budget:
-
-![AWS Budget](/images/1/00060.png?featherlight=false&featherlight=false&width=90pc)
 
 ![AWS Budget](/images/1/0006.png?featherlight=false&featherlight=false&width=90pc)
 

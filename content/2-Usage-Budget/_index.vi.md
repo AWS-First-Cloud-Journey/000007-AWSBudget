@@ -1,10 +1,10 @@
-+++
-title = "Tạo Usage Budget"
-date = 2024
-weight = 3
-chapter = false
-pre = " <b> 3. </b> "
-+++
+---
+title : "Tạo Usage Budget"
+date : 2025-09-30
+weight : 3
+chapter : false
+pre : " <b> 3. </b> "
+---
 
 #### Tổng quan
 
@@ -16,11 +16,13 @@ pre = " <b> 3. </b> "
 
 1. Đăng nhập vào **AWS Management Console** và tìm dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
-![Billing Service](/images/3/0001.png?featherlight=false&width=90pc)
+
+![Billing Service](/images/3/abc.png?featherlight=false&width=90pc)
+
 
 2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
 
-![Budgets Menu](/images/3/0001.png?featherlight=false&width=90pc)
+![Budgets Menu](/images/3/00001.png?featherlight=false&width=90pc)
 
 3. Nhấn vào nút **Create budget**.
 
@@ -33,18 +35,18 @@ pre = " <b> 3. </b> "
    - Tại **Budget types**, chọn **Usage budget**
    - Nhấn **Next**
 
-![Budget Type](/images/3/0002.png?featherlight=false&width=90pc)
+![Budget Type](/images/3/00002.png?featherlight=false&width=90pc)
 
 5. Trong giao diện **Set your budget**:
    - Tại **Budget name**, nhập tên cho budget của bạn
 
-![Budget Name](/images/3/0003.png?featherlight=false&width=90pc)
+![Budget Name](/images/3/00003.png?featherlight=false&width=90pc)
 
 6. Tại phần **Usage type**:
    - Chọn **Usage type groups**
    - Chọn **EC2:Running Hours** để theo dõi số giờ chạy của EC2 instances
 
-![Usage Type](/images/3/0004.png?featherlight=false&width=90pc)
+![Usage Type](/images/3/00004.png?featherlight=false&width=90pc)
 
 7. Thực hiện cấu hình **Set budget amount**:
    - **Period**: Chọn khoảng thời gian cho Budget (Hàng ngày/Hàng tháng/Hàng quý/Hàng năm)
@@ -52,47 +54,45 @@ pre = " <b> 3. </b> "
    - **Budgeting method**: Chọn phương pháp lập ngân sách (Fixed/Planned)
    - Nhập số giờ sử dụng tối đa mà bạn muốn giới hạn
 
-![Budget Amount](/images/3/0005.png?featherlight=false&width=90pc)
+![Budget Amount](/images/3/00005.png?featherlight=false&width=90pc)
 
 8. Tại phần **Budget scope**, giữ mặc định và chọn **Next**.
 
-![Budget Scope](/images/3/0006.png?featherlight=false&width=90pc)
+![Budget Scope](/images/3/00006.png?featherlight=false&width=90pc)
 
 #### Thiết lập cảnh báo
 
 9. Trong phần **Configure alerts**, chọn **Add an alert threshold** để thiết lập ngưỡng cảnh báo.
 
-![Configure Alerts](/images/3/0007.png?featherlight=false&width=90pc)
+![Configure Alerts](/images/3/00007.png?featherlight=false&width=90pc)
 
 10. Hoàn thành thông tin **Alert**:
     - Thiết lập ngưỡng cảnh báo (% của ngân sách)
     - Thêm địa chỉ email để nhận thông báo khi vượt ngưỡng
 
-![Alert Details](/images/3/0008.png?featherlight=false&width=90pc)
+![Alert Details](/images/3/00008.png?featherlight=false&width=90pc)
 
 11. Nhấn **Next** để tiếp tục.
 
-![Next Step](/images/3/0009.png?featherlight=false&width=90pc)
+![Next Step](/images/3/00009.png?featherlight=false&width=90pc)
 
 12. Xem lại các thiết lập và chọn **Create budget** để hoàn tất.
 
-![Create Budget](/images/3/00010.png?featherlight=false&width=90pc)
+![Create Budget](/images/3/000010.png?featherlight=false&width=90pc)
 
 #### Xem và quản lý Budget
 
 13. Sau khi tạo thành công, bạn sẽ thấy budget mới trong danh sách.
 
-![Budget Created](/images/3/00011.png?featherlight=false&width=90pc)
+![Budget Created](/images/3/000011.png?featherlight=false&width=90pc)
 
 14. Kiểm tra **Budget health** (Tình trạng ngân sách) để theo dõi mức sử dụng hiện tại so với ngân sách đã thiết lập.
 
-![Budget Health](/images/3/00012.png?featherlight=false&width=90pc)
+![Budget Health](/images/3/000012.png?featherlight=false&width=90pc)
 
 15. Xem **Budget history** (Lịch sử ngân sách) để theo dõi xu hướng sử dụng qua thời gian.
 
-![Budget History](/images/3/00013.png?featherlight=false&width=90pc)
-
-![Budget History Details](/images/3/000131.png?featherlight=false&width=90pc)
+![Budget History](/images/3/000013.png?featherlight=false&width=90pc)
 
 💡 **Pro Tip**: Sử dụng Usage Budget để theo dõi và kiểm soát việc sử dụng tài nguyên AWS, đặc biệt là các dịch vụ tính phí theo giờ như EC2. Điều này giúp bạn tránh việc sử dụng quá mức dự kiến và kiểm soát chi phí hiệu quả hơn.
 
