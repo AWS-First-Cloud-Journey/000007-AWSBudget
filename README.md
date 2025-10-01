@@ -176,3 +176,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **AWS First Cloud Journey** - Empowering cloud learning through hands-on workshops.
+
+## Update workshop by Huynh Hoang Long
+1. Replace `r Sys.Date()` to current day (ex: `2025-09-30`).
+2. Replace `.Site.IsMultiLingual` to `.IsMultilingual`.
+3. Replace all old images to new images.

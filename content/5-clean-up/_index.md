@@ -28,11 +28,11 @@ AWS Budgets are powerful tools for cost management in cloud environments. After 
    - Click the checkbox next to the budget name
    - Click the **Delete** button in the upper right corner
    
-   ![Deleting a Budget](/images/5/0009.png?featherlight=false&width=90pc)
+   ![Deleting a Budget](/images/5/z0009.png?featherlight=false&width=90pc)
 
 4. In the confirmation dialog, review the budget name to ensure you're deleting the correct budget, then click **Confirm** to permanently delete the budget.
 
-   ![Confirming Budget Deletion](/images/5/00010.png?featherlight=false&width=90pc)
+   ![Confirming Budget Deletion](/images/5/z00010.png?featherlight=false&width=90pc)
 
 5. Repeat steps 3-4 for each budget you created during this lab.
 

@@ -1,6 +1,6 @@
 ---
 title : "Create Cost Budget"
-date : "`r Sys.Date()`"
+date : 2025-09-30
 weight : 2
 chapter : false
 pre : " <b> 2. </b> "
@@ -17,6 +17,8 @@ In this section, you will learn how to create and configure an AWS Cost Budget t
 #### Creating a Cost Budget
 
 1. Sign in to the **AWS Management Console** and search for **AWS Billing and Cost Management** in the services search bar.
+
+![Billing Service](/images/3/abc.png?featherlight=false&width=90pc)
 
 2. In the navigation pane, select **Budgets**.
 

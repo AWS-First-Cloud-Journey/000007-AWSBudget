@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.147.8">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo Usage Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET</title>
 
     
-    <link href="/css/nucleus.css?1759219523" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1759219523" rel="stylesheet">
-    <link href="/css/hybrid.css?1759219523" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1759219523" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1759219523" rel="stylesheet">
-    <link href="/css/auto-complete.css?1759219523" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1759219523" rel="stylesheet">
-    <link href="/css/theme.css?1759219523" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1759219523" rel="stylesheet">
+    <link href="/css/nucleus.css?1759250128" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1759250128" rel="stylesheet">
+    <link href="/css/hybrid.css?1759250128" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1759250128" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1759250128" rel="stylesheet">
+    <link href="/css/auto-complete.css?1759250128" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1759250128" rel="stylesheet">
+    <link href="/css/theme.css?1759250128" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1759250128" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1759219523" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1759250128" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1759219523"></script>
+    <script src="/js/jquery-3.3.1.min.js?1759250128"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1759219523"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1759219523"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1759250128"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1759250128"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1759219523"></script>
+<script type="text/javascript" src="/js/search.js?1759250128"></script>
 
     
   </div>
@@ -135,7 +135,7 @@
   
     
     <li data-nav-id="/vi/2-usage-budget/" title="Tạo Usage Budget" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -269,7 +269,7 @@
                   
                     
                     
-                      <option id="en" value="/2-usage-budget/">English</option>
+                      <option id="en" value="//localhost:1313/2-usage-budget/">English</option>
                     
                   
               
@@ -283,7 +283,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/2-usage-budget/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/2-usage-budget/" selected>Tiếng Việt</option>
                     
                   
               
@@ -324,7 +324,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>15-04-2025</font>
+        <font color=orange>30-09-2025</font>
     </i>
 </left>
 <left>
@@ -417,16 +417,16 @@
 
 	<h4 id="tổng-quan">Tổng quan</h4>
 <p>Ở phần này, bạn sẽ thực hành tạo một Usage Budget - công cụ giúp bạn theo dõi và kiểm soát mức sử dụng tài nguyên AWS của mình.</p>
-<p>ℹ️ <strong>Information</strong>: Nếu bạn đã làm qua phần <a href="../1-cost-budgets">tạo Cost Budget</a>, bạn sẽ thấy quy trình tạo Usage Budget cũng rất tương đồng, với một điểm khác biệt chính là Cost Budget hoạt động dựa trên <strong>chi phí</strong>, còn Usage Budget hoạt động dựa trên <strong>mức sử dụng</strong> tài nguyên.</p>
+<p>ℹ️ <strong>Information</strong>: Nếu bạn đã làm qua phần <a href="/vi/1-cost-budgets/">tạo Cost Budget</a>, bạn sẽ thấy quy trình tạo Usage Budget cũng rất tương đồng, với một điểm khác biệt chính là Cost Budget hoạt động dựa trên <strong>chi phí</strong>, còn Usage Budget hoạt động dựa trên <strong>mức sử dụng</strong> tài nguyên.</p>
 <h4 id="khởi-tạo-usage-budget">Khởi tạo Usage Budget</h4>
 <ol>
 <li>Đăng nhập vào <strong>AWS Management Console</strong> và tìm dịch vụ <strong>Billing and Cost Management</strong> tại thanh tìm kiếm.</li>
 </ol>
-<p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
+<p><img src="/images/3/abc.png?featherlight=false&amp;width=90pc" alt="Billing Service"></p>
 <ol start="2">
 <li>Tại trang quản trị, chọn <strong>Budgets</strong> từ menu bên trái.</li>
 </ol>
-<p><img src="/images/3/0001.png?featherlight=false&amp;width=90pc" alt="Budgets Menu"></p>
+<p><img src="/images/3/00001.png?featherlight=false&amp;width=90pc" alt="Budgets Menu"></p>
 <ol start="3">
 <li>Nhấn vào nút <strong>Create budget</strong>.</li>
 </ol>
@@ -441,7 +441,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0002.png?featherlight=false&amp;width=90pc" alt="Budget Type"></p>
+<p><img src="/images/3/00002.png?featherlight=false&amp;width=90pc" alt="Budget Type"></p>
 <ol start="5">
 <li>Trong giao diện <strong>Set your budget</strong>:
 <ul>
@@ -449,7 +449,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0003.png?featherlight=false&amp;width=90pc" alt="Budget Name"></p>
+<p><img src="/images/3/00003.png?featherlight=false&amp;width=90pc" alt="Budget Name"></p>
 <ol start="6">
 <li>Tại phần <strong>Usage type</strong>:
 <ul>
@@ -458,7 +458,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0004.png?featherlight=false&amp;width=90pc" alt="Usage Type"></p>
+<p><img src="/images/3/00004.png?featherlight=false&amp;width=90pc" alt="Usage Type"></p>
 <ol start="7">
 <li>Thực hiện cấu hình <strong>Set budget amount</strong>:
 <ul>
@@ -469,16 +469,16 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0005.png?featherlight=false&amp;width=90pc" alt="Budget Amount"></p>
+<p><img src="/images/3/00005.png?featherlight=false&amp;width=90pc" alt="Budget Amount"></p>
 <ol start="8">
 <li>Tại phần <strong>Budget scope</strong>, giữ mặc định và chọn <strong>Next</strong>.</li>
 </ol>
-<p><img src="/images/3/0006.png?featherlight=false&amp;width=90pc" alt="Budget Scope"></p>
+<p><img src="/images/3/00006.png?featherlight=false&amp;width=90pc" alt="Budget Scope"></p>
 <h4 id="thiết-lập-cảnh-báo">Thiết lập cảnh báo</h4>
 <ol start="9">
 <li>Trong phần <strong>Configure alerts</strong>, chọn <strong>Add an alert threshold</strong> để thiết lập ngưỡng cảnh báo.</li>
 </ol>
-<p><img src="/images/3/0007.png?featherlight=false&amp;width=90pc" alt="Configure Alerts"></p>
+<p><img src="/images/3/00007.png?featherlight=false&amp;width=90pc" alt="Configure Alerts"></p>
 <ol start="10">
 <li>Hoàn thành thông tin <strong>Alert</strong>:
 <ul>
@@ -487,29 +487,28 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/0008.png?featherlight=false&amp;width=90pc" alt="Alert Details"></p>
+<p><img src="/images/3/00008.png?featherlight=false&amp;width=90pc" alt="Alert Details"></p>
 <ol start="11">
 <li>Nhấn <strong>Next</strong> để tiếp tục.</li>
 </ol>
-<p><img src="/images/3/0009.png?featherlight=false&amp;width=90pc" alt="Next Step"></p>
+<p><img src="/images/3/00009.png?featherlight=false&amp;width=90pc" alt="Next Step"></p>
 <ol start="12">
 <li>Xem lại các thiết lập và chọn <strong>Create budget</strong> để hoàn tất.</li>
 </ol>
-<p><img src="/images/3/00010.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
+<p><img src="/images/3/000010.png?featherlight=false&amp;width=90pc" alt="Create Budget"></p>
 <h4 id="xem-và-quản-lý-budget">Xem và quản lý Budget</h4>
 <ol start="13">
 <li>Sau khi tạo thành công, bạn sẽ thấy budget mới trong danh sách.</li>
 </ol>
-<p><img src="/images/3/00011.png?featherlight=false&amp;width=90pc" alt="Budget Created"></p>
+<p><img src="/images/3/000011.png?featherlight=false&amp;width=90pc" alt="Budget Created"></p>
 <ol start="14">
 <li>Kiểm tra <strong>Budget health</strong> (Tình trạng ngân sách) để theo dõi mức sử dụng hiện tại so với ngân sách đã thiết lập.</li>
 </ol>
-<p><img src="/images/3/00012.png?featherlight=false&amp;width=90pc" alt="Budget Health"></p>
+<p><img src="/images/3/000012.png?featherlight=false&amp;width=90pc" alt="Budget Health"></p>
 <ol start="15">
 <li>Xem <strong>Budget history</strong> (Lịch sử ngân sách) để theo dõi xu hướng sử dụng qua thời gian.</li>
 </ol>
-<p><img src="/images/3/00013.png?featherlight=false&amp;width=90pc" alt="Budget History"></p>
-<p><img src="/images/3/000131.png?featherlight=false&amp;width=90pc" alt="Budget History Details"></p>
+<p><img src="/images/3/000013.png?featherlight=false&amp;width=90pc" alt="Budget History"></p>
 <p>💡 <strong>Pro Tip</strong>: Sử dụng Usage Budget để theo dõi và kiểm soát việc sử dụng tài nguyên AWS, đặc biệt là các dịch vụ tính phí theo giờ như EC2. Điều này giúp bạn tránh việc sử dụng quá mức dự kiến và kiểm soát chi phí hiệu quả hơn.</p>
 <p>🔒 <strong>Security Note</strong>: Đảm bảo chỉ những người có trách nhiệm quản lý chi phí mới nhận được thông báo cảnh báo từ budget để tránh rò rỉ thông tin nhạy cảm về tài chính của tổ chức.</p>
 
@@ -672,19 +671,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1759219523"></script>
-    <script src="/js/perfect-scrollbar.min.js?1759219523"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1759219523"></script>
-    <script src="/js/jquery.sticky.js?1759219523"></script>
-    <script src="/js/featherlight.min.js?1759219523"></script>
-    <script src="/js/highlight.pack.js?1759219523"></script>
+    <script src="/js/clipboard.min.js?1759250128"></script>
+    <script src="/js/perfect-scrollbar.min.js?1759250128"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1759250128"></script>
+    <script src="/js/jquery.sticky.js?1759250128"></script>
+    <script src="/js/featherlight.min.js?1759250128"></script>
+    <script src="/js/highlight.pack.js?1759250128"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1759219523"></script>
-    <script src="/js/learn.js?1759219523"></script>
-    <script src="/js/hugo-learn.js?1759219523"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1759250128"></script>
+    <script src="/js/learn.js?1759250128"></script>
+    <script src="/js/hugo-learn.js?1759250128"></script>
 
-    <link href="/mermaid/mermaid.css?1759219523" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1759219523"></script>
+    <link href="/mermaid/mermaid.css?1759250128" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1759250128"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,9 +1,9 @@
 +++
 title = "Create Budget by Template"
-date = 2024
-weight = 2
+date = 2025
+weight = 1
 chapter = false
-pre = " <b> 2. </b> "
+pre = " <b> 1. </b> "
 +++
 
 #### Overview
@@ -23,6 +23,8 @@ In this section, you will learn how to quickly create an AWS Budget using the pr
    - Click the **Create a budget** button
 
 ![Create Budget](/images/1/0002.png?featherlight=false&width=90pc)
+
+![AWS Budget](/images/1/00012.png?featherlight=false&featherlight=false&width=90pc)
 
 3. Select the template option for budget setup:
    - Choose **Use a template (simplified)**
@@ -53,8 +55,6 @@ In this section, you will learn how to quickly create an AWS Budget using the pr
    - Select your newly created budget
    - Navigate to the **Budget history** tab to see historical performance
 
-![Budget History Tab](/images/1/00060.png?featherlight=false&width=90pc)
-
 ![Budget History Details](/images/1/0006.png?featherlight=false&width=90pc)
 
 7. Review the budget overview:
@@ -73,9 +73,7 @@ In this section, you will learn how to quickly create an AWS Budget using the pr
    - Historical data helps identify spending patterns over time
    - Use this information to refine future budgets
 
-![Budget History Navigation](/images/1/00060.png?featherlight=false&width=90pc)
-
-![Budget History Trends](/images/1/0006.png?featherlight=false&width=90pc)
+![AWS Budget](/images/1/0006.png?featherlight=false&featherlight=false&width=90pc)
 
 10. Understand the template alert configuration:
     - Review the alert thresholds and notification settings

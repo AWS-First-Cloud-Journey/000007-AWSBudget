@@ -20,11 +20,11 @@ pre = " <b> 6. </b> "
    - Chọn **Budget** cần xóa
    - Nhấn vào nút **Delete**
 
-![Xóa Budget](/images/5/0009.png?featherlight=false&width=90pc)
+![Xóa Budget](/images/5/z0009.png?featherlight=false&width=90pc)
 
 4. Trong hộp thoại xác nhận, nhấn **Delete** để hoàn tất việc xóa budget.
 
-![Xác nhận xóa Budget](/images/5/00010.png?featherlight=false&width=90pc)
+![Xác nhận xóa Budget](/images/5/z00010.png?featherlight=false&width=90pc)
 
 5. Lặp lại các bước trên với tất cả các Budget còn lại mà bạn đã tạo trong quá trình thực hành.
 

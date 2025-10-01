@@ -1,6 +1,6 @@
 ---
 title : "Tạo Saving Plans Budget"
-date :  "`r Sys.Date()`" 
+date :  2025-09-30
 weight : 5
 chapter : false
 pre : " <b> 5. </b> "
@@ -26,15 +26,15 @@ pre : " <b> 5. </b> "
 
 1. Đăng nhập vào trang quản trị **AWS Management Console** và tìm dịch vụ **AWS Billing and Cost Management** tại thanh tìm kiếm.
 
-![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0001.png?featherlight=false&width=90pc)
 
 2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
 
-![Billing Service](/images/5/0001.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/x00001.png?featherlight=false&width=90pc)
 
 3. Nhấn vào nút **Create budget**.
 
-![Billing Service](/images/5/00001.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/x00001.png?featherlight=false&width=90pc)
 
 4. Thực hiện cấu hình **Budget setup**:
 
@@ -42,35 +42,35 @@ pre : " <b> 5. </b> "
    - Tại **Budget types**, chọn **Savings Plans budget**
    - Nhấn **Next**
 
-![Billing Service](/images/5/0002.png?featherlight=false&width=90pc)
-![Billing Service](/images/5/00002.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0002.png?featherlight=false&width=90pc)
+
+![Billing Service](/images/5/z00002.png?featherlight=false&width=90pc)
 
 5. Tại phần **Details**, nhập tên cho budget của bạn trong trường **Budget name**.
 
-![Billing Service](/images/5/0003.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0003.png?featherlight=false&width=90pc)
 
 6. Thực hiện cấu hình **Utilization threshold** - ngưỡng sử dụng cho Savings Plans.
 
-![Billing Service](/images/5/0004.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0004.png?featherlight=false&width=90pc)
 
 7. Cấu hình **Alert preferences** và sau đó chọn **Next**:
    - Thiết lập ngưỡng cảnh báo
    - Thêm địa chỉ email để nhận thông báo khi đạt ngưỡng
 
-![Billing Service](/images/5/0005.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0005.png?featherlight=false&width=90pc)
 
 8. Xem lại các thiết lập và nhấn **Create budget** để hoàn tất.
 
-![Billing Service](/images/5/00006.png?featherlight=false&width=90pc)
-![Billing Service](/images/5/0006.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0006.png?featherlight=false&width=90pc)
 
 9. Sau khi tạo thành công, bạn sẽ thấy thông báo xác nhận.
 
-![Billing Service](/images/5/0007.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0007.png?featherlight=false&width=90pc)
 
 10. Kiểm tra chi tiết budget đã tạo trong danh sách budgets.
 
-![Billing Service](/images/5/0008.png?featherlight=false&width=90pc)
+![Billing Service](/images/5/z0008.png?featherlight=false&width=90pc)
 
 {{% notice tip %}}
 **💡 Pro Tip**: Savings Plans Budget giúp bạn theo dõi mức độ sử dụng cam kết Savings Plans và đảm bảo bạn đang tận dụng tối đa các khoản tiết kiệm. Thiết lập ngưỡng cảnh báo ở mức 80-90% sẽ giúp bạn có thời gian điều chỉnh trước khi đạt đến mức sử dụng tối đa.

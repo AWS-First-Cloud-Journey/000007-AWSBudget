@@ -16,6 +16,8 @@ pre = " <b> 2. </b> "
 
 1. Đăng nhập vào **AWS Management Console** và tìm dịch vụ **Billing and Cost Management** tại thanh tìm kiếm.
 
+![Billing Service](/images/3/abc.png?featherlight=false&width=90pc)
+
 2. Tại trang quản trị, chọn **Budgets** từ menu bên trái.
 
 3. Nhấn vào nút **Create budget**.
